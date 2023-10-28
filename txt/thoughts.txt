@@ -1,4 +1,5 @@
-- Various Style In The Site (Retro (pure CSS), Simple (CSS3[?]), Modern (CSS3 and Bootstrap), Futurist (Modern + Masonry and idk), ...)
+- Various Style In The Site (Old School(no CSS), Retro (pure CSS3), Simple (CSS3[?] and something more), Modern (CSS3 and Bootstrap), 
+    Futurist (Modern + Masonry and idk), ...)
 - I wanna share my thoughts, stories, delusions, experiences, tutorials (?), ...
 - URL of the site: User.Maldito or Maldito.User or User.Maldito.Online[www.User.com] (Favorite x1) or (language [en, es, pt]).User.Maldito 
 (Favorite x2)
@@ -10,4 +11,12 @@
 - Topics: Tutorials / Stories ([Posibles] Notas Muertas) / Proyects / About Me (Diary [?], Videogames, Songs, Experiences) / My (Home)Work / ...
 - Should I put a chat like her? I need to think about that, I'm not rich...
 - Debería establecer una tématica general y partir de ahí. La pregunta es, ¿cúal?
-- 
+- So much Folders to Keep my Mind in Order (sorry for the Arbitrary Capitalize Letter)
+- There is no need to put my (Social Media) Instagram Account, right?
+- But I need to put some "definitions" to both, the users and I, to understand the website
+- Sorry if I forget something, maybe I need to be reminded again :>
+- Should I avoid the use of "divs"? I'll try my best
+- Responsive? Maybe after Simple
+- Each Page/Layout should have its own Night Mode?! That looks like a lot of work
+ - Ahora que caigo, tengo que usar ids para todo, por las traducciones en JSON. Suena a trabajazo x2
+ 

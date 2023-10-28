@@ -1,0 +1,36 @@
+*, body, html{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+}
+header{
+    background-color: red;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    height: 100px;
+}
+main{
+    background-color: blueviolet;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    height: 300px;
+
+}
+aside{
+    background-color: lightgreen;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    height: 150px;
+
+}
+footer{
+    background-color: aqua;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    height: 110px;
+
+}
+h2, footer{
+    text-align: center;
+}
