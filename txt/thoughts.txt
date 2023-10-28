@@ -18,5 +18,19 @@
 - Should I avoid the use of "divs"? I'll try my best
 - Responsive? Maybe after Simple
 - Each Page/Layout should have its own Night Mode?! That looks like a lot of work
- - Ahora que caigo, tengo que usar ids para todo, por las traducciones en JSON. Suena a trabajazo x2
- 
+- Ahora que caigo, tengo que usar ids para todo, por las traducciones en JSON. Suena a trabajazo x2
+- Link: Galery. Incluir carpetas de Memes (img + mp4) + Life Reveal (img + mp4)
+- Link: Thoughts. Pensameintos, delirios y opiniones mías.
+
+- Layouts: 
+
+    Old School Era: like 80's - 00's websites. Poor CSS, Just Text, Some Colors, No JavaScript, Baseline IMG ;CCCCCCC
+        Little More Slow, Different Icons and Mouse...
+
+    Retro: font and things Arcade-like, colors and img with some pixels (more pixelart), events and popup alert
+
+    Simple: Clean Layout, Smooth JS Animations (if possible), Progresive IMG :DDDDDDD, ... (idk, honesty)
+
+    Modern: Simple + Usage of Bootstrap (yey!), little more/less info 
+
+    Futurist: Modern + Use of Masonry (yey?) &... i forgot :(

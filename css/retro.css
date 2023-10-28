@@ -1,0 +1,27 @@
+*::selection{
+    background-color: black;
+    color: lightgreen;
+}
+body, html{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+body{
+    background-color: green;
+}
+header{
+    border: 5px double black;
+    /* margin-right: 600px; */
+    display: inline-block;
+    padding: 0 40px;
+}
+.container{
+    border: 5px solid black;
+    margin: 0 100px;
+}
+
+

@@ -2,35 +2,40 @@
     padding: 0;
     margin: 0;
     border: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+body{
+    background-color: rgb(39, 39, 39);
 }
 header{
     background-color: red;
     border: 3px solid black;
     margin-bottom: 30px;
-    height: 100px;
+    height: 50px;
 }
 main{
     background-color: blueviolet;
     border: 3px solid black;
     margin-bottom: 30px;
     height: 300px;
-
 }
 aside{
     background-color: lightgreen;
     border: 3px solid black;
     margin-bottom: 30px;
-    height: 150px;
+    height: 200px;
 
 }
 footer{
     background-color: aqua;
     border: 3px solid black;
     margin-bottom: 30px;
-    height: 110px;
+    height: 100px;
 
 }
 h2, footer{
     text-align: center;
+}
+li{
+    text-indent: 40px;
 }
