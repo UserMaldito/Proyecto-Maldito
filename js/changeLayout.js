@@ -1,7 +1,7 @@
 const DOM = {
     layoutSelect: document.getElementById("changingLayout"),
     // selectedOption: document.getElementById("changingLayout"),
-    linkCSS: document.querySelector("link").attributes["href"]
+    linkCSS: document.querySelectorAll("link")[1].attributes["href"]
 
 
 }

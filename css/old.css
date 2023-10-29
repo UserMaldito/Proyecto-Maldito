@@ -4,6 +4,11 @@
     border: 0;
     /* overflow: hidden; */
 }
+/*No Abbr Seen*/
+abbr{
+    text-decoration: none;
+    text-transform: none;
+}
 body{
     background-color: rgb(39, 39, 39);
 }

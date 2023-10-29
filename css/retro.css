@@ -1,8 +1,19 @@
+/*Font Family -> Pixels*/
+*{
+    font-family: "Pixels";
+    font-size: xx-large;
+}
+/*Cool Selection*/
 *::selection{
     background-color: black;
     color: lightgreen;
 }
-body, html{
+/*No Abbr Seen*/
+abbr{
+    text-decoration: none;
+    text-transform: none;
+}
+body, html, p, footer{
     padding: 0;
     margin: 0;
     border: 0;
@@ -11,17 +22,42 @@ body, html{
     /* overflow: hidden; */
 }
 body{
-    background-color: green;
+    background-color: black;
 }
 header{
-    border: 5px double black;
+    border: 5px double lightblue;
     /* margin-right: 600px; */
     display: inline-block;
     padding: 0 40px;
 }
 .container{
-    border: 5px solid black;
+    border: 5px solid white;
     margin: 0 100px;
+    background-color: green;
 }
-
+p{
+    border: 5px solid black;
+    padding: 10px;
+    margin: -10px;
+}
+header, select, footer{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+li::before{
+    content: "_______>";
+    color: transparent;
+    background: url("../img/gif/jellyArrowgif.gif") no-repeat 10px -15px;
+}
+li{
+    margin-bottom: 30px;
+}
+footer{
+    margin: -10px;
+    padding: 10px;
+    border: 5px solid black;
+    font-weight: bolder;
+}
 
