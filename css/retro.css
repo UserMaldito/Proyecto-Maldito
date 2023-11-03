@@ -21,7 +21,7 @@ body, html, p, footer{
     width: 100%;
     /* overflow: hidden; */
 }
-body{
+html, body{
     background-color: black;
 }
 header{

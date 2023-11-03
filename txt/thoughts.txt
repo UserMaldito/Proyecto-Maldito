@@ -34,3 +34,16 @@
     Modern: Simple + Usage of Bootstrap (yey!), little more/less info 
 
     Futurist: Modern + Use of Masonry (yey?) &... i forgot :(
+
+- I must avoid putting images. Instead, I can use Mega and with some links I avoid using so much space. 
+    Win - Win to both, Neocity and me. 
+
+- I should focus first in having all the pages done and, then, end it with "some" styles (1000 line codes of style) =(
+
+- Is better option Imgur or Mega (or another platform) (please, Google Drive No)?
+
+- Should I count this Document as a Page? 50/50
+
+- Oh, I almost forgot, I really like the idea of personalize the 404 page (50X page could I? I don't think so)
+
+
