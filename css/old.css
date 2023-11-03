@@ -18,7 +18,8 @@ header{
     margin-bottom: 30px;
     height: 50px;
 }
-main{
+
+section{
     background-color: blueviolet;
     border: 3px solid black;
     margin-bottom: 30px;
@@ -31,6 +32,8 @@ aside{
     height: 200px;
 
 }
+
+
 footer{
     background-color: aqua;
     border: 3px solid black;
