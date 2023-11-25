@@ -11,7 +11,6 @@ async function JsonToPage() {
     console.log(explosiveJson);
 
     JsonToHtml(explosiveJson);
-
 }
 
 async function GetAndSetJsonFromLocal(linkJson) {
@@ -36,38 +35,38 @@ async function GetAndSetJsonFromLocal(linkJson) {
 
 }
 
-function JsonToHtml(jsonObject) {
-    let storyCollection = {
-        "stories": [
-            {
-                "title": "Posibles Notas Muertas 1",
-                "p": [
-                        {"p1": "Esto es una prueba del párrafo 1"}                        ,
-                        {"p2": "Esto es una prueba del párrafo 2"},
-                        {"p3": "Esto es una prueba del párrafo 3"}
-                ]
-            },
-            {
-                "title": "Posibles Notas Muertas 2",
-                "p": [
-                        {"p1": "Esto es una prueba del párrafo 1"},
-                        {"p2": "Esto es una prueba del párrafo 2"}
-                ]
-            },
-            {
-                "title": "Posibles Notas Muertas 3",
-                "p": [
+function JsonToHtml(storyCollection) {
+    // let storyCollection = {
+    //     "stories": [
+    //         {
+    //             "title": "Posibles Notas Muertas 1",
+    //             "p": [
+    //                     {"p1": "Esto es una prueba del párrafo 1"}                        ,
+    //                     {"p2": "Esto es una prueba del párrafo 2"},
+    //                     {"p3": "Esto es una prueba del párrafo 3"}
+    //             ]
+    //         },
+    //         {
+    //             "title": "Posibles Notas Muertas 2",
+    //             "p": [
+    //                     {"p1": "Esto es una prueba del párrafo 1"},
+    //                     {"p2": "Esto es una prueba del párrafo 2"}
+    //             ]
+    //         },
+    //         {
+    //             "title": "Posibles Notas Muertas 3",
+    //             "p": [
                     
-                        {"p1": "Esto es una prueba del párrafo 1"},
-                        {"p2": "Esto es una prueba del párrafo 2"},
-                        {"p3": "Esto es una prueba del párrafo 3"},
-                        {"p4": "Esto es una prueba del párrafo 4"},
-                        {"p5": "Esto es una prueba del párrafo 5"}
+    //                     {"p1": "Esto es una prueba del párrafo 1"},
+    //                     {"p2": "Esto es una prueba del párrafo 2"},
+    //                     {"p3": "Esto es una prueba del párrafo 3"},
+    //                     {"p4": "Esto es una prueba del párrafo 4"},
+    //                     {"p5": "Esto es una prueba del párrafo 5"}
                     
-                ]
-            }
-        ]
-    }
+    //             ]
+    //         }
+    //     ]
+    // }
     
     //Targeting Section and Append, After, the Article
     let section = document.querySelector("section");
@@ -83,7 +82,6 @@ function JsonToHtml(jsonObject) {
         appendStory.append(newTitle);
 
         //Line(s) of the Story
-
         for (let index = 0; index < story.p.length; index++) {
             if (((story.p[index] != undefined)) || (story.p[index] != null)){
                 let paragraph = document.createElement("p");
@@ -93,17 +91,13 @@ function JsonToHtml(jsonObject) {
             }
         }
 
-        // story.p.map((line) => {
-        //     if ((line != undefined) && (line != null)) {
-        //         let paragraph = document.createElement("p");
-        //         paragraph.textContent = line.p;
-        //         appendStory.append(paragraph);
-        //     }
-        // })
-
         section.append(appendStory);
     }
 }
 
 
 
+// document.onload = (ev) => {
+//     localStorage.clear();
+//     JsonToPage();
+// }

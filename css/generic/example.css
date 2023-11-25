@@ -1,0 +1,11 @@
+*:not(html, body, header, footer){
+    /*
+    border: 0;
+    margin: 0;
+    padding: 0;     
+    */
+    border: 1px solid black;
+}
+/* section, aside{
+    border: 3px solid black;
+} */
