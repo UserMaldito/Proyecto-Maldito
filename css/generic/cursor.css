@@ -1,0 +1,35 @@
+/* Overwriting the default cursor */
+p:not(abbr),
+cite:not(abbr)
+{
+    cursor: url("/cursor/wii-pointer-reverse.cur"), text;
+    background-color: brown;
+}
+abbr:hover{
+    cursor: url("/cursor/wii-help.cur"), help;
+}
+select:hover, select>option:hover{
+    cursor: url("/cursor/wii-open-ccw.cur"), help;
+}
+select:active{
+    cursor: url("/cursor/wii-grab-ccw.cur"), help;
+}
+a:hover{
+    cursor: url("/cursor/wii-pointer-blue.cur"), alias;
+}
+html{
+    cursor: url("/cursor/Wii\ Cursor.cur"), default;
+}
+.card{
+    cursor: url("/cursor/wii-pointer-blue-ccw.cur"), context-menu;
+}
+/* Not a cursor, but I like to make something... unique*/
+::selection{
+    background-color: black;
+    color: white;
+}
+header>abbr>a:hover{
+/* Al pasar por encima del link del home, distinto cursor */
+
+    cursor: url("/cursor/wii-pointer-reverse.cur"), progress;
+}

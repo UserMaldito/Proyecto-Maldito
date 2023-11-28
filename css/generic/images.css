@@ -1,6 +1,17 @@
-.img-landscape{
-    width: 30px;
+/*Image too big, trying to making it smol*/
+.card.img-landscape, .card.img-vertical{
+    width: 300px;
 }
-.img-vertical{
+
+/* % = less readability */
+/* .card.img-landscape, .card.img-vertical{
     width: 30%;
+} */
+
+.card img{
+    width: 100%;
+}
+
+.card{
+    margin: 10px;
 }

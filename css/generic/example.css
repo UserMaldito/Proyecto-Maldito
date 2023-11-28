@@ -9,3 +9,10 @@
 /* section, aside{
     border: 3px solid black;
 } */
+main{
+    min-height: fit-content;
+}
+/* article{
+    resize: horizontal;
+    overflow: auto;
+} */

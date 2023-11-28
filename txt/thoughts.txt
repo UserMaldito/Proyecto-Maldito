@@ -48,5 +48,9 @@
 
 - Add, through JavaScript, the Explanations (abbr tag and title)
 
-- The 3 sections, on the Main Page, must have just 3 things
+- The 3 sections, on the Main Page, must have just 3 things.
 
+- Ponerle colores de fondo al pasar el ratón a los enlaces del Navegador (like, Gallery -> Green | About Me -> Orange | Stories -> Blue | ... -> ...)
+    Deberán de ser colores flojos (pasteles maybe), para que no destaque mucho.
+
+- Idea: Change the default cursor (default Wii[?]) and make it Customizable
