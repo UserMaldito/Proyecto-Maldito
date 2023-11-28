@@ -46,4 +46,7 @@
 
 - Oh, I almost forgot, I really like the idea of personalize the 404 page (50X page could I? I don't think so)
 
+- Add, through JavaScript, the Explanations (abbr tag and title)
+
+- The 3 sections, on the Main Page, must have just 3 things
 
