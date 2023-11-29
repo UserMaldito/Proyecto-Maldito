@@ -1,10 +1,4 @@
 /* Overwriting the default cursor */
-p:not(abbr),
-cite:not(abbr)
-{
-    cursor: url("/cursor/wii-pointer-reverse.cur"), text;
-    background-color: brown;
-}
 abbr:hover{
     cursor: url("/cursor/wii-help.cur"), help;
 }

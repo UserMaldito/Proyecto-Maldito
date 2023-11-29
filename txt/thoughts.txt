@@ -54,3 +54,5 @@
     Deberán de ser colores flojos (pasteles maybe), para que no destaque mucho.
 
 - Idea: Change the default cursor (default Wii[?]) and make it Customizable
+
+- Idea: Name this thoughts.txt "Manifesto" -> SAdgrl.online reference
