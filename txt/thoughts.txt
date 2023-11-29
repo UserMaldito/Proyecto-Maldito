@@ -56,3 +56,8 @@
 - Idea: Change the default cursor (default Wii[?]) and make it Customizable
 
 - Idea: Name this thoughts.txt "Manifesto" -> SAdgrl.online reference
+
+- Idea: Meme Recolector as a Slide? Could be interesting, but nah.
+
+- Idea: Put in all dirs an fake Index as a 404 Not Found
+
