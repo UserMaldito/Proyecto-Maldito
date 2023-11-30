@@ -1,24 +1,62 @@
+/*Main Rules*/
+/*Colores Temporales*/
 main{
     background-color: aqua;
     display: flex;
-    max-width: 850px;
+    gap: var(--space-between-things);
+
+    /*Section Rules Nested*/
+    >section{
+        background-color: aqua;
+        max-width: 60%;
+
+        /*Header Title Rules Nested*/
+        >header>abbr>h2{
+            text-align: center;
+            
+        }
+        
+        /*Article Rules Nested*/
+        >article{
+            display: flex;
+            flex-direction: column;
+            column-gap: 30px;
+            background-color: lightblue;
+            
+            /*Article Header Rules Nested*/
+            >header{
+                height: 50px;
+                background-color: lightcyan;
+                /*Article Title Rules Nested*/
+                >abbr>h3{
+                    padding-left: 20px;
+                }
+            }
+
+            /*Article Content Rules Nested (trying vertical-align)*/
+            p{
+                text-indent: 40px;
+                min-height: 50px;
+            }
+        }
+    }
+
+    
 }
 
 
-section{
-    background-color: aqua;
-    max-width: 60%;
-}
-
-
-article{
-    background-color: blanchedalmond;
-}
-
-
+/*Aside Rules*/
 aside{
     background-color: cadetblue;
-    max-width: 40%;
+    min-width: 40%;
 }
 
-
+/*Media Rules*/
+@media (max-width: 800px) {
+    main{
+        flex-direction: column;
+    }
+    section, article{
+        min-width: fit-content;
+    }
+}

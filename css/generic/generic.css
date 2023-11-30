@@ -1,0 +1,15 @@
+*:not(ul, ol){
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --space-between-things: 10px;
+    --second-view: 600px;
+
+}
+
+body>header, body>main, body>footer{
+    width: 1000px;
+}
