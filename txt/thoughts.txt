@@ -61,3 +61,16 @@
 
 - Idea: Put in all dirs an fake Index as a 404 Not Found
 
+- Idea: Dynamic buttom to go back (the old pages do not have a "return" buttom, right?)
+
+- NEW SECTION: To Do.
+
+- To Do: Hoverable buttons in the Gallery > Index
+
+- Idea: Try to make some pages (Gallery, Stories, ...) dynamic (JSON file + )
+
+- Idea: Help svg and hover it for help (like how this page works)
+
+- Idea: Tipografía Slab-Serif / Usar Menos de 5 colores
+	Paleta Colores (Realeza-Day/Night | Bootstrap-D/N | Old School-D/N)
+

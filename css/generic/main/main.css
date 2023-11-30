@@ -1,0 +1,24 @@
+main{
+    background-color: aqua;
+    display: flex;
+    max-width: 850px;
+}
+
+
+section{
+    background-color: aqua;
+    max-width: 60%;
+}
+
+
+article{
+    background-color: blanchedalmond;
+}
+
+
+aside{
+    background-color: cadetblue;
+    max-width: 40%;
+}
+
+
