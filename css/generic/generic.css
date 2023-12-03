@@ -1,3 +1,4 @@
+/*Quitándole a Todo (excepto a las listas) Margen, Espacio Interior y Borde*/
 *:not(ul, ol){
     margin: 0;
     padding: 0;
@@ -7,9 +8,21 @@
 :root{
     --space-between-things: 10px;
     --second-view: 600px;
-
+    --gif-arrow: url("/img/gif/jellyArrowgif.gif");
+    /*Colors*/
+    --light-blue-1: lightblue;
+    --light-blue-2: lightcyan;
+    --light-blue-3: rgb(0, 204, 255);
+    --light-blue-4: lightgreen
 }
 
-body>header, body>main, body>footer{
-    width: 1000px;
+/*Center the Main + More Rules*/
+body{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 1000px; */
+    
+    background-color: grey;
 }
