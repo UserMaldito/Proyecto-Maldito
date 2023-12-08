@@ -74,3 +74,5 @@
 - Idea: Tipografía Slab-Serif / Usar Menos de 5 colores
 	Paleta Colores (Realeza-Day/Night | Bootstrap-D/N | Old School-D/N)
 
+- Idea: Github -> 2 Branches (minor changes & mayor changes)
+    To have a better way to see the changes

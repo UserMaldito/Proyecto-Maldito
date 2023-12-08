@@ -10,47 +10,46 @@ let layoutEvent = DOM.layoutSelect.addEventListener("change", ChangeLayout);
 
 function ChangeLayout(){
     let selectedTheme = DOM.layoutSelect.options[DOM.layoutSelect.selectedIndex].value;
-    let changeHref = VerifingNewLayout(selectedTheme).replace("´", "");
-    let consoleMsg = "Layout Change Successfully!";
 
-    if (changeHref != "trolling") {
-        DOM.linkCSS.value = changeHref;
-    }
-    else{
-        consoleMsg = "Fuck You x:D";
-    }
-
-    console.log(consoleMsg);
 }
 
 
 
+function NoCSS() {
+    document.querySelectorAll("link").forEach((cssLink) => {
+        cssLink.remove();
+    });
+}
 
+
+
+// function ChangeLayout(){
+//     let selectedTheme = DOM.layoutSelect.options[DOM.layoutSelect.selectedIndex].value;
+//     let changeHref = VerifingNewLayout(selectedTheme).replace("´", "");
+//     let consoleMsg = "Layout Change Successfully!";
+
+//     if (changeHref != "trolling") {
+//         DOM.linkCSS.value = changeHref;
+//     }
+//     else{
+//         consoleMsg = "Fuck You x:D";
+//     }
+
+//     console.log(consoleMsg);
+// }
 function VerifingNewLayout(newLayout){
     let urlLink = "";
 
     switch (newLayout) {
-        case "clean":
+        case "nothing":
             break;
 
-        case "old":
-            urlLink = `./css/${newLayout}.css`;
+        case "default":
+            
             break;
 
-        case "retro":
-            urlLink =`./css/${newLayout}.css`;
-            break;
-
-        case "simple":
-            urlLink = `./css/${newLayout}.css`;
-            break;
-    
-        case "modern":
-            urlLink = `./css/${newLayout}.css`;
-            break;
-    
-        case "futuristic":
-            urlLink = `./css/${newLayout}.css`;
+        case "css_hater":
+            NoCSS();
             break;
 
         default:
