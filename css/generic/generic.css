@@ -5,6 +5,7 @@
     border: 0;
 }
 
+/*Variables to All my .css*/
 :root{
     --space-between-things: 10px;
     --second-view: 600px;
@@ -12,8 +13,9 @@
     /*Colors*/
     --light-blue-1: lightblue;
     --light-blue-2: lightcyan;
-    --light-blue-3: rgb(0, 204, 255);
-    --light-blue-4: lightgreen
+    --light-blue-3: lightpink;
+    --light-blue-4: lightgreen;
+    
 }
 
 /*Center the Main + More Rules*/
@@ -23,6 +25,30 @@ body{
     flex-direction: column;
     align-items: center;
     /* width: 1000px; */
-    
     background-color: grey;
+
+    /* 4 The Font */
+    word-spacing: 15px;
+    font-size: 25px;
+    select{
+        word-spacing: 5px;
+        font-weight: 500;
+        font-size: 20px;
+    }
 }
+
+/* Universal Rules For The Links and Abbreviations*/
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+abbr:hover{
+    color: green;
+    font-weight: 800;
+}
+abbr, abbr>a{
+    text-decoration: none;
+}
+
+
+

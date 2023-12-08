@@ -4,6 +4,7 @@
 /*JUST TAGS*/
 main{
     /* background-color: aqua; */
+
     display: inherit;
     gap: var(--space-between-things);
 
@@ -37,6 +38,7 @@ main{
             border: inherit;
             display: flex;
             flex-direction: column;
+
             background-color: var(--light-blue-1);
             
             /*Article Header Rules Nested*/
@@ -94,6 +96,7 @@ main{
         >nav{
             display: inherit;
             flex-direction: column;
+            /* position: fixed; */
 
             /*Aside Form Rules Nested*/
             >form{
@@ -104,6 +107,7 @@ main{
                 /*Aside Form Select Rules Nested*/
                 >abbr>select{
                     padding: 0 10px;
+                    text-align: center;
                 }
             }
 
@@ -141,7 +145,7 @@ main{
 
 
 /*Media Rules*/
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     main{
         flex-direction: column;
     }
