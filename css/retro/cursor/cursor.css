@@ -1,0 +1,28 @@
+/* Overwriting the default cursor */
+abbr:hover{
+    cursor: help;
+}
+select:hover, select>option:hover{
+    cursor: cell;
+}
+select:active{
+    cursor: help;
+}
+a:hover{
+    cursor: alias;
+}
+html{
+    cursor: default;
+}
+.card{
+    cursor: context-menu;
+}
+/* Not a cursor, but I like to make something... unique*/
+::selection{
+    background-color: black;
+    color: white;
+}
+header>abbr>a:hover{
+/* Al pasar por encima del link del home, distinto cursor */
+    cursor: progress;
+}

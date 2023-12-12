@@ -1,0 +1,9 @@
+/* Just The Fonts */
+@font-face {
+    font-family: "Windows_CMD";
+    src: url("/fonts/windows_command_prompt/windows_command_prompt.ttf");
+}
+
+body, select{
+    font-family: "Windows_CMD";
+}

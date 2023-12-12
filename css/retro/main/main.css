@@ -1,0 +1,79 @@
+/* Main Rules */
+
+main {
+    border: 5px solid darkgreen;
+    display: inherit;
+    gap: var(--space-between-things);
+
+
+    /* Section Rules Nested */
+    >section{
+        border: inherit;
+        min-width: 70%;
+        /* Section Article Rules Nested */
+        >article{
+            border: inherit;
+
+            p{
+                padding: 0 20px;
+            }
+        }
+    }
+    /* Aside Rules Nested */
+    >aside{
+        border: inherit;
+        display: inherit;
+        flex-direction: column;
+        min-width: 30%;
+        /* Aside Nav Rules Nested */
+        >nav{
+            display: inherit;
+            flex-direction: inherit;
+            align-items: center;
+
+            /* Nav List Rules Nested */
+            /* >ul{
+
+                >li{
+
+                }
+            } */
+        }
+    }
+
+    /* All The Headers */
+    header{
+        text-align: center;
+    }
+}
+
+/*Media Rules*/
+@media (max-width: 1000px) {
+    main{
+        flex-direction: column;
+        >section{
+            min-width: fit-content;
+        }
+        >aside{
+            nav{
+                flex-direction: row-reverse;
+                justify-content: center;
+                gap: 100px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

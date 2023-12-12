@@ -76,3 +76,5 @@
 
 - Idea: Github -> 2 Branches (minor changes & mayor changes)
     To have a better way to see the changes
+
+- Idea: About this Web (explicar como funciona la página web)

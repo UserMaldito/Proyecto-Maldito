@@ -1,0 +1,26 @@
+/*Cool Selection*/
+*::selection{
+    background-color: black;
+    color: lightgreen;
+}
+
+/* Own Global Variables*/
+:root{
+
+}
+
+/* Backgound Style "Hacker" */
+
+/* html{
+    background-color: green;
+    color: black;
+} */
+
+body{
+    background-color: black;
+    color: green;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
