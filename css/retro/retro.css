@@ -10,10 +10,11 @@
 
     /* Background Variables */
     --color-background: rgb(0, 0, 0);
-    --color-background-important: rgb(0, 0, 0);
+    --color-background-important: rgb(255, 0, 0);
+    --color-background-secondary: rgb(128, 128, 128);
 
     /* Letter Variables */
-    --color-letter-important: rgb(255, 0, 0);
+    --color-letter-important: rgb(255, 255, 255);
     --color-letter-primary: rgb(180, 105, 0);
     --color-letter-secondary: rgb(0, 128, 0);
     --color-letter-info: rgb(0, 0, 255);
@@ -37,11 +38,16 @@
 }
 
 /* Backgound Style "Hacker" */
-body{
+html{
+    /* TIP: Put the Back & Color in the HTML Tag,
+    if is in the body, when people zoom out could see the drastic
+    change between colors = ugly :c */
     background-color: var(--color-background);
     color: var(--color-letter-secondary);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    >body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

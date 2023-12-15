@@ -22,30 +22,33 @@ main {
         :visited{
             color: var(--color-letter-link-visited);
         }
-        
     }
-    
-    
 
     /* Section Rules Nested */
     >section{
         border: inherit;
-        min-width: 70%;
+        min-width: 60%;
         /* Section Article Rules Nested */
         >article{
             border: inherit;
-
-            p{
+            >p{
                 padding: 0 20px;
+            }
+
+            /* Article List Rules Nested */
+            ul{
+                margin-right: 30px;
             }
         }
     }
+
     /* Aside Rules Nested */
     >aside{
         border: inherit;
         display: inherit;
         flex-direction: column;
-        min-width: 30%;
+        min-width: 40%;
+
         /* Aside Nav Rules Nested */
         >nav{
             display: inherit;
@@ -53,15 +56,19 @@ main {
             align-items: center;
 
             /* Nav List Rules Nested */
-            >ul{    
+            >ul{
                 list-style-type: none;
                 >li{
                     margin: 13px;
                     >a:before{
                         content: "C:/";
-                        color: var(--color-letter-important);
+                        color: var(--color-background-important);
                     }
                 }
+            }
+            select{
+                text-align: center;
+                margin: 20px;
             }
         }
     }
@@ -71,6 +78,21 @@ main {
         text-align: center;
     }
 }
+
+/* All the Important Things*/
+.important{
+    color: var(--color-letter-important);
+    background-color: var(--color-background-secondary);
+    border: 5px solid var(--color-background-important);
+    padding: 0 20px;
+    /* Abbr inside the Class Rules */
+    abbr{
+        background-color: var(--color-letter-info);
+        color: var(--color-letter-important);
+        text-decoration: underline lightblue;
+    }
+}
+
 
 /*Media Rules*/
 @media (max-width: 1000px) {
@@ -84,21 +106,8 @@ main {
                 flex-direction: row-reverse;
                 justify-content: center;
                 gap: var(--separator-2);
+                margin: 0 20px;
             }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

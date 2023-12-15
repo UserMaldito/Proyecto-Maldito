@@ -7,45 +7,50 @@ const DOM = {
 }
 function ChangeLayout(){
     let selectedTheme = DOM.layoutSelect.options[DOM.layoutSelect.selectedIndex].value;
-    VerifingNewLayout(selectedTheme)
+    let layoutName = VerifingNewLayout(selectedTheme);
+
+    localStorage.setItem("layoutName", layoutName);
 }
 
 function VerifingNewLayout(newLayout){
     //Refreshing the definition (of all the links) [necessary]
     DOM.allLinksCss = document.querySelectorAll("link");
 
-    let urlLink = "";
+    let newLayoutName = "";
 
     switch (newLayout) {
         case "nothing":
-            
+            newLayoutName = "nothing";            
             break;
 
         case "default":
             NoCSS();
             DefaultCSS();
             console.log("Thanks for Returning to the Original :)");
+            newLayoutName = "default";
             break;
 
         case "css_hater":
             NoCSS();
             console.log("CSS Hater Spotted");
+            newLayoutName = "css_hater";
             break;
 
         case "retro":
             NoCSS();
             HackerCSS();
             console.log("Please, don't hack me. I'll do anything, but don't hurt me TnT");
+            newLayoutName = "retro";
             break;
 
 
         default:
-            urlLink = "trolling" //do the barrel roll? idk
+            newLayoutName = "trolling"; //do the barrel roll? idk
             console.log("So funny touching the code I made, right? C:");
             break;
     }
 
-    return urlLink;
+    return newLayoutName;
 }
 
 //Optimize the *CSS functions with the layout name in the parameter => [HackerCSS(layout = "retro" -> href="{layout}.css")]
@@ -123,6 +128,15 @@ window.onload = () => {
 
     //Listening Events
     DOM.layoutSelect.addEventListener("change", ChangeLayout);
+
+    //Set items
+    let localLayout = localStorage.getItem("layoutName");
+    if ((localLayout == null) || (localLayout == "")) {
+        localStorage.setItem("layoutName", "default");
+    }
+    else{
+        VerifingNewLayout(localLayout);
+    }
 
 
 };
