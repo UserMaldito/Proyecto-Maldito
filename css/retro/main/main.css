@@ -91,6 +91,11 @@ main {
         color: var(--color-letter-important);
         text-decoration: underline lightblue;
     }
+    abbr:hover{
+        background-color: var(--color-letter-important);
+        color: var(--color-letter-info);
+        text-decoration: underline lightpink;
+    }
 }
 
 
