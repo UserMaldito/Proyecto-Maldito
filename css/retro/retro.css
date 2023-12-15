@@ -1,24 +1,45 @@
 /*Cool Selection*/
 *::selection{
-    background-color: black;
-    color: lightgreen;
+    background-color: lightgreen;
+    color:  black;
 }
 
 /* Own Global Variables*/
 :root{
+            /* Colors Rules */
+
+    /* Background Variables */
+    --color-background: rgb(0, 0, 0);
+    --color-background-important: rgb(0, 0, 0);
+
+    /* Letter Variables */
+    --color-letter-important: rgb(255, 0, 0);
+    --color-letter-primary: rgb(180, 105, 0);
+    --color-letter-secondary: rgb(0, 128, 0);
+    --color-letter-info: rgb(0, 0, 255);
+
+    /* Letter Link Variables */
+    --color-letter-link-normal: rgb(0, 255, 0);
+    --color-letter-link-hovered: rgb(255, 255, 0);
+    --color-letter-link-visited: rgb(255, 255, 255);
+
+
+                    /* Size */
+
+    --letter: 50px;
+    /* "Mobile" Version (Aside [AKA The Navigator]) */
+    --separator-1: 10px;
+    --separator-2: 100px;
+
+    /* Just For:*/
+    --border: 5px solid rgb(0, 60, 0);
 
 }
 
 /* Backgound Style "Hacker" */
-
-/* html{
-    background-color: green;
-    color: black;
-} */
-
 body{
-    background-color: black;
-    color: green;
+    background-color: var(--color-background);
+    color: var(--color-letter-secondary);
 
     display: flex;
     flex-direction: column;

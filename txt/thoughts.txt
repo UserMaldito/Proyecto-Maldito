@@ -78,3 +78,7 @@
     To have a better way to see the changes
 
 - Idea: About this Web (explicar como funciona la página web)
+
+- Idea: Put "C:/" in List (hacker/retro style)
+
+- Idea: Make the Header/Footer/The Navegator Dynamicly (with JS), cause it's always the same (content)

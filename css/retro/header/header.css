@@ -1,0 +1,22 @@
+/* Header of the Page (RGB)*/
+header>abbr>a{
+    color: var(--color-letter-secondary);
+    :hover{
+        animation: colorChange infinite linear normal 7s;
+    }
+    :visited{
+        color: inherit;
+    }
+}
+
+@keyframes colorChange {
+    0%{
+        color: var(--color-letter-secondary);
+    }
+    25%{
+        color: var(--color-letter-info);
+    }
+    50%{
+        color: var(--color-letter-important);
+    }
+}

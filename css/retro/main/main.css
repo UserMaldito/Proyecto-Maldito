@@ -1,10 +1,31 @@
 /* Main Rules */
-
 main {
-    border: 5px solid darkgreen;
+    border: var(--border);
     display: inherit;
     gap: var(--space-between-things);
 
+    /* All the abbr */
+    abbr, abbr>select{
+        background-color: var(--color-background);
+        color: var(--color-letter-primary);
+    }
+
+    /* All Links Inside the Main */ 
+    >a, a>*, a{
+        color: var(--color-letter-link-normal);
+        background-color: inherit;
+        text-decoration: none;
+
+        :hover{
+            color: var(--color-letter-link-hovered);
+        }
+        :visited{
+            color: var(--color-letter-link-visited);
+        }
+        
+    }
+    
+    
 
     /* Section Rules Nested */
     >section{
@@ -32,12 +53,16 @@ main {
             align-items: center;
 
             /* Nav List Rules Nested */
-            /* >ul{
-
+            >ul{    
+                list-style-type: none;
                 >li{
-
+                    margin: 13px;
+                    >a:before{
+                        content: "C:/";
+                        color: var(--color-letter-important);
+                    }
                 }
-            } */
+            }
         }
     }
 
@@ -58,7 +83,7 @@ main {
             nav{
                 flex-direction: row-reverse;
                 justify-content: center;
-                gap: 100px;
+                gap: var(--separator-2);
             }
         }
     }
