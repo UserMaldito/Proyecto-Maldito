@@ -1,5 +1,5 @@
 /* Main Rules */
-main {
+main{
     border: var(--border);
     display: inherit;
     gap: var(--space-between-things);
@@ -9,6 +9,12 @@ main {
         background-color: var(--color-background);
         color: var(--color-letter-primary);
     }
+    abbr:hover:not(abbr>select:hover):not(a>abbr){
+        /*All Abbr Hovered Except the Select and The Navigator Links*/
+        color: var(--color-letter-info);
+        text-decoration: underline lightpink;
+    }
+    
 
     /* All Links Inside the Main */ 
     >a, a>*, a{

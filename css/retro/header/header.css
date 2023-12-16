@@ -17,6 +17,6 @@ header>abbr>a{
         color: var(--color-letter-info);
     }
     50%{
-        color: var(--color-letter-important);
+        color: var(--color-background-important);
     }
 }
