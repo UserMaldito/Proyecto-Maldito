@@ -16,8 +16,8 @@ main{
     }
     
 
-    /* All Links Inside the Main */ 
-    >a, a>*, a{
+    /* All Links Inside the Main (Except The Links On The Sections)*/ 
+    >a, a>*, a:not(section a){
         color: var(--color-letter-link-normal);
         background-color: inherit;
         text-decoration: none;
