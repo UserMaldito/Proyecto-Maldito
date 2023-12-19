@@ -85,7 +85,7 @@
 
 - Idea: Make a changelog page (sight...)
 
-
+- Idea: Hover the link in The Realm Page will display a different Font 
 
 
 
