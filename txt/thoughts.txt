@@ -93,5 +93,5 @@
 
 - Idea: all-core stetic (webcore, oddcore, ...)
 
-
+- Idea: Talk about my favorite music with the color topic and more...
 
