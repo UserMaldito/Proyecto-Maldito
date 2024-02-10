@@ -95,3 +95,14 @@
 
 - Idea: Talk about my favorite music with the color topic and more...
 
+- Idea: Asunto Miyazaki Page
+
+- Idea: Record and put a loop of some voice telling things...
+
+- Idea: Put a CMD to Stories and to read you have to write "ls" to list all the entries
+    , nano to select a entry and select a language to begin the reading.
+    Meaning: At least 1 File/language (JSON, terminal or plain text?)
+
+- Idea: Sort the Homework Page of my assignments (DSW, DPL, ...)
+
+
