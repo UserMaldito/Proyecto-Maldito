@@ -13,6 +13,22 @@
     color: black;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >.placeholder-image{
+        background-color: blue;
+        height: 300px;
+        width: 300px;
+        display: inline-block;  
+    }
+    >p{
+        padding-left: 20px;
+        width: 400px;
+    }
+}
+
 html{
     background: url("/img/P5/p5r_background.png");
     font-family: "Persona Header";
@@ -25,7 +41,7 @@ html{
         }
         /* All the Headers*/
         header{
-            text-shadow: 1px 1px 10px grey;
+            /*text-shadow: 1px 1px 10px grey;*/
         }
         /* All the Unordered List (is just 1) */
         ul{
@@ -57,9 +73,10 @@ html{
                         font-family: inherit;
                         font-size:large;
                     }
-                    >p{
+                    p{
                         font-family: "Persona Text";
-                        font-size: large;
+                        font-size: x-large;
+                        word-wrap: normal;
                     }
                 }
             }

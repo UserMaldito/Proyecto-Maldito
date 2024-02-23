@@ -55,7 +55,7 @@
 
 - Idea: Change the default cursor (default Wii[?]) and make it Customizable
 
-- Idea: Name this thoughts.txt "Manifesto" -> SAdgrl.online reference
+- Idea: Name this thoughts.txt as a "Manifesto" -> sadgrl.online reference
 
 - Idea: Meme Recolector as a Slide? Could be interesting, but nah.
 
@@ -69,7 +69,7 @@
 
 - Idea: Try to make some pages (Gallery, Stories, ...) dynamic (JSON file + )
 
-- Idea: Help svg and hover it for help (like how this page works)
+- Idea: Help svg (not png) and the users can hover it for help (explaining how this page works)
 
 - Idea: Tipografía Slab-Serif / Usar Menos de 5 colores
 	Paleta Colores (Realeza-Day/Night | Bootstrap-D/N | Old School-D/N)
@@ -104,5 +104,9 @@
     Meaning: At least 1 File/language (JSON, terminal or plain text?)
 
 - Idea: Sort the Homework Page of my assignments (DSW, DPL, ...)
+
+- Idea: Page about the game Ultrakill
+
+- Idea: Before creating any other page, i'll need the script <p>
 
 
