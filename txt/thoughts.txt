@@ -109,4 +109,6 @@
 
 - Idea: Before creating any other page, i'll need the script <p>
 
+- Cronología: 1. Index -> 2. Stories -> 3. Gallery -> 4. About This/Him -> 5. Realm/Void
+    -> 6. Homework -> 7.Proyects -> 8.Tutorials
 

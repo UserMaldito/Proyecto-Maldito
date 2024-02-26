@@ -15,3 +15,7 @@
 .card{
     margin: 10px;
 }
+
+article{
+    display: flex;
+}
