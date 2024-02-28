@@ -14,11 +14,13 @@ header>abbr>a{
         top: -80px;
         left: 270px;
     >a{
-        color: red;
+        color: pink;
         text-decoration: inherit;
-
+        >h2{
+            display: inline;
+        }
         :hover{
-            animation: colorChange infinite alternate-reverse linear 3s;
+            animation: colorChange infinite alternate-reverse linear 1s;
         }
     }
     
