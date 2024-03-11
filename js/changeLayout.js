@@ -12,13 +12,6 @@ function ChangeLayout(){
     localStorage.setItem("layoutName", layoutName);
 }
 
-function ChangeGalleryLayout(){
-    let selectedTheme = DOM.layoutSelect.options[DOM.layoutSelect.selectedIndex].value;
-    let layoutName = VerifingNewLayout(selectedTheme);
-
-    localStorage.setItem("layoutGalleryName", layoutName);
-}
-
 function VerifingNewLayout(newLayout){
     //Refreshing the definition (of all the links) [necessary]
     DOM.allLinksCss = document.querySelectorAll("link");
@@ -70,34 +63,6 @@ function VerifingNewLayout(newLayout){
     return newLayoutName;
 }
 
-function VerifingGalleryLayout(galleryLayout){
-    DOM.allLinksCss = document.querySelectorAll("link");
-    let newLayoutName = "";
-
-    switch (galleryLayout) {
-        case "css_hater":
-            NoCSS();
-            console.log("Why? I mean... Why?");
-            newLayoutName = "css_hater";
-            break;
-
-        case "gallery_retro":
-            NoCSS();
-            BootstrapCSS();
-            HackerGalleryCSS();
-            console.log("STOP HACKING ME! I'M SCARED!! PLS, I'LL DO ANYTHING!!!");
-            newLayoutName = "gallery_retro";
-            break;
-
-
-        default:
-            newLayoutName = "trolling"; //do the barrel roll? idk
-            console.log("????????????????????????");
-            break;
-    }
-
-    return newLayoutName;
-}
 
 function NoCSS() {
     //Remove All The Links (CSS Tags)
@@ -168,40 +133,6 @@ function HackerCSS() {
     document.head.appendChild(link_7);
 }
 
-function HackerGalleryCSS() {
-    let link_1 = document.createElement("link");
-    let link_2 = document.createElement("link");
-    let link_3 = document.createElement("link");
-    let link_4 = document.createElement("link");
-    let link_5 = document.createElement("link");
-    let link_6 = document.createElement("link");
-
-
-    link_1.setAttribute("rel", "stylesheet");
-    link_2.setAttribute("rel", "stylesheet");
-    link_3.setAttribute("rel", "stylesheet");
-    link_4.setAttribute("rel", "stylesheet");
-    link_5.setAttribute("rel", "stylesheet");
-    link_6.setAttribute("rel", "stylesheet");
-
-
-    link_1.setAttribute("href", "/css/retro/retro.css");
-    link_2.setAttribute("href", "/css/retro/font/font.css");
-    link_3.setAttribute("href", "/css/retro/header/header.css");
-    link_4.setAttribute("href", "/css/retro/footer/footer.css");
-    link_5.setAttribute("href", "/css/retro/cursor/cursor.css");
-
-    //Gallery Link (overide the main retro)
-    link_6.setAttribute("href", "/css/retro/gallery/gallery.css");
-
-    document.head.appendChild(link_1);
-    document.head.appendChild(link_2);
-    document.head.appendChild(link_3);
-    document.head.appendChild(link_4);
-    document.head.appendChild(link_5);
-    document.head.appendChild(link_6);
-}
-
 function BootstrapCSS(){
     let link_1 = document.createElement("link");
 
@@ -227,7 +158,8 @@ window.onload = () => {
     //Set items
     let localLayout = localStorage.getItem("layoutName");
     if ((localLayout == null) || (localLayout == "")) {
-        localStorage.setItem("layoutName", "default");
+        VerifingNewLayout("retro");
+        localStorage.setItem("layoutName", "retro");
     }
     else{
         VerifingNewLayout(localLayout);
