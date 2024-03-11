@@ -41,11 +41,11 @@ body{
                 >div{
                     >figure{
                         .card-body{
-                            background-color: var(--color-background);
+                            background-color: var(--color-background-2);
                             color: var(--color-letter-secondary);
                         }
                         .card-footer{
-                            background-color: var(--color-background);
+                            background-color: var(--color-background-2);
                             color: var(--color-letter-primary);
                             border-top: 2px solid var(--color-background-secondary);
                             p{

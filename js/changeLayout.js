@@ -12,6 +12,13 @@ function ChangeLayout(){
     localStorage.setItem("layoutName", layoutName);
 }
 
+function ChangeGalleryLayout(){
+    let selectedTheme = DOM.layoutSelect.options[DOM.layoutSelect.selectedIndex].value;
+    let layoutName = VerifingNewLayout(selectedTheme);
+
+    localStorage.setItem("layoutGalleryName", layoutName);
+}
+
 function VerifingNewLayout(newLayout){
     //Refreshing the definition (of all the links) [necessary]
     DOM.allLinksCss = document.querySelectorAll("link");
@@ -63,7 +70,34 @@ function VerifingNewLayout(newLayout){
     return newLayoutName;
 }
 
-//Optimize the *CSS functions with the layout name in the parameter => [HackerCSS(layout = "retro" -> href="{layout}.css")]
+function VerifingGalleryLayout(galleryLayout){
+    DOM.allLinksCss = document.querySelectorAll("link");
+    let newLayoutName = "";
+
+    switch (galleryLayout) {
+        case "css_hater":
+            NoCSS();
+            console.log("Why? I mean... Why?");
+            newLayoutName = "css_hater";
+            break;
+
+        case "gallery_retro":
+            NoCSS();
+            BootstrapCSS();
+            HackerGalleryCSS();
+            console.log("STOP HACKING ME! I'M SCARED!! PLS, I'LL DO ANYTHING!!!");
+            newLayoutName = "gallery_retro";
+            break;
+
+
+        default:
+            newLayoutName = "trolling"; //do the barrel roll? idk
+            console.log("????????????????????????");
+            break;
+    }
+
+    return newLayoutName;
+}
 
 function NoCSS() {
     //Remove All The Links (CSS Tags)

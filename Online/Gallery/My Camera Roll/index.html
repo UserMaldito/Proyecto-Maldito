@@ -33,12 +33,13 @@
     <main>
         <section>
             <header>
-                <abbr title="I'm Feeling Famous | Try Zoom In/Out (+/-) To Change The Distrubution of The Gallery">
+                <abbr title="I'm Feeling Famous">
                     <h2>
                         Gallery
                     </h2>
                 </abbr>
-                <abbr title="Try Zoom In/Out (+/-) To Change The Distrubution of The Gallery">TIP</abbr>
+                <br><br>
+                <h4>TIP: Try Zoom In/Out (+/-) To Change The Distrubution of The Gallery</h4>
             </header>
             <article data-masonry='{ "itemSelector": ".card", "columnWidth": 20 , "percentPosition": true }' class="justify-content-center align-content-center">
                 <!-- <article class="justify-content-center align-items-center g-2 "> -->
@@ -603,15 +604,15 @@
                     <br>
                     <form>
                         <abbr title="Change the Layout of the Page">
-                            <select name="Layout" id="changingLayout">
+                            <select name="Layout" id="galleryLayout">
                                 <abbr title="Do not select this. It's just an example">
                                     <option value="nothing">
                                         The Layout Selector
                                     </option>
                                 </abbr>
-                                <!-- <abbr title="Keep my style with this option!">
-                                    <option value="default">Default</option>
-                                </abbr> -->
+                                <abbr title="Keep my style with this option!">
+                                    <option value="BootStrap_Only">"Default"</option>
+                                </abbr>
                                 <abbr title="Wanna feel like ur doing something cool? Hack the Style">
                                     <option value="gallery_retro">
                                         Hacker CSS (Gallery Mode)
@@ -635,7 +636,7 @@
             <br>
         </footer>
         <!-- This Script (Java-Script) Will Try To Change The Layout  -->
-        <script src="/js/changeLayout.js"></script>
+        <script src="/js/changeGalleryLayout.js"></script>
         <!-- The Beautiful Styles Of The Photos | Masonry -->
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     </body>

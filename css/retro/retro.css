@@ -10,6 +10,7 @@
 
     /* Background Variables */
     --color-background: rgb(0, 0, 0);
+    --color-background-2: rgb(22, 22, 22);
     --color-background-important: rgb(255, 0, 0);
     --color-background-secondary: rgb(128, 128, 128);
 
