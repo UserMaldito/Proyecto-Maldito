@@ -1,19 +1,22 @@
 /* Header of the Page (RGB)*/
 header>abbr>a{
     color: var(--color-letter-secondary);
-    animation: colorChange infinite linear 5s;
+    animation: colorChange infinite linear normal 7s;
 } 
 
 /* That question mark */
 #helper{
     text-decoration: none;
-    font-size: xx-large;
+    font-size: small;
     position: relative;
         top: -80px;
         left: 270px;
     >a{
         color: pink;
         text-decoration: inherit;
+        >h2{
+            display: inline;
+        }
         animation: colorChange infinite alternate-reverse linear 1s;
     }
     

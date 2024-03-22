@@ -1,0 +1,30 @@
+/* Aside Rules Nested */
+aside{
+    border: inherit;
+    display: inherit;
+    flex-direction: column;
+    min-width: 40%;
+
+    /* Aside Nav Rules Nested */
+    >nav{
+        display: inherit;
+        flex-direction: inherit;
+        align-items: center;
+
+        /* Nav List Rules Nested */
+        >ul{
+            list-style-type: none;
+            >li{
+                margin: 13px;
+                >a:before{
+                    content: "C:/";
+                    color: var(--color-background-important);
+                }
+            }
+        }
+        select{
+            text-align: center;
+            margin: 20px;
+        }
+    }
+}
