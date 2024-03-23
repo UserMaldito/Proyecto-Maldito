@@ -5,10 +5,10 @@ const DOM = {
 
 
 }
+
 function ChangeLayout(){
     let selectedTheme = DOM.layoutSelect.options[DOM.layoutSelect.selectedIndex].value;
     let layoutName = VerifingNewLayout(selectedTheme);
-
     localStorage.setItem("layoutName", layoutName);
 }
 
@@ -38,8 +38,18 @@ function VerifingNewLayout(newLayout){
 
         case "retro":
             NoCSS();
-            HackerCSS();
-            console.log("Please, don't hack me. I'll do anything, but don't hurt me TnT");
+            let message = "Please, don't hack me. I'll do anything, but don't hurt me TnT";
+            let isCSSMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
+
+            if (isCSSMobile) {
+                HackerCSS("retro_mobile");
+                message = "Oh, I see...";
+            }
+            else{
+                HackerCSS("retro");
+            }
+
+            console.log(message);
             newLayoutName = "retro";
             break;
 
@@ -98,7 +108,7 @@ function DefaultCSS() {
     document.head.appendChild(link_5);
 }
 
-function HackerCSS() {
+function HackerCSS(folder) {
     //I Create The Element Link and Attach them with a the Relative Path 
     let link_1 = document.createElement("link");
     let link_2 = document.createElement("link");
@@ -107,6 +117,8 @@ function HackerCSS() {
     let link_5 = document.createElement("link");
     let link_6 = document.createElement("link");
     let link_7 = document.createElement("link");
+    let link_8 = document.createElement("link");
+    let link_9 = document.createElement("link");
 
     link_1.setAttribute("rel", "stylesheet");
     link_2.setAttribute("rel", "stylesheet");
@@ -115,14 +127,18 @@ function HackerCSS() {
     link_5.setAttribute("rel", "stylesheet");
     link_6.setAttribute("rel", "stylesheet");
     link_7.setAttribute("rel", "stylesheet");
+    link_8.setAttribute("rel", "stylesheet");
+    link_9.setAttribute("rel", "stylesheet");
 
-    link_1.setAttribute("href", "/css/retro/retro.css");
-    link_2.setAttribute("href", "/css/retro/font/font.css");
-    link_3.setAttribute("href", "/css/retro/header/header.css");
-    link_4.setAttribute("href", "/css/retro/main/main.css");
-    link_5.setAttribute("href", "/css/retro/footer/footer.css");
-    link_6.setAttribute("href", "/css/retro/cursor/cursor.css");
-    link_7.setAttribute("href", "/css/retro/images.css");
+    link_1.setAttribute("href", "/css/"+folder+"/retro.css");
+    link_2.setAttribute("href", "/css/"+folder+"/font/font.css");
+    link_3.setAttribute("href", "/css/"+folder+"/header/header.css");
+    link_4.setAttribute("href", "/css/"+folder+"/main/main.css");
+    link_5.setAttribute("href", "/css/"+folder+"/footer/footer.css");
+    link_6.setAttribute("href", "/css/"+folder+"/cursor/cursor.css");
+    link_7.setAttribute("href", "/css/"+folder+"/images.css");
+    link_8.setAttribute("href", "/css/"+folder+"/main/aside/aside.css");
+    link_9.setAttribute("href", "/css/"+folder+"/main/section/section.css");
 
     document.head.appendChild(link_1);
     document.head.appendChild(link_2);
@@ -131,6 +147,8 @@ function HackerCSS() {
     document.head.appendChild(link_5);
     document.head.appendChild(link_6);
     document.head.appendChild(link_7);
+    document.head.appendChild(link_8);
+    document.head.appendChild(link_9);
 }
 
 function BootstrapCSS(){
@@ -165,5 +183,13 @@ window.onload = () => {
         VerifingNewLayout(localLayout);
     }
 
+    let isScriptMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
+    if (isScriptMobile) {
+        let mobileScript = document.createElement("script");
 
+        mobileScript.type = "text/javascript";
+        mobileScript.src = "/js/devices.js";
+        
+        document.body.appendChild(mobileScript);
+    }
 };

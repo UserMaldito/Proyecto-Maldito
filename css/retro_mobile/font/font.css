@@ -1,0 +1,10 @@
+/* Just The Fonts */
+@font-face {
+    font-family: "Yulong Regular";
+    src: url("/fonts/yulong/Yulong-Regular.ttf");
+}
+
+body, select{
+    font-family: "Yulong Regular";
+    font-size: large;
+}

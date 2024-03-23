@@ -1,0 +1,17 @@
+/* Section Rules Nested */
+section{
+    border: inherit;
+    min-width: 60%;
+    /* Section Article Rules Nested */
+    >article{
+        border: inherit;
+        >p{
+            padding: 0 20px;
+        }
+        
+        /* Article List Rules Nested */
+        ul{
+            margin-right: 30px;
+        }
+    }
+}

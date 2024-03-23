@@ -1,6 +1,7 @@
 /* Main Rules */
 main{
     border: var(--border);
+    width: 80%;
     display: inherit;
     gap: var(--space-between-things);
 
@@ -14,7 +15,12 @@ main{
         color: var(--color-letter-info);
         text-decoration: underline lightpink;
     }
-    
+
+    /* Abbr Support on Mobile Phones (Alternative, 1 tap = show title) */
+    /* abbr[title]:hover::after, abbr[title]:focus::after{
+        color: var(--color-background-important);
+        content: attr(title);
+    } */
 
     /* All Links Inside the Main (Except The Links On The Sections)*/ 
     >a, a>*, a:not(section a){

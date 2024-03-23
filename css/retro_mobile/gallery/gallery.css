@@ -2,20 +2,25 @@
 .card.img-landscape, .card.img-vertical{
     width: 300px;
 }
-
 .card{
     margin: 10px;
 }
 
 body{
+    /* display: initial !important; It should be important due to the Bootstrap Override */
+    display: flex;
     overflow-x: hidden;
-    display: initial !important; /* It should be important due to the Bootstrap Override*/
+
     >header{
-        padding: 20px;
-        position: relative;
-        top: 5%;
-        left: 40%;
+        left: 0%;
+        text-align: center;
+        #helper{
+            position: relative;
+            left: 25%;
+            font-size: xx-large;
+        }
     }
+
     >main{
         /* Section Rules Inside the 1st Main*/
         >section{
@@ -27,11 +32,9 @@ body{
             border-radius: 10px;
             >header{
                 display: flex;
-                padding: 20px;
+                align-items: center;
                 color: var(--color-background-important);
-                abbr{
-                    display: inline;
-                }
+                padding: 30px;
             }
             /* Article Rules Inside the 1st Section*/
             >article{
@@ -39,6 +42,7 @@ body{
                 width: 97%;
                 /* Wanna Change the Card Colors*/
                 >div{
+                    margin-left: 40px;
                     >figure{
                         .card-body{
                             background-color: var(--color-background-2);
@@ -83,6 +87,16 @@ body{
                     margin: 20px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    body>header{
+        #helper{
+            position: relative;
+            left: 35%;
+            font-size: xx-large;
         }
     }
 }

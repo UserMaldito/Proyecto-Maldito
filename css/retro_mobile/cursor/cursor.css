@@ -1,0 +1,24 @@
+/* Overwriting the default cursor */
+abbr:hover{
+    cursor: help;
+}
+select:hover, select>option:hover{
+    cursor: cell;
+}
+select:active{
+    cursor: help;
+}
+a:hover{
+    cursor: alias;
+}
+html{
+    cursor: default;
+}
+.card{
+    cursor: context-menu;
+}
+
+header>abbr>a:hover{
+/* Al pasar por encima del link del home, distinto cursor */
+    cursor: progress;
+}
