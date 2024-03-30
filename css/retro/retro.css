@@ -16,8 +16,8 @@
 
     /* Letter Variables */
     --color-letter-important: rgb(255, 255, 255);
-    --color-letter-primary: rgb(180, 105, 0);
-    --color-letter-secondary: rgb(0, 128, 0);
+    --color-letter-primary: rgb(255, 149, 0);
+    --color-letter-secondary: rgb(0, 255, 0);
     --color-letter-info: rgb(0, 0, 255);
 
     /* Letter Link Variables */
@@ -34,7 +34,7 @@
     --separator-2: 100px;
 
     /* Just For:*/
-    --border: 5px solid rgb(0, 60, 0);
+    --border: 5px solid rgb(0, 35, 0);
 
 }
 

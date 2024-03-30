@@ -1,0 +1,10 @@
+footer{
+    >section{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        img{
+            width: 30px;
+        }
+    }
+}
