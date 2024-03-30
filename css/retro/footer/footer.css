@@ -1,0 +1,19 @@
+footer{
+    >section{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        img{
+            width: 30px;
+        }
+    }
+    #visitor-counter{
+        display: flex;
+        justify-content: center;
+        font-size: smaller;
+        a:visited, a{
+            color: blue;
+            text-decoration: none;
+        }
+    }
+}
