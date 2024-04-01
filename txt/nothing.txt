@@ -1,0 +1,10 @@
+Quiero gritar. Muy fuerte. Quiero llorar. Muy fuerte. ¿A qué se debe este tornado de emociones? Supongo que echo de menos sentirme amado. 
+Joder, eso si que suena triste. Echar de menos una suave caricia acompañado de una gentil sonrisa. Crazy, I was crazy once... No, creo 
+que sigo en ese estado. Soñando despierto (mi deporte favorito) que soy echado de menos. Tal vez estoy desesperado en estar enamorado 
+una vez más. De ser así, estoy, aparte de perder el tiempo, alucinando como de costumbre. I should wake up once more (alone) and ...
+And? There is no and. My days and nights are lonely, trying not to cry. No debería seguir hablando de esto. No me siento cómodo 
+hablando con alguien que no conozco. Aunque, siendo justos, no estoy hablando con nadie. No, no estoy diciendo que eres nadie, sino que 
+estoy hablando solo por quinta vez del día. Y eso que me acabo de despertar. Anyways, dejo por aquí la conversación por si me da algo 
+y me siento valiente. 
+
+    CheckPoint(false);
