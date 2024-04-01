@@ -16,4 +16,7 @@ footer{
             text-decoration: none;
         }
     }
+    #like-counter{
+        font: initial;
+    }
 }

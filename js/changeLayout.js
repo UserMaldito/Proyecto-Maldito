@@ -25,8 +25,8 @@ function VerifingNewLayout(newLayout){
 
         case "default":
             NoCSS();
-            DefaultCSS();
-            console.log("Thanks for Returning to the Original :)");
+            BootstrapCSS();
+            console.log("Default Default Default Default Default :)");
             newLayoutName = "default";
             break;
 
@@ -81,6 +81,7 @@ function NoCSS() {
     });
 }
 
+//Not Done
 function DefaultCSS() {
     //I Create The Element Link and Attach them the Relative Path 
     let link_1 = document.createElement("link");

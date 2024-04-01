@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- My Own Personal Homemade Indistinctive Style -->
     <!-- Retro Style 4 the First Time -->
-    <link rel="stylesheet" href="/css/retro/retro.css">
+    <!-- <link rel="stylesheet" href="/css/retro/retro.css">
     <link rel="stylesheet" href="/css/retro/font/font.css">
     <link rel="stylesheet" href="/css/retro/header/header.css">
     <link rel="stylesheet" href="/css/retro/main/main.css">
     <link rel="stylesheet" href="/css/retro/footer/footer.css">
-    <link rel="stylesheet" href="/css/retro/cursor/cursor.css">
+    <link rel="stylesheet" href="/css/retro/cursor/cursor.css"> -->
     
     <title>
         User.Maldito
     </title>
 </head>
 <body>
-    <header>
+    <header class="p-4 text-center">
         <abbr tabindex="0" title="Welcome to my Weird Website. Welcome to My Mind">
             <a href="/index.html">
                 <h1>
@@ -34,7 +34,7 @@
     </header>
     
     <main>
-        <section>   
+        <section class="p-3">   
             <header>
                 <abbr tabindex="0" title="This Is The Main Page">
                     <h2>
@@ -42,7 +42,7 @@
                     </h2>
                 </abbr>
             </header>
-            <article>
+            <article class="p-5">
                 <header>
                     <abbr tabindex="0" title="In This Section I Will Greeting You (And Give U A Virtual Hug :D)">
                         <h3>
@@ -53,7 +53,7 @@
                 <p>Hi! This is the Website of User Maldito. Feel free to look around and do nothing.</p>
                 <p class="new">DISCLAIMER: I'm not native english. Sorry if there is some mistake in the translate. As you may notice (if you are frecuent), some of my though are in spanish. Try to translate it to see something new (and, maybe, learn something)</p>
             </article>
-            <article>
+            <article class="p-5">
                 <header>
                     <abbr tabindex="0" title="I'll Try To Explain The Updates Of The Page (And, Perhaps, Mine Too)">
                         <h3>
@@ -123,6 +123,10 @@
                                 <ol>
                                     <li>
                                         <p>
+                                            Testing/Changing the "Default" Layout
+                                        </p>
+                                    <li>
+                                        <p>
                                             Hide link not functional
                                         </p>
                                     </li>
@@ -139,7 +143,7 @@
                 <br>
             </ul>
             </article>
-            <article>
+            <article class="p-5">
                 <header>
                     <abbr tabindex="0" title="The thoughts are fast. I should write it down before I forget it.">
                         <h3>
@@ -180,7 +184,7 @@
             </article>
         </section>
     
-    <aside>
+    <aside class="p-3">
         <header>
             <abbr tabindex="0" title="Links to My Other Pages">
                 <h2>
@@ -188,8 +192,8 @@
                 </h2>
             </abbr>
         </header>
-        <nav>
-            <ul>
+        <nav class="d-flex flex-column align-items-center">
+            <ul class="p-5">
                 <li>
                     <a href="/Online/About This Web/index.html">
                         <abbr tabindex="0" title="Discover the Hidden Truth of This Page ">
@@ -220,7 +224,7 @@
                 </li>
             </ul>
             <br>
-            <form>
+            <form class="p-5">
                 <abbr tabindex="0" title="Change the Layout of the Page">
                     <select name="Layout" id="changingLayout">
                         <abbr tabindex="0" title="Do not select this. It's just an example">
@@ -251,14 +255,14 @@
     <br>
     <section>
         <a href="https://github.com/UserMaldito/Proyecto-Maldito" title="Proyecto Maldito (This Website) in GitHub">
-            <img src="/img/logos/github-mark.png" alt="GitHub Logo">
+            <img class="w-25 m-3" src="/img/logos/github-mark.png" alt="GitHub Logo">
         </a>
         <a href="https://www.instagram.com/u.maldito/" title="Tell Me I'm Pretty (Cage the Elephant Reference)">
-            <img src="/img/logos/instagram.png" alt="Instagram Logo by Flaticon">
+            <img class="w-25 m-3" src="/img/logos/instagram.png" alt="Instagram Logo by Flaticon">
         </a>
         <a href="mailto:usermaldito@gmail.com" title="(Do Not) Mail Me">
-            <img src="/img/logos/gmail.png" alt="Gmail Logo by Flaticon">
-        </a>
+            <img class="w-25 m-2" src="/img/logos/gmail.png" alt="Gmail Logo by Flaticon">
+        </a> 
     </section>
     <br><br>
     <div id="visitor-counter">
@@ -270,10 +274,12 @@
         <!-- ---------------------------------- -->
     </div>
     <br>
-    <!-- LikeBtn.com BEGIN -->
-    <span class="likebtn-wrapper" data-theme="ugreen" data-i18n_like="💖💖" data-ef_voting="grow" data-identifier="item_1" data-show_dislike_label="true" data-group_identifier="like_main" data-counter_clickable="true" data-counter_frmt="space" data-counter_zero_show="true" data-counter_count="true" data-popup_position="bottom" data-popup_style="dark" data-popup_width="1" data-popup_content_order="1" data-share_size="small" data-loader_show="true" data-i18n_dislike="💔" data-i18n_after_like="😍" data-i18n_after_dislike="😓" data-i18n_like_tooltip="Like" data-i18n_dislike_tooltip="Dislike" data-i18n_unlike_tooltip=":D" data-i18n_undislike_tooltip=":C" data-i18n_share_text="I'm glad you like that. Yay! Don't mind with the buttons above" data-i18n_popup_close="Click To Close">Like Button by likebtn.com</span>
-    <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-    <!-- LikeBtn.com END -->
+    <div id="like-counter">
+        <!-- LikeBtn.com BEGIN -->
+        <span class="likebtn-wrapper" data-theme="ugreen" data-i18n_like="💖💖" data-ef_voting="grow" data-identifier="item_1" data-show_dislike_label="true" data-group_identifier="like_main" data-counter_clickable="true" data-counter_frmt="space" data-counter_zero_show="true" data-counter_count="true" data-popup_position="bottom" data-popup_style="dark" data-popup_width="1" data-popup_content_order="1" data-share_size="small" data-loader_show="true" data-i18n_dislike="💔" data-i18n_after_like="😍" data-i18n_after_dislike="😓" data-i18n_like_tooltip="Like" data-i18n_dislike_tooltip="Dislike" data-i18n_unlike_tooltip=":D" data-i18n_undislike_tooltip=":C" data-i18n_share_text="I'm glad you like that. Yay! Don't mind with the buttons above" data-i18n_popup_close="Click To Close">Like Button by likebtn.com</span>
+        <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+        <!-- LikeBtn.com END -->
+    </div>
     <br><br>
     Don't Look At Me, I'm Just Trying To Be A Generic Footer
     <br><br><br>
