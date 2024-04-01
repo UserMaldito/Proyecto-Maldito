@@ -21,9 +21,10 @@
     --color-letter-info: rgb(0, 0, 255);
 
     /* Letter Link Variables */
-    --color-letter-link-normal: rgb(0, 255, 0);
+    --color-letter-link-normal: rgb(0, 251, 255);
     --color-letter-link-hovered: rgb(255, 255, 0);
     --color-letter-link-visited: rgb(255, 255, 255);
+    --color-letter-link-secondary: rgb(255, 0, 255);
 
 
                     /* Size */
@@ -50,5 +51,138 @@ html{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
+        /* Change Messages */
+        .new:not(li):after{
+            margin-left: 4px;
+            content: "NEW!";
+            color: var(--color-letter-link-hovered);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .modified:not(li):after{
+            margin-left: 4px;
+            content: "MODIFIED!";
+            color: var(--color-letter-link-secondary);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .experimental:not(li):after{
+            margin-left: 4px;
+            content: "experimental";
+            color: var(--color-background-important);
+            text-decoration: underline;
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .old:not(li):after{
+            margin-left: 4px;
+            content: "old";
+            color: var(--color-letter-link-visited);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .deprecated:not(li):after{
+            margin-left: 4px;
+            content: "deprecated";
+            color: var(--color-background-secondary);
+            text-decoration: line-through;
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .hidden:not(li):after{
+            margin-left: 4px;
+            content: "hidden";
+            color: var(--color-letter-primary);
+            text-decoration: line-through;
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .testing:not(li):after{
+            margin-left: 4px;
+            content: "testing";
+            color: var(--color-letter-link-normal);
+            border-bottom: 2px solid var(--color-letter-link-visited);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+    }
+    ul{
+        margin: 30px;
+        >li{
+            margin: inherit;
+            a:visited, a{
+                color: blue
+            }
+            
+        }
+        /* Change Messages x2 */
+        li.new>*:after{
+            margin-left: 4px;
+            content: "NEW!";
+            color: var(--color-letter-link-hovered);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        li.modified>*:after{
+            margin-left: 4px;
+            content: "MODIFIED!";
+            color: var(--color-letter-link-secondary);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        li.experimental>*:after{
+            margin-left: 4px;
+            content: "experimental";
+            color: var(--color-background-important);
+            text-decoration: underline;
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        li.old>*:after{
+            margin-left: 4px;
+            content: "old";
+            color: var(--color-letter-link-visited);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        li.deprecated>*:after{
+            margin-left: 4px;
+            content: "deprecated";
+            color: var(--color-background-secondary);
+            text-decoration: line-through;
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        li.hidden>*:after{
+            margin-left: 4px;
+            content: "hidden";
+            color: var(--color-letter-primary);
+            text-decoration: line-through;
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        li.testing>*:after{
+            margin-left: 4px;
+            content: "testing";
+            color: var(--color-letter-link-normal);
+            border-bottom: 2px solid var(--color-letter-link-visited);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
     }
 }

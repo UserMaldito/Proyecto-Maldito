@@ -21,48 +21,6 @@ aside{
                     color: var(--color-background-important);
                 }
             }
-            >li#new:after{
-                margin-left: 5px;
-                content: "NEW!";
-                color: var(--color-letter-primary);
-                font-size: smaller;
-                position: relative;
-                bottom: 10px;
-            }
-            >li#modified:after{
-                margin-left: 5px;
-                content: "MODIFIED!";
-                color: var(--color-letter-info);
-                font-size: smaller;
-                position: relative;
-                bottom: 10px;
-            }
-            >li#experimental:after{
-                margin-left: 5px;
-                content: "experimental";
-                color: var(--color-background-important);
-                text-decoration: underline;
-                font-size: smaller;
-                position: relative;
-                bottom: 10px;
-            }
-            >li#old:after{
-                margin-left: 5px;
-                content: "old";
-                color: var(--color-letter-link-visited);
-                font-size: smaller;
-                position: relative;
-                bottom: 10px;
-            }
-            >li#deprecated:after{
-                margin-left: 5px;
-                content: "deprecated";
-                color: var(--color-background-secondary);
-                text-decoration: line-through;
-                font-size: smaller;
-                position: relative;
-                bottom: 10px;
-            }
         }
         select{
             text-align: center;

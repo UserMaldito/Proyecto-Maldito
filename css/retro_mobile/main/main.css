@@ -24,7 +24,7 @@ main{
 
     /* All Links Inside the Main (Except The Links On The Sections)*/ 
     >a, a>*, a:not(section a){
-        color: var(--color-letter-link-normal);
+        color: var(--color-letter-secondary);
         background-color: inherit;
         text-decoration: none;
 
