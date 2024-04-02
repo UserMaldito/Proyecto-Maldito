@@ -44,6 +44,10 @@ function VerifingNewLayout(newLayout){
             if (isCSSMobile) {
                 HackerCSS("retro_mobile");
                 message = "Oh, I see...";
+                //music
+                let musicPlayer = document.querySelector("iframe");
+                // musicPlayer.width = "90%";
+                musicPlayer.height= "152px";
             }
             else{
                 HackerCSS("retro");

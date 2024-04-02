@@ -27,8 +27,9 @@ aside{
             margin: 20px;
         }
     }
+    
+    >article{
+        padding: 25px;
+    }
 }
-
-
-
 
