@@ -10,12 +10,12 @@
 body{
     overflow-x: hidden;
     display: initial !important; /* It should be important due to the Bootstrap Override*/
-    >header{
+    /* >header{
         padding: 20px;
         position: relative;
         top: 5%;
         left: 40%;
-    }
+    } */
     >main{
         /* Section Rules Inside the 1st Main*/
         >section{
