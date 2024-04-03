@@ -32,4 +32,9 @@ section{
             text-decoration: underline blue;
         }
     }
+    #to-do{
+        box-shadow: 3px 3px 6px yellow;
+        border: 4px solid green;
+        padding: 10px
+    }
 }

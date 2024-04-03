@@ -69,6 +69,11 @@ aside{
             margin-bottom: 20px;
         }
     }
+
+    >article{
+        /* border: 1px solid white; */
+        margin: 10px;
+    }
 }
 
 /*Media Rules*/
@@ -85,5 +90,10 @@ aside{
                 justify-content: center;
             }
         }
+    }
+}
+@media (max-width: 400px) {
+    #stickers>*{
+        margin: 15px;
     }
 }

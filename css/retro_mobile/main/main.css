@@ -49,6 +49,7 @@ main{
     color: var(--color-letter-important);
     background-color: var(--color-background-secondary);
     border: 5px solid var(--color-background-important);
+    box-shadow: 2px 2px 2px var(--color-letter-info);
     padding: 0 20px;
     /* Abbr inside the Class Rules */
     abbr{
