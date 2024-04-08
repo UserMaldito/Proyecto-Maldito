@@ -185,3 +185,26 @@ html{
         }
     }
 }
+
+/* Status.Cafe CSS */
+#statuscafe {
+    padding: .5em;
+    background-color: var(--color-letter-info);
+    border: 1px solid var(--color-letter-important);
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+/* imood.com CSS*/
+#imood{
+    display: flex;
+    justify-content: space-between;
+}
+
+.webring_site{
+    border-bottom: 3px solid var(--color-letter-link-hovered);
+}

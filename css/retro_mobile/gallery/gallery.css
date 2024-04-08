@@ -15,8 +15,8 @@ body{
         left: 0%;
         text-align: center;
         #helper{
-            position: relative;
-            left: 25%;
+            float: start;
+            
             font-size: xx-large;
         }
     }

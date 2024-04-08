@@ -197,4 +197,9 @@ window.onload = () => {
         
         document.body.appendChild(mobileScript);
     }
+
+    //Put the year in the footer
+    let dateBox = document.getElementById("fecha");
+    let year = new Date().getFullYear();
+    dateBox.innerText += year.toString();
 };
