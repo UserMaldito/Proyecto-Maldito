@@ -1,9 +1,9 @@
 #came-button>*{
     transform: scale(.5);
-    position: relative;
+    border: 3px solid blue;
 }
 #silent-button>*{
-    transform: scale(.7);
+    transform: scale(.75);
 }
 #no-buttons-img{
     display: flex;

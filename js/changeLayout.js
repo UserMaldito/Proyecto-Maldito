@@ -200,6 +200,8 @@ window.onload = () => {
 
     //Put the year in the footer
     let dateBox = document.getElementById("fecha");
-    let year = new Date().getFullYear();
-    dateBox.innerText += year.toString();
+    if (dateBox != null) {
+        let year = new Date().getFullYear();
+        dateBox.innerText += year.toString();
+    }
 };
