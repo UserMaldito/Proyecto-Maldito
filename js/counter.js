@@ -1,68 +1,70 @@
-//Thanks sadgrl/goblin-heart for the tutorial. I was lost hehe 
-//Link of the tutorial: (https://goblin-heart.net/sadgrl/learn/articles/last-update-visitors)
-
+console.log("Init Script");
 Search();
 
-async function Search(){
+function Search(){
     const siteInfo = "https://weirdscifi.ratiosemper.com/neocities.php?sitename=";
     const username = "user-maldito";//Place Here Your Neocities Username
 
-    let theInfo = await GetSiteInfo(siteInfo, username);
-    if (theInfo.length > 0) {
+    console.log("Initializing Search");
+    let theInfo = GetSiteInfo(siteInfo, username);
+    if (theInfo.success) {
         
     }
 }
 
+function GetSiteInfo(urlSite, username){
+    let yourWebsiteData = {
+        success: false,
+        views: 0,
+        hits: 0,
+        created: "",
+        last_update: "",
+        domain: "",
+        tags: [],
+    }
 
-async function GetSiteInfo(siteInfo, username){
-    let info = [];
-    //Searching site info in "https://weirdscifi.ratiosemper.com/neocities.php?sitename=" + "Your Pretty Website"
-    let mysearch = await fetch(siteInfo + username)
-    //My 1st then will tell you if you have been found or not
+    fetch(urlSite + username)
     .then(resp => {
-        let message = "I can't see you :c";
-        if(resp.ok){    //if successful (do funky stuff)
-            message = "He he, I Found U!";
+        if (resp.ok) {
+            console.log("Yey, I found you!");
             return resp.json();
         }
-        //Not found :c
-        console.log(message);
-    })
-    //The 2nd then (i you have been found) reveal the stats
-    .then(data => {
-        //If Not found, show nothing
-        if (data != undefined) {
-            //Demo of the data in the console
-            console.log("Your Data: \n");
-            console.log(data);
-            console.log("Specific Data Example: \n");
-            console.log("Total views: " + data.info.views);
-            console.log("Total hits: " + data.info.hits);
-            console.log("Last Time Updated: " + data.info.last_updated);
-            let date = new Date(data.info.last_updated);
-            console.log("Last Updated: " + date.getMonth() + " / " +  + date.getDate() + " / " + date.getFullYear());
-            //-- Collecting Data And Storing :D
-            let isFound = false;
-            if (data.result == "success") {
-                isFound = true;
-            }
-
-            info.push("found", isFound);
-            info.push("sitename", data.info.sitename);
-            info.push("views", data.info.views);
-            info.push("hits", data.info.hits);
-            info.push("born", new Date(data.info.created_at));
-            info.push("updated", new Date(data.info.last_updated));
-            info.push("domain", data.info.domain);
-            info.push("tags", data.tags);
+        else{
+            throw new Error("You have NOT been found :c");
         }
     })
-    //Terrible Error During Something (Ctrl + Z x20 and is probably fixed)
-    .catch(error => console.log(`${error}`));
+    .then(data => {
+        //console.log(data);
+        if (data.result == "success") {
+            const separatorDate = "/";
+            let created = new Date(data.info.created_at);
+            let updated = new Date(data.info.last_updated);
 
-    return info;
+            yourWebsiteData.success = true;
+            yourWebsiteData.name = data.info.sitename;
+            yourWebsiteData.views = data.info.views;
+            yourWebsiteData.hits = data.info.hits;
+            //   [dd/MM/YYYY] 24/11/2014 (example)
+            yourWebsiteData.created = created.getDate() + separatorDate + created.getMonth() + separatorDate + created.getFullYear();
+            yourWebsiteData.last_update = updated.getDate() + separatorDate + updated.getMonth() + separatorDate + updated.getFullYear();
+            
+            yourWebsiteData.domain = data.info.domain;
+            yourWebsiteData.tags = data.info.tags;
+
+            console.log("Your website data:");
+            console.log(yourWebsiteData);
+        }
+    })
+    .catch(error => console.error(error));
+
+    return yourWebsiteData;
 }
 
 function PrettyCounter(){
-    
+    const stadistic = document.querySelectorAll(".stat");
+    for (let index = 0; index < stadistic.length; index++) {
+        const stat = stadistic.item(index);
+        const data = stat.children.item(0).textContent;
+        yourWebsiteData[index] = data;
+    }
 }

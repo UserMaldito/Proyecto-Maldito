@@ -202,6 +202,6 @@ window.onload = () => {
     let dateBox = document.getElementById("fecha");
     if (dateBox != null) {
         let year = new Date().getFullYear();
-        dateBox.innerText += year.toString();
+        dateBox.innerHTML = "&copy;" + year.toString();
     }
 };
