@@ -1,18 +1,15 @@
-console.log("Init Script");
-Search();
-
-function Search(){
+async function Search(){
     const siteInfo = "https://weirdscifi.ratiosemper.com/neocities.php?sitename=";
     const username = "user-maldito";//Place Here Your Neocities Username
 
     console.log("Initializing Search");
-    let theInfo = GetSiteInfo(siteInfo, username);
+    let theInfo = await GetSiteInfo(siteInfo, username);
     if (theInfo.success) {
-        
+        SetCounterInfo(theInfo);
     }
 }
 
-function GetSiteInfo(urlSite, username){
+async function GetSiteInfo(urlSite, username){
     let yourWebsiteData = {
         success: false,
         views: 0,
@@ -23,7 +20,7 @@ function GetSiteInfo(urlSite, username){
         tags: [],
     }
 
-    fetch(urlSite + username)
+    await fetch(urlSite + username)
     .then(resp => {
         if (resp.ok) {
             console.log("Yey, I found you!");
@@ -44,9 +41,9 @@ function GetSiteInfo(urlSite, username){
             yourWebsiteData.name = data.info.sitename;
             yourWebsiteData.views = data.info.views;
             yourWebsiteData.hits = data.info.hits;
-            //   [dd/MM/YYYY] 24/11/2014 (example)
-            yourWebsiteData.created = created.getDate() + separatorDate + created.getMonth() + separatorDate + created.getFullYear();
-            yourWebsiteData.last_update = updated.getDate() + separatorDate + updated.getMonth() + separatorDate + updated.getFullYear();
+            //   [dd/MM/YYYY] 24/11/2014 --- 12:36:58 (example)
+            yourWebsiteData.created = created.getDate() + separatorDate + created.getMonth() + separatorDate + created.getFullYear() + " - " + created.getHours() + ":" + created.getMinutes() + ":"  + created.getSeconds();
+            yourWebsiteData.last_update = updated.getDate() + separatorDate + updated.getMonth() + separatorDate + updated.getFullYear() + " - " + updated.getHours() + ":" + updated.getMinutes() + ":" + updated.getSeconds();
             
             yourWebsiteData.domain = data.info.domain;
             yourWebsiteData.tags = data.info.tags;
@@ -60,11 +57,16 @@ function GetSiteInfo(urlSite, username){
     return yourWebsiteData;
 }
 
-function PrettyCounter(){
-    const stadistic = document.querySelectorAll(".stat");
-    for (let index = 0; index < stadistic.length; index++) {
-        const stat = stadistic.item(index);
-        const data = stat.children.item(0).textContent;
-        yourWebsiteData[index] = data;
-    }
+function SetCounterInfo(webData){
+    let viewBox = document.querySelector("#views");
+    let createdBox = document.querySelector("#created");
+    let updatedBox = document.querySelector("#updated");
+
+    viewBox.innerText ="My views: " + webData.views;
+    createdBox.innerText = 'Created: ' + webData.created;
+    updatedBox.innerText = `Updated: ${webData.last_update}`;
+
+    console.log("Write it down");
 }
+
+Search();

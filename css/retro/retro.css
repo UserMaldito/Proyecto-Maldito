@@ -113,6 +113,25 @@ html{
             position: relative;
             bottom: 5px;
         }
+        .urgent:not(li):after{
+            margin-left: 4px;
+            content: "IMPORTANT";
+            color: var(--color-background-important);
+            border-bottom: 2px solid var(--color-letter-link-visited);
+            font-size: 18px;
+            position: relative;
+            bottom: 10px;
+        }
+        .to-do:not(li):after{
+            margin-left: 4px;
+            content: "TO DO";
+            color: var(--color-letter-link-secondary);
+            border-bottom: 2px solid var(--color-background-important);
+            font-size: 18px;
+            position: relative;
+            bottom: 10px;
+        }
+    
     }
     ul{
         margin: 30px;
@@ -184,6 +203,33 @@ html{
             position: relative;
             bottom: 5px;
         }
+        li.urgent>*:after{
+            margin-left: 4px;
+            content: "IMPORTANT";
+            color: var(--color-background-important);
+            border-bottom: 2px solid var(--color-letter-link-visited);
+            font-size: 18px;
+            position: relative;
+            bottom: 10px;
+        }
+        li.to-do>*:after{
+            margin-left: 4px;
+            content: "TO DO";
+            color: var(--color-letter-link-secondary);
+            border-bottom: 2px solid var(--color-background-important);
+            font-size: 18px;
+            position: relative;
+            bottom: 10px;
+        }
+        /* li.coming-soon>*:after{
+            margin-left: 4px;
+            content: "Coming Soon...";
+            color: var(--color-letter-info);
+            background-color: var(--color-background-secondary);
+            font-size: 18px;
+            position: relative;
+            bottom: 10px;
+        } */
     }
 }
 

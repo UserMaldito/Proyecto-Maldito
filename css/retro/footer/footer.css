@@ -1,5 +1,5 @@
 footer{
-    >section{
+    >section:not(#stickers){
         display: flex;
         justify-content: center;
         gap: 20px;
@@ -7,20 +7,25 @@ footer{
             width: 30px;
         }
     }
-    #visitor-counter{
-        display: flex;
-        justify-content: center;
-        font-size: smaller;
-        a:visited, a{
-            color: blue;
-            text-decoration: none;
-        }
-    }
-    #like-counter{
-        font: initial;
-    }
     #fecha{
         border-right: 10px;
         float: inline-end;
+    }
+    #stats-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .stat{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    
+    #stickers>article{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
     }
 }
