@@ -3,16 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" type="image/png" href="/img/gif/alarm.gif"> -->
-    <!-- My Own Personal Homemade Indistinctive Style -->
-
-                <!-- Generic (Default) Style -->
-    <!-- <link rel="stylesheet" href="/css/generic/generic.css">
-    <link rel="stylesheet" href="/css/generic/header/header.css">
-    <link rel="stylesheet" href="/css/generic/fonts/Yulong.css">
-    <link rel="stylesheet" href="/css/generic/main/main.css">
-    <link rel="stylesheet" href="/css/generic/cursor/cursor.css"> -->
-
                     <!-- Retro Style -->
     <link rel="stylesheet" href="/css/retro/retro.css">
     <link rel="stylesheet" href="/css/retro/font/font.css">
@@ -53,10 +43,17 @@
             </header>
             <article>
                 <ul>
-                    <li>
+                    <li class="new">
+                        <a href="/Online/Realm/Music_Realm/index.html">
+                            <abbr title="Music I Listen To (May Include Some Playlist)">
+                                Are my hears bleeding? (I Need More Time)
+                            </abbr>
+                        </a>
+                    </li>
+                    <li class="hidden">
                         <a href="/Online/Realm/Games_Realm/index.html">
                             <abbr title="5 More Minutes, Pleeease~">
-                                Gamez
+                                Gamez (Not Done But Working)
                             </abbr>
                         </a>
                     </li>
@@ -90,13 +87,6 @@
                     </li>
                     <li>
                         <a href="#">
-                            <abbr title="Music I Listen (May Include Some Playlist)">
-                                Is my hear bleeding? (Not Done)
-                            </abbr>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
                             <abbr title="Writting To Escape From Reality">
                                 My Schizophrenia Is Comig Back
                             </abbr>
@@ -125,28 +115,35 @@
                     <li>
                         <a href="/Online/About This Web/index.html">
                             <abbr tabindex="0" title="Discover the Hidden Truth of This Page ">
-                                About This Page
+                                About User's Website
+                            </abbr>
+                        </a>
+                    </li>
+                    <li class="modified">
+                        <a href="/Online/About Him/index.html">
+                            <abbr tabindex="0" title="aaaaaaaaAAAAAAAAAAªªªªªªªªª">
+                                About User
                             </abbr>
                         </a>
                     </li>
                     <li class="new">
-                        <a href="/Online/About Him/index.html">
-                            <abbr tabindex="0" title="aaaaaaaaAAAAAAAAAAªªªªªªªªª">
-                                About Me
+                        <a href="/Online/Realm/index.html">
+                            <abbr tabindex="0" title="Wanna Explore More Deeply In User's Mind?">
+                                User's Realm
                             </abbr>
                         </a>
                     </li>
                     <li>
                         <a href="/Online/Stories/index.html">
                             <abbr tabindex="0" title="My Schizophrenia With Few Restrictions">
-                                Stories
+                                User's Stories
                             </abbr>
                         </a>
                     </li>
-                    <li class="modified">
+                    <li>
                         <a href="/Online/Gallery/index.html">
                             <abbr tabindex="0" title="Photos & Videos of Myself and My Surronding (Memes are Includes, Maybe)">
-                                Gallery
+                                User's Gallery
                             </abbr>
                         </a>
                     </li>
@@ -155,18 +152,13 @@
                 <form class="p-5">
                     <abbr tabindex="0" title="Change the Layout of the Page">
                         <select name="Layout" id="changingLayout">
-                            <abbr tabindex="0" title="Do not select this. It's just an example">
-                                <option value="nothing">
-                                    The Layout Selector
-                                </option>
-                            </abbr>
-                            <abbr tabindex="0" title="Keep my style with this option!">
-                                <option value="default">Default</option>
-                            </abbr>
                             <abbr tabindex="0" title="Wanna feel like ur doing something cool? Hack the Style">
                                 <option selected="selected" value="retro">
                                     Hacker CSS (Dark Mode)
                                 </option>
+                            </abbr>
+                            <abbr tabindex="0" title="Keep my style with this option!">
+                                <option value="default">Default</option>
                             </abbr>
                             <abbr tabindex="0" title="Do you like the old old old pages? Delete the Style">
                                 <option value="css_hater">No CSS</option>
@@ -182,27 +174,60 @@
         <br>
         <br>
         <section>
-            
-            <a href="mailto:usermaldito@gmail.com" title="(Do Not) Mail Me">
+            <a href="mailto:usermaldito@gmail.com" title="Mail Me :=0">
                 <img class="w-25 m-2" src="/img/logos/gmail.png" alt="Gmail Logo by Flaticon">
             </a> 
         </section>
-        <br><br>
-        <div id="visitor-counter">
-            <!-- External Script To Visitor Counter -->
-            <a href=""></a>
-            <div id="sfcyr9egw2nma3clphjhtzcudqky4x9k8wp"></div>
-            <script src="https://counter11.optistats.ovh/private/counter.js?c=yr9egw2nma3clphjhtzcudqky4x9k8wp&down=async" async></script>
-            <br><a href="https://www.freecounterstat.com">~ Counter by freecounterstat.com</a><noscript><a href="https://www.freecounterstat.com" title="counter for website"><img src="https://counter11.optistats.ovh/private/freecounterstat.php?c=21mqu1czbkxt5mse1yrsj5mxwkddbg45" border="0" title="counter for website" alt="counter for website"></a></noscript>
-            <!-- ---------------------------------- -->
-        </div>
         <br>
-        <br>
-        <p id="fecha">~ Made with love by User Maldito &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy; </p>
+        <p>~ Made with love by User Maldito <strong id="fecha"></strong> </p>
         <hr>
-        Don't Look At Me, I'm Just Trying To Be A Generic Footer
+        <section id="stats-box">
+            <article class="stat">
+                <p id="views"></p>
+                <p id="created"></p>
+                <p id="updated"></p>
+            </article>
+        </section>
+        <section id="stickers">
+            <article>
+                <br>
+                <img src="/img/buttons/old_buttons/button(1).gif" alt="button_1">
+                <img src="/img/buttons/old_buttons/button(2).gif" alt="button-2">
+                <img src="/img/buttons/old_buttons/button(3).gif" alt="button-3">
+                <img src="/img/buttons/old_buttons/button(4).gif" alt="button-4">
+                <img src="/img/buttons/old_buttons/button(5).gif" alt="button-5">
+                <img src="/img/buttons/old_buttons/button(6).gif" alt="button-6">
+                <img src="/img/buttons/old_buttons/button(8).gif" alt="button-8">
+                <img src="/img/buttons/old_buttons/button(9).gif" alt="button-9">
+                <img src="/img/buttons/old_buttons/button(10).gif" alt="button-10">
+                <img src="/img/buttons/old_buttons/button(11).gif" alt="button-11">
+                <img src="/img/buttons/old_buttons/button(12).gif" alt="button-12">
+                <img src="/img/buttons/old_buttons/button(13).gif" alt="button-13">
+                <img src="/img/buttons/old_buttons/button(14).gif" alt="button-14">
+                <img src="/img/buttons/old_buttons/button(16).gif" alt="button-16">
+                <img src="/img/buttons/old_buttons/button(17).gif" alt="button-17">
+                <img src="/img/buttons/old_buttons/button(18).gif" alt="button-18">
+                <img src="/img/buttons/old_buttons/button(19).gif" alt="button-19">
+                <img src="/img/buttons/old_buttons/button(22).gif" alt="button-22">
+                <img src="/img/buttons/old_buttons/button(23).gif" alt="button-23">
+                <img src="/img/buttons/old_buttons/button(24).gif" alt="button-24">
+                <img src="/img/buttons/old_buttons/button(26).gif" alt="button-26">
+                <img src="/img/buttons/old_buttons/button(27).gif" alt="button-27">
+                <img src="/img/buttons/old_buttons/button(28).gif" alt="button-28">
+                <img src="/img/buttons/old_buttons/button(30).png" alt="button-30">
+                <img src="/img/buttons/old_buttons/button(31).gif" alt="button-31">
+                <img src="/img/buttons/old_buttons/button(33).gif" alt="button-33">
+                <img src="/img/buttons/old_buttons/button(34).gif" alt="button-34">
+                <img src="/img/buttons/old_buttons/button(36).png" alt="button-36">
+                <br>
+            </article>
+        </section>
         <br><br>
     </footer>
+    
+    <!-- This Will Display My Homemade Stats  -->
+    <script src="/js/counter.js"></script>
+    
     <!-- This Script (Java-Script) Will Change The Layout  -->
     <script src="/js/changeLayout.js"></script>
 </body>

@@ -8,6 +8,11 @@ section{
         >p{
             padding: 0 20px;
         }
+
+        #my_name{
+            text-align: end;
+            margin: 50px;
+        }
         
         /* Article List Rules Nested */
         
