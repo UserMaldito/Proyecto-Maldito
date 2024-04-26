@@ -1,13 +1,3 @@
-/* Specific CSS */
-@font-face {
-    font-family: "Persona Header";
-    src: url("/fonts/persona-5-font/persona-5-menu-font-prototype/Persona5MenuFontPrototype-Regular.ttf");
-}
-@font-face {
-    font-family: "Persona Text";
-    src: url("/fonts/persona-5-font/p5hatty.ttf");
-}
-
 ::selection{
     background-color: red;
     color: black;

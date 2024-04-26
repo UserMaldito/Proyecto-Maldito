@@ -11,8 +11,8 @@
     /* Background Variables */
     --color-background: rgb(0, 0, 0);
     --color-background-2: rgb(22, 22, 22);
-    --color-background-important: rgb(255, 0, 0);
-    --color-background-secondary: rgb(128, 128, 128);
+    --color-background-important: rgb(180, 0, 0);
+    --color-background-secondary: rgb(95, 95, 95);
 
     /* Letter Variables */
     --color-letter-important: rgb(255, 255, 255);
@@ -45,12 +45,14 @@ html{
     if is in the body, when people zoom out could see the drastic
     change between colors = ugly :c */
     background-color: var(--color-background);
-    color: var(--color-letter-secondary);
+    color: var(--color-letter-link-visited);
 
     >body{
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        
         
         /* Change Messages */
         .new:not(li):after{
@@ -255,3 +257,11 @@ html{
 .webring_site{
     border-bottom: 3px solid var(--color-letter-link-hovered);
 }
+
+/* Clock Frame */
+#clock_frame{
+    position: sticky;
+    top: 100px;
+    left: 72%;
+}
+

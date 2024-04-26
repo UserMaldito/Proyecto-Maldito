@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/persona/p5clock.css">
     <title>Reloj P5 Style</title>
 </head>
 <body>
-    <header>
-        <abbr tabindex="0" title="Welcome to my Weird Website. Welcome to My Mind">
-            <a href="/index.html">
-                <h1>
-                    The User Maldito's Web
-                </h1>
-            </a>
-        </abbr>
-        <abbr tabindex="0" title="How This Page Works?" id="helper">
-            <a href="/Online/About This Web/index.html">
-                ?
-            </a>
-        </abbr>
-        <br>
-    </header>
     <main>
-        <section></section>
+        <section id="clock">
+            <article id="date">
+                <p id="month">month</p>
+                <p id="slash">/</p>
+                <p id="day">day</p>
+            </article>
+            <p id="dayweek">Mon (?)</p>
+            <p id="daypart">day-time (morning)</p>
+            <!-- <p id="weather-img">Weather img</p>
+            <p id="weather">Weather</p>
+            <p id="temp">Temperature (ºC)</p> -->
+        </section>
     </main>
     <script src="/js/p5clock.js"></script>
 </body>
