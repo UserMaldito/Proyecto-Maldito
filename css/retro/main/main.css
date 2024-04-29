@@ -45,13 +45,13 @@ main{
     padding: 0 20px;
     /* Abbr inside the Class Rules */
     abbr{
-        background-color: var(--color-letter-info);
-        color: var(--color-letter-important);
+        background-color: var(--color-background-important);
+        color: var(--color-letter-secondary);
         text-decoration: underline lightblue;
     }
     abbr:hover{
-        background-color: var(--color-letter-important);
-        color: var(--color-letter-info);
+        background-color: var(--color-letter-secondary) !important;
+        color: var(--color-background-important) !important;
         text-decoration: underline lightpink;
     }
 }

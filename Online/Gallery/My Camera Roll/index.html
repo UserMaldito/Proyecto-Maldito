@@ -21,9 +21,9 @@
 </head>
 <body>
     <br>
-    <header class="text-center">
+    <header class="p-4 text-center">
         <abbr tabindex="0" title="Welcome to my Weird Website. Welcome to My Mind">
-            <a href="/index.html">
+            <a href="/home.html">
                 <h1>
                     The User Maldito's Web
                 </h1>
@@ -548,53 +548,55 @@
                     </h2>
                 </abbr>
             </header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/Online/About This Web/index.html">
+            <nav class="d-flex flex-column align-items-center">
+                <ul class="p-5">
+                    <li class="deprecated">
+                        <a href="">
                             <abbr tabindex="0" title="Discover the Hidden Truth of This Page ">
-                                About This Page
+                                About User's Website
                             </abbr>
                         </a>
                     </li>
-                    <li id="new">
+                    <li class="modified">
                         <a href="/Online/About Him/index.html">
                             <abbr tabindex="0" title="aaaaaaaaAAAAAAAAAAªªªªªªªªª">
-                                About Me
+                                About User
+                            </abbr>
+                        </a>
+                    </li>
+                    <li class="new">
+                        <a href="/Online/Realm/index.html">
+                            <abbr tabindex="0" title="Wanna Explore More Deeply In User's Mind?">
+                                User's Realm
                             </abbr>
                         </a>
                     </li>
                     <li>
                         <a href="/Online/Stories/index.html">
                             <abbr tabindex="0" title="My Schizophrenia With Few Restrictions">
-                                Stories
+                                User's Stories
                             </abbr>
                         </a>
                     </li>
-                    <li id="modified">
+                    <li>
                         <a href="/Online/Gallery/index.html">
                             <abbr tabindex="0" title="Photos & Videos of Myself and My Surronding (Memes are Includes, Maybe)">
-                                Gallery
+                                User's Gallery
                             </abbr>
                         </a>
                     </li>
                 </ul>
                 <br>
-                <form>
+                <form class="p-5">
                     <abbr tabindex="0" title="Change the Layout of the Page">
-                        <select name="Layout" id="galleryLayout">
-                            <abbr tabindex="0" title="Do not select this. It's just an example">
-                                <option value="nothing">
-                                    The Layout Selector
-                                </option>
-                            </abbr>
-                            <abbr tabindex="0" title="Keep it default with this option!">
-                                <option value="BootStrap_Only">Default (Gallery Light Mode)</option>
-                            </abbr>
+                        <select name="Layout" id="changingLayout">
                             <abbr tabindex="0" title="Wanna feel like ur doing something cool? Hack the Style">
-                                <option selected="selected" value="gallery_retro">
-                                    Hacker CSS (Gallery Dark Mode)
+                                <option selected="selected" value="retro">
+                                    Hacker CSS (Dark Mode)
                                 </option>
+                            </abbr>
+                            <abbr tabindex="0" title="Keep my style with this option!">
+                                <option value="default">Default</option>
                             </abbr>
                             <abbr tabindex="0" title="Do you like the old old old pages? Delete the Style">
                                 <option value="css_hater">No CSS</option>
