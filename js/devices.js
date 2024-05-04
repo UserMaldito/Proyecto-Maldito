@@ -1,19 +1,22 @@
 var deltaTouch; //Important :C
-let abreviationList = document.querySelectorAll("abbr");
+let abreviationList = document.querySelectorAll(".title");
 
-abreviationList.forEach(abbr => {
-    //(Evento de Escucha Al Hacer Presionar 2 veces) Ayuda de StackOverflow (lo tenía redificil x2000 lpm, maldita sea el día que pensé en incluir el dichoso y maldito "DoubleTap")
-    //https://stackoverflow.com/questions/28940676/how-to-make-ondblclick-event-works-on-phone
-    
-    abbr.addEventListener("touchstart", function(e){
-        //Función anónima para obtener el evento y pasarlo
-        let doubleTap = isDoubleTap(e);
-        if (doubleTap) {
-            e.preventDefault();
-            ShowAbbreviation(abbr);
-        }
-    })
-});
+let isScriptMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
+    if (isScriptMobile) {
+        abreviationList.forEach(abbr => {
+            //Evento de Escucha Al Hacer Presionar 2 veces --> Ayuda de StackOverflow (lo tenía redificil x2000 lpm, maldita sea el día que pensé en incluir el dichoso y maldito "DoubleTap")
+            //https://stackoverflow.com/questions/28940676/how-to-make-ondblclick-event-works-on-phone
+            
+            abbr.addEventListener("touchstart", function(e){
+                //Función anónima para obtener el evento y pasarlo
+                let doubleTap = isDoubleTap(e);
+                if (doubleTap) {
+                    e.preventDefault();
+                    ShowAbbreviation(abbr);
+                }
+            })
+        });
+    }
 
 function isDoubleTap(e) {
     const maxTime = 700; //Tiempo entre pulsaciones

@@ -16,12 +16,18 @@ body>main>section{
         } */
         ul{
             position: relative;
-            left: -40px;
+            left: -60px;
             width: 100%;
+        }
+        @media (max-width: 701px) {
+            ul>li>ol{
+                position: relative;
+                left: -35px;
+                width: 100%;
+            }
         }
     }
     summary{
         color: var(--color-letter-link-1);
     }
-
 }

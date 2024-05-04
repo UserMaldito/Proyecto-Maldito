@@ -42,16 +42,13 @@ function VerifingNewLayout(newLayout){
             let isCSSMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
 
             if (isCSSMobile) {
-                HackerCSS("retro_mobile");
                 message = "Oh, I see...";
-                //music
+                //Music
                 let musicPlayer = document.querySelector("iframe");
                 // musicPlayer.width = "90%";
                 musicPlayer.height= "152px";
             }
-            else{
-                HackerCSS("retro");
-            }
+            HackerCSS("hacker");
 
             console.log(message);
             newLayoutName = "retro";
@@ -135,7 +132,7 @@ function HackerCSS(folder) {
     link_8.setAttribute("rel", "stylesheet");
     link_9.setAttribute("rel", "stylesheet");
 
-    link_1.setAttribute("href", "/css/"+folder+"/retro.css");
+    link_1.setAttribute("href", "/css/"+folder + "//"+ folder +".css");
     link_2.setAttribute("href", "/css/"+folder+"/font/font.css");
     link_3.setAttribute("href", "/css/"+folder+"/header/header.css");
     link_4.setAttribute("href", "/css/"+folder+"/main/main.css");
@@ -185,23 +182,7 @@ window.onload = () => {
         localStorage.setItem("layoutName", "retro");
     }
     else{
-        VerifingNewLayout(localLayout);
-    }
-
-    let isScriptMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
-    if (isScriptMobile) {
-        let mobileScript = document.createElement("script");
-
-        mobileScript.type = "text/javascript";
-        mobileScript.src = "/js/devices.js";
-        
-        document.body.appendChild(mobileScript);
-    }
-
-    //Put the year in the footer
-    let dateBox = document.getElementById("fecha");
-    if (dateBox != null) {
-        let year = new Date().getFullYear();
-        dateBox.innerHTML = "&copy;" + year.toString();
+        localStorage.setItem("layoutName", "retro");
+        // VerifingNewLayout(localLayout);
     }
 };

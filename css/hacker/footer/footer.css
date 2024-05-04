@@ -22,7 +22,7 @@ body>footer{
     #stickers>article{
         display: flex;
         flex-wrap: wrap;
-        margin: 0 10px;
+        margin: 20px 10px;
         /* gap: 10px; */
         justify-content: space-between;
         >*{

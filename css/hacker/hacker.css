@@ -115,8 +115,10 @@ html{
             bottom: 5px;
         }
 
-        ul, ol{
+        ul{
             margin: 30px;
+        }
+        ul, ol{
             >li{
                 margin: inherit;
                 a:visited, a{
@@ -225,6 +227,14 @@ html{
                 color: var(--color-letter-4) !important;
                 text-decoration: underline;
                 background-color: var(--color-letter-link-3);
+            }
+        }
+        *[title]:not(h2, h3, a){
+            color: lightgreen;
+            background-color: black;
+            &:hover{
+                background-color: lightgreen;
+                color: black;
             }
         }
     }
