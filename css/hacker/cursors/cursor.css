@@ -1,0 +1,17 @@
+body{
+    >header a{
+        cursor: wait;
+    }
+    *[title]:not(body>header a, select){
+        cursor: help;
+    }
+    form, form *{
+        cursor: cell;
+    }
+    a:not(.hidden>a, body>header a){
+        cursor: alias;
+    }
+    .hidden>a{
+        cursor: not-allowed !important;
+    }
+}

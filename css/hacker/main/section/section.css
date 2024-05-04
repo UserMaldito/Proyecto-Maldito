@@ -1,0 +1,27 @@
+body>main>section{
+    border: inherit;
+    min-width: 60%;
+    >header{
+        border: inherit;
+        text-align: center;
+    }
+    article{
+        border: inherit;
+        padding: 20px;
+        >header{
+            text-indent: 6%;
+        }
+        /* *:not(hr, header, summary){ 
+            padding-left: 25px;
+        } */
+        ul{
+            position: relative;
+            left: -40px;
+            width: 100%;
+        }
+    }
+    summary{
+        color: var(--color-letter-link-1);
+    }
+
+}

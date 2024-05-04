@@ -3,7 +3,7 @@ async function Search(){
     const siteInfo = "https://weirdscifi.ratiosemper.com/neocities.php?sitename=";
     const username = "user-maldito";  //Place Here Your Neocities Username -> Example: "cinni" or "dawsomespace"
 
-    console.log("Initializing Search");
+    // console.log("Initializing Search");
     let theInfo = await GetSiteInfo(siteInfo, username);
     if (theInfo.success) {
         SetCounterInfo(theInfo);
@@ -11,7 +11,7 @@ async function Search(){
 }
 
 async function GetSiteInfo(urlSite, username){
-    console.log("Let's Get This Site's Data/Info");
+    // console.log("Let's Get This Site's Data/Info");
     let yourWebsiteData = {
         success: false,
         views: 0,
@@ -25,7 +25,7 @@ async function GetSiteInfo(urlSite, username){
     await fetch(urlSite + username)
     .then(resp => {
         if (resp.ok) {
-            console.log("Yey, I found you!");
+            // console.log("Yey, I found you!");
             return resp.json();
         }
         else{
@@ -47,8 +47,8 @@ async function GetSiteInfo(urlSite, username){
             yourWebsiteData.domain = data.info.domain;
             yourWebsiteData.tags = data.info.tags;
 
-            console.log("Your website data:");
-            console.log(yourWebsiteData);
+            console.log("I have your website data, jiji");
+            // console.log(yourWebsiteData);
         }
     })
     .catch(error => console.error(error));
@@ -71,7 +71,7 @@ function SetCounterInfo(webData){ // Your views = 6331 (example) | Last Update =
     createdBox.innerText = 'Created: ' + betterCreatedDate;
     updatedBox.innerText = `Updated: ${betterUpdatedDate}`;
 
-    console.log("Write it down");
+    // console.log("Write it down");
 }
 
 function BetterViewsInfo(views){
@@ -130,7 +130,6 @@ function BetterDateInfo(date, options) {
     let betterYears = Math.abs(dateNow.getFullYear() - date.getFullYear());
 
     let allDays = Math.floor((betterYears / 365) + (betterMonths * 30) + betterDays);
-    console.log(allDays);
 
     switch (options) {
         case 1:
