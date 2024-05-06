@@ -264,10 +264,5 @@ html{
     border-bottom: 3px solid var(--color-letter-link-hovered);
 }
 
-/* Clock Frame */
-#clock_frame{
-    position: sticky;
-    top: 100px;
-    left: 72%;
-}
+
 

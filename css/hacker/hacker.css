@@ -124,11 +124,11 @@ html{
                 a:visited, a{
                     text-decoration: none;
                     color: var(--color-letter-3);
+                    &:hover{
+                        text-decoration: none;
+                        color: var(--color-letter-link-2);
+                    }
                 }
-                a:hover{
-                    text-decoration: none;
-                    color: var(--color-letter-link-2);
-                }            
             }
             .new>*:after{
                 margin-left: 4px;
@@ -235,6 +235,14 @@ html{
             &:hover{
                 background-color: lightgreen;
                 color: black;
+            }
+        }
+        a:visited, a:not(body>header *, body>main>aside *){
+            text-decoration: none;
+            color: var(--color-letter-link-1);
+            &:hover{
+                text-decoration: none;
+                background-color: var(--color-background-4);
             }
         }
     }

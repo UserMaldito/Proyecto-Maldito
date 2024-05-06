@@ -4,16 +4,16 @@
 //                                                         ~ User Trasnochador
 
 //1. Place Here Your Neocities Username -> Example: "almondine" or "cinni" or "dawsomespace" or "goblin-heart"
-const username = "almondine";
+const username = "user-maldito";
 
 //2. Views Type: (Normal[0], Better[1] or Best[2])
     /*
         Example: 
-        betterViews = 0; -> My views: 12345678 | 1234
+        views = 0; -> My views: 12345678 | 1234
         betterViews = 1 -> My views: 12 345 678 | 1 234
-        betterViews = 2; -> My views: 12.3 M | 1.2 K
+        bestViews = 2; -> My views: 12.3 M | 1.2 K
     */
-const viewSelector = 0;
+const viewSelector = 2;
 const separator = '.';     //Recommended: "." & "," & " "
 
 //3. Date Type: IMPORTANT TO UNDERSTAND
@@ -114,8 +114,6 @@ function SetCounterInfo(webData){ // Your views = 6331 (example) | Last Update =
 
     let betterCreatedDate = BetterDateInfo(webData.created, createdType);
     let betterUpdatedDate = BetterDateInfo(webData.updated, updatedType);
-
-    console.log(webData.updated);
 
     viewBox.innerText ="My views: " + views;
     createdBox.innerText = 'Created: ' + betterCreatedDate;

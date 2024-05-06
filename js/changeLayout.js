@@ -82,34 +82,6 @@ function NoCSS() {
     });
 }
 
-//Not Done
-function DefaultCSS() {
-    //I Create The Element Link and Attach them the Relative Path 
-    let link_1 = document.createElement("link");
-    let link_2 = document.createElement("link");
-    // let link_3 = document.createElement("link");
-    let link_4 = document.createElement("link");
-    let link_5 = document.createElement("link");
-
-    link_1.setAttribute("rel", "stylesheet");
-    link_2.setAttribute("rel", "stylesheet");
-    // link_3.setAttribute("rel", "stylesheet");
-    link_4.setAttribute("rel", "stylesheet");
-    link_5.setAttribute("rel", "stylesheet");
-
-    link_1.setAttribute("href", "/css/generic/generic.css");
-    link_2.setAttribute("href", "/css/generic/header/header.css");
-    // link_3.setAttribute("href", "/css/generic/fonts/Yulong.css");
-    link_4.setAttribute("href", "/css/generic/main/main.css");
-    link_5.setAttribute("href", "/css/generic/cursor/cursor.css");
-
-    document.head.appendChild(link_1);
-    document.head.appendChild(link_2);
-    // document.head.appendChild(link_3);
-    document.head.appendChild(link_4);
-    document.head.appendChild(link_5);
-}
-
 function HackerCSS(folder) {
     //I Create The Element Link and Attach them with a the Relative Path 
     let link_1 = document.createElement("link");
@@ -120,7 +92,7 @@ function HackerCSS(folder) {
     let link_6 = document.createElement("link");
     let link_7 = document.createElement("link");
     let link_8 = document.createElement("link");
-    let link_9 = document.createElement("link");
+    // let link_9 = document.createElement("link");
 
     link_1.setAttribute("rel", "stylesheet");
     link_2.setAttribute("rel", "stylesheet");
@@ -130,17 +102,17 @@ function HackerCSS(folder) {
     link_6.setAttribute("rel", "stylesheet");
     link_7.setAttribute("rel", "stylesheet");
     link_8.setAttribute("rel", "stylesheet");
-    link_9.setAttribute("rel", "stylesheet");
+    // link_9.setAttribute("rel", "stylesheet");
 
-    link_1.setAttribute("href", "/css/"+folder + "//"+ folder +".css");
-    link_2.setAttribute("href", "/css/"+folder+"/font/font.css");
+    link_1.setAttribute("href", "/css/"+folder+"/fonts/fonts.css");
+    link_2.setAttribute("href", "/css/"+folder + "/"+ folder +".css");
     link_3.setAttribute("href", "/css/"+folder+"/header/header.css");
     link_4.setAttribute("href", "/css/"+folder+"/main/main.css");
-    link_5.setAttribute("href", "/css/"+folder+"/footer/footer.css");
-    link_6.setAttribute("href", "/css/"+folder+"/cursor/cursor.css");
-    link_7.setAttribute("href", "/css/"+folder+"/images.css");
-    link_8.setAttribute("href", "/css/"+folder+"/main/aside/aside.css");
-    link_9.setAttribute("href", "/css/"+folder+"/main/section/section.css");
+    link_5.setAttribute("href", "/css/"+folder+"/main/section/section.css");
+    link_6.setAttribute("href", "/css/"+folder+"/main/aside/aside.css");
+    link_7.setAttribute("href", "/css/"+folder+"/footer/footer.css");
+    link_8.setAttribute("href", "/css/"+folder+"/cursors/cursor.css");
+    // link_9.setAttribute("href", "/css/"+folder+"/images.css");
 
     document.head.appendChild(link_1);
     document.head.appendChild(link_2);
@@ -150,7 +122,7 @@ function HackerCSS(folder) {
     document.head.appendChild(link_6);
     document.head.appendChild(link_7);
     document.head.appendChild(link_8);
-    document.head.appendChild(link_9);
+    // document.head.appendChild(link_9);
 }
 
 function BootstrapCSS(){
@@ -177,12 +149,10 @@ window.onload = () => {
 
     //Set items
     let localLayout = localStorage.getItem("layoutName");
-    if ((localLayout == null) || (localLayout == "")) {
+
+    if ((localLayout == null) || (localLayout == "") || (DOM.allLinksCss.length == 0)) {
         VerifingNewLayout("retro");
-        localStorage.setItem("layoutName", "retro");
     }
-    else{
-        localStorage.setItem("layoutName", "retro");
-        // VerifingNewLayout(localLayout);
-    }
+
+    localStorage.setItem("layoutName", "retro");
 };

@@ -3,7 +3,10 @@ body{
         cursor: wait;
     }
     *[title]:not(body>header a, select){
-        cursor: help;
+        cursor: grab;
+        &:active{           /* When Clicked*/
+            cursor: grabbing;
+        }
     }
     form, form *{
         cursor: cell;

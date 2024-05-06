@@ -1,6 +1,6 @@
 body>main>aside{
     border: inherit;
-    min-width: 40%;
+    min-width: 39%;
     >header{
         border: inherit;
         text-align: center;
@@ -50,12 +50,14 @@ body>main>aside{
             animation: colorChange infinite alternate-reverse linear 10s;
         }
     }
-
     #statuscafe {
         padding: 15px;
         background-color: lightgreen;
         color: black;
         border: 5px solid var(--color-letter-4);
+        h4{
+            color: var(--color-background-3);
+        }
         ::selection{
             color: lightgreen;
             background-color:  black;
@@ -66,7 +68,12 @@ body>main>aside{
         flex-direction: row;
         justify-content: space-evenly;
     }
-
+    /* Clock Frame */
+    #clock_frame{
+        position: sticky;
+        top: 100px;
+        left: 72%;
+    }
 }
 
 @keyframes colorChange {

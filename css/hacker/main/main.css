@@ -1,5 +1,7 @@
 body>main{
     border: var(--border);
+}
+body>main:not(#warning){
     display: flex;
 }
 
