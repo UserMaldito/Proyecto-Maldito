@@ -1,9 +1,7 @@
 const DOM = {
     layoutSelect: null,
     // selectedOption: document.getElementById("changingLayout"),
-    allLinksCss: null,
-
-
+    allLinksCss: null
 }
 
 function ChangeLayout(){
@@ -71,6 +69,7 @@ function VerifingNewLayout(newLayout){
             break;
     }
 
+    
     return newLayoutName;
 }
 
@@ -150,9 +149,10 @@ window.onload = () => {
     //Set items
     let localLayout = localStorage.getItem("layoutName");
 
-    if ((localLayout == null) || (localLayout == "") || (DOM.allLinksCss.length == 0)) {
-        VerifingNewLayout("retro");
+    if (localLayout.length == 0) {
+        localLayout = "retro";
     }
 
-    localStorage.setItem("layoutName", "retro");
+    VerifingNewLayout(localLayout);
+    localStorage.setItem("layoutName", localLayout);
 };
