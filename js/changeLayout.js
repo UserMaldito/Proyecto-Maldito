@@ -53,15 +53,13 @@ function VerifingNewLayout(newLayout){
             break;
 
         //Gallery Layout
-
         case "gallery_retro":
             NoCSS();
+            HackerGalleryCSS("hacker");
             BootstrapCSS();
-            HackerGalleryCSS("retro");
             console.log("STOP HACKING ME! I'M SCARED!! PLS, I'LL DO ANYTHING!!!");
             newLayoutName = "gallery_retro";
             break;
-
 
         default:
             newLayoutName = "trolling"; //do the barrel roll? idk
@@ -136,9 +134,15 @@ function BootstrapCSS(){
 
     document.head.appendChild(link_1);
 
+    if (window.location.pathname.match("Online/Gallery/My-Camera-Roll/index.html")){
+        let link_2 = document.createElement("link");
+        link_2.setAttribute("rel", "stylesheet");
+        link_2.setAttribute("href", "/css/hacker/specific/gallery/gallery.css");
+        document.head.appendChild(link_2);
+    }
 }
 
-function HackerGalleryCSS(cssLayout) {
+function HackerGalleryCSS(folder) {
     let link_1 = document.createElement("link");
     let link_2 = document.createElement("link");
     let link_3 = document.createElement("link");
@@ -155,12 +159,12 @@ function HackerGalleryCSS(cssLayout) {
     link_6.setAttribute("rel", "stylesheet");
     
     
-    link_1.setAttribute("href", "/css/" + cssLayout + "/retro.css");
-    link_2.setAttribute("href", "/css/" + cssLayout + "/font/font.css");
-    link_3.setAttribute("href", "/css/" + cssLayout + "/header/header.css");
-    link_4.setAttribute("href", "/css/" + cssLayout + "/footer/footer.css");
-    link_5.setAttribute("href", "/css/" + cssLayout + "/cursor/cursor.css");
-    link_6.setAttribute("href", "/css/" + cssLayout + "/gallery/gallery.css");
+    link_1.setAttribute("href", "/css/"+folder+"/fonts/fonts.css");
+    link_2.setAttribute("href", "/css/"+folder+"/cursors/cursor.css");
+    link_3.setAttribute("href", "/css/"+folder+"/"+ folder +".css");
+    link_4.setAttribute("href", "/css/"+folder+"/header/header.css");
+    link_5.setAttribute("href", "/css/"+folder+"/specific/gallery/gallery.css");
+    link_6.setAttribute("href", "/css/"+folder+"/footer/footer.css");
     
     document.head.appendChild(link_1);
     document.head.appendChild(link_2);
@@ -181,9 +185,16 @@ window.onload = () => {
     //Set items
     let localLayout = localStorage.getItem("layoutName");
 
-    if (localLayout.length == 0) {
-        localLayout = "retro";
+    if ((localLayout.length == 0) & DOM.allLinksCss.length == 0) {
+        localLayout = "hacker";
+
+        /* If we are in my gallery (with that url/link/whatever), wanna load my css gallery superduperespecial  */
+        if (window.location.pathname.match("Online/Gallery/My-Camera-Roll/index.html")){
+            localLayout = "gallery-retro";
+        }
     }
+
+    
 
     VerifingNewLayout(localLayout);
     localStorage.setItem("layoutName", localLayout);
