@@ -531,8 +531,8 @@
                 </article>
             </section>
             
-            <aside class="p-3">
-                <header>
+            <aside class="m-5">
+                <header class="border border-0 border-bottom">
                     <h2 tabindex="0" title="Links to My Other Pages">
                         The Navigator
                     </h2>
@@ -545,7 +545,7 @@
                             </a>
                         </li>
                         <li class="modified">
-                            <a href="/Online/About-Him/index.html" title="aaaaaaaaAAAAAAAAAAªªªªªªªªª">
+                            <a href="/Online/About-Him/profile.html" title="aaaaaaaaAAAAAAAAAAªªªªªªªªª">
                                 About User
                             </a>
                         </li>
@@ -572,15 +572,15 @@
                                 Hacker CSS (Dark Mode)
                             </option>
                             <option value="default" title="Keep another style with this option!">
-                                Default
+                                Clean UX (Light Mode)
                             </option>
                             <option value="css_hater" title="Do you like the old old old pages? Delete the Style">
-                                No CSS
+                                Style-less (No CSS)
                             </option>
                         </select>
                     </form>
                 </nav>
-            </aside> 
+            </aside>
         </main>
         
         <footer>
@@ -633,7 +633,18 @@
             <br><br>
         </footer>
         
-        <!-- This Will Display My Homemade Stats  -->
-        <script src="/js/counter.js"></script>
+        <div id="scripts">
+            <!-- This Will Display My Homemade Stats  -->
+            <script src="/js/counter.js"></script>
+
+            <!-- The Magic Of Putting A Date + Copyright In The Footer -->
+            <script src="/js/date.js"></script>
+
+            <!-- (Same As Hover In PC) This Script Will Detect A Mobile User And, With Double Tap, Could See The Title -->
+            <script src="/js/devices.js"></script>
+
+            <!-- This Script Will Change The Layout  -->
+            <!-- <script src="/js/changeLayout.js"></script> -->
+        </div>
     </body>
 </html>

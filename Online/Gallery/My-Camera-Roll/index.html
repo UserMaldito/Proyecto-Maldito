@@ -21,13 +21,13 @@
     </head>
     <body>
         <br>
-        <header class="p-4 text-center">
+        <header class="p-4 d-flex justify-content-center">
             <h1>
                 <a href="/home.html" title="Welcome to my Weird Website. Welcome to My Mind">
                     The User Maldito's Web
                 </a>
             </h1>
-            <a href="/index.html" title="How This Page Works?" id="helper">
+            <a class="mx-2" href="/index.html" title="How This Page Works?" id="helper">
                 ?
             </a>
             <br>
@@ -533,8 +533,8 @@
                 </article>
             </section>
                 
-            <aside class="p-3">
-                <header>
+            <aside class="m-5">
+                <header class="border border-0 border-bottom">
                     <h2 tabindex="0" title="Links to My Other Pages">
                         The Navigator
                     </h2>
@@ -570,14 +570,14 @@
                     <br>
                     <form class="p-5">
                         <select tabindex="0" name="Layout" id="changingLayout" title="Change the Layout of the Page">
-                            <option selected="selected" value="retro" title="Wanna feel like ur doing something cool? Hack the Style">
-                                Hacker CSS (Dark Gallery Mode)
+                            <option selected="selected" value="gallery_retro" title="Hack My Eyes With This Template">
+                                Hacker gallery CSS (Dark Mode)
                             </option>
                             <option value="default" title="Keep another style with this option!">
-                                Default
+                                Clean UX (Light Mode)
                             </option>
                             <option value="css_hater" title="Do you like the old old old pages? Delete the Style">
-                                No CSS
+                                Style-less (No CSS)
                             </option>
                         </select>
                     </form>
@@ -585,60 +585,57 @@
             </aside>
         </main>
         
-        <footer>
-            <br>
-            <br>
-            <br>
-            <p>~ Made with love by User Maldito <strong id="fecha"></strong> </p>
+        <footer class="m-4">
+            <p>~ Made with love by User Maldito <strong id="fecha"></strong></p>
             <hr>
             <section id="stats-box">
-                <article class="stat">
+                <article class="stat d-flex flex-row justify-content-around p-2">
                     <p id="views"></p>
                     <p id="created"></p>
                     <p id="updated"></p>
                 </article>
             </section>
-            <section id="stickers">
+            <hr>
+            <section class="d-flex justify-content-between align-items-center" id="stickers">
                 <article>
                     <br>
-                    <img src="/img/buttons/old_buttons/button(1).gif" alt="button_1">
-                    <img src="/img/buttons/old_buttons/button(2).gif" alt="button-2">
-                    <img src="/img/buttons/old_buttons/button(3).gif" alt="button-3">
-                    <img src="/img/buttons/old_buttons/button(4).gif" alt="button-4">
-                    <img src="/img/buttons/old_buttons/button(5).gif" alt="button-5">
-                    <img src="/img/buttons/old_buttons/button(6).gif" alt="button-6">
-                    <img src="/img/buttons/old_buttons/button(8).gif" alt="button-8">
-                    <img src="/img/buttons/old_buttons/button(9).gif" alt="button-9">
-                    <img src="/img/buttons/old_buttons/button(10).gif" alt="button-10">
-                    <img src="/img/buttons/old_buttons/button(11).gif" alt="button-11">
-                    <img src="/img/buttons/old_buttons/button(12).gif" alt="button-12">
-                    <img src="/img/buttons/old_buttons/button(13).gif" alt="button-13">
-                    <img src="/img/buttons/old_buttons/button(14).gif" alt="button-14">
-                    <img src="/img/buttons/old_buttons/button(16).gif" alt="button-16">
-                    <img src="/img/buttons/old_buttons/button(17).gif" alt="button-17">
-                    <img src="/img/buttons/old_buttons/button(18).gif" alt="button-18">
-                    <img src="/img/buttons/old_buttons/button(19).gif" alt="button-19">
-                    <img src="/img/buttons/old_buttons/button(22).gif" alt="button-22">
-                    <img src="/img/buttons/old_buttons/button(23).gif" alt="button-23">
-                    <img src="/img/buttons/old_buttons/button(24).gif" alt="button-24">
-                    <img src="/img/buttons/old_buttons/button(26).gif" alt="button-26">
-                    <img src="/img/buttons/old_buttons/button(27).gif" alt="button-27">
-                    <img src="/img/buttons/old_buttons/button(28).gif" alt="button-28">
-                    <img src="/img/buttons/old_buttons/button(30).png" alt="button-30">
-                    <img src="/img/buttons/old_buttons/button(31).gif" alt="button-31">
-                    <img src="/img/buttons/old_buttons/button(33).gif" alt="button-33">
-                    <img src="/img/buttons/old_buttons/button(34).gif" alt="button-34">
-                    <img src="/img/buttons/old_buttons/button(36).png" alt="button-36">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(1).gif" alt="button_1">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(2).gif" alt="button-2">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(3).gif" alt="button-3">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(4).gif" alt="button-4">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(5).gif" alt="button-5">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(6).gif" alt="button-6">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(8).gif" alt="button-8">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(9).gif" alt="button-9">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(10).gif" alt="button-10">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(11).gif" alt="button-11">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(12).gif" alt="button-12">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(13).gif" alt="button-13">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(14).gif" alt="button-14">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(16).gif" alt="button-16">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(17).gif" alt="button-17">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(18).gif" alt="button-18">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(19).gif" alt="button-19">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(22).gif" alt="button-22">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(23).gif" alt="button-23">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(24).gif" alt="button-24">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(26).gif" alt="button-26">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(27).gif" alt="button-27">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(28).gif" alt="button-28">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(30).png" alt="button-30">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(31).gif" alt="button-31">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(33).gif" alt="button-33">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(34).gif" alt="button-34">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(36).png" alt="button-36">
                     <br>
                 </article>
             </section>
-            <br><br>
         </footer>
         
         <!-- This Will Display My Homemade Stats  -->
         <script src="/js/counter.js"></script>
         <!-- This Script (Java-Script) Will Try To Change The Layout  -->
-        <script src="/js/changeGalleryLayout.js"></script>
+        <script src="/js/changeLayout.js"></script>
 
         <!-- This Script Will Guess If You're Using PC or Mobile  -->
         <script src="/js/devices.js"></script>

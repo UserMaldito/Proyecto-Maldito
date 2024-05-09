@@ -57,7 +57,7 @@ function VerifingNewLayout(newLayout){
         case "gallery_retro":
             NoCSS();
             BootstrapCSS();
-            HackerGalleryCSS();
+            HackerGalleryCSS("retro");
             console.log("STOP HACKING ME! I'M SCARED!! PLS, I'LL DO ANYTHING!!!");
             newLayoutName = "gallery_retro";
             break;
@@ -136,6 +136,38 @@ function BootstrapCSS(){
 
     document.head.appendChild(link_1);
 
+}
+
+function HackerGalleryCSS(cssLayout) {
+    let link_1 = document.createElement("link");
+    let link_2 = document.createElement("link");
+    let link_3 = document.createElement("link");
+    let link_4 = document.createElement("link");
+    let link_5 = document.createElement("link");
+    let link_6 = document.createElement("link");
+    
+    
+    link_1.setAttribute("rel", "stylesheet");
+    link_2.setAttribute("rel", "stylesheet");
+    link_3.setAttribute("rel", "stylesheet");
+    link_4.setAttribute("rel", "stylesheet");
+    link_5.setAttribute("rel", "stylesheet");
+    link_6.setAttribute("rel", "stylesheet");
+    
+    
+    link_1.setAttribute("href", "/css/" + cssLayout + "/retro.css");
+    link_2.setAttribute("href", "/css/" + cssLayout + "/font/font.css");
+    link_3.setAttribute("href", "/css/" + cssLayout + "/header/header.css");
+    link_4.setAttribute("href", "/css/" + cssLayout + "/footer/footer.css");
+    link_5.setAttribute("href", "/css/" + cssLayout + "/cursor/cursor.css");
+    link_6.setAttribute("href", "/css/" + cssLayout + "/gallery/gallery.css");
+    
+    document.head.appendChild(link_1);
+    document.head.appendChild(link_2);
+    document.head.appendChild(link_3);
+    document.head.appendChild(link_4);
+    document.head.appendChild(link_5);
+    document.head.appendChild(link_6);
 }
 
 window.onload = () => {
