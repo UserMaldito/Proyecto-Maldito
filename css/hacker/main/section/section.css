@@ -1,0 +1,45 @@
+body>main>section{
+    border: inherit;
+    min-width: 59%;
+    >header{
+        border: inherit;
+        text-align: center;
+    }
+    article{
+        border: inherit;
+        padding: 20px;
+        >header{
+            text-indent: 6%;
+        }
+        /* *:not(hr, header, summary){ 
+            padding-left: 25px;
+        } */
+        ul{
+            position: relative;
+            left: -60px;
+            width: 100%;
+        }
+        @media (max-width: 701px) {
+            ul>li>ol{
+                position: relative;
+                left: -35px;
+                width: 100%;
+            }
+        }
+    }
+    summary{
+        color: var(--color-letter-link-1);
+    }
+
+    .important{
+        color: var(--color-letter-important);
+        background-color: var(--color-background-4);
+        border: 5px solid var(--color-background-3);
+        padding: 0 20px;
+    }
+
+    #my_name{
+        text-align: end;
+        margin: 50px;
+    }
+}

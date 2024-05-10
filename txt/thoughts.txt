@@ -132,6 +132,17 @@
 
 - To Do: Remake the CSS to make it more understandable :<
 
+- Idea: /Online/Essays (share my old essay and remastered, but in Drive pls I don't wanna write more)
 
+- Idea (thanks to https://clowdywings.neocities.org/): Post snippets of codes
 
+- Idea: Fake cookies box (I hate cookies. Do u h8 cookies? -> Yes (Eat them) / No (Use them) )
+
+- Important Update: User's Performance
+
+- Idea: Hacer portfolio en Neocities (modelo, web developer and more) https://www.w3schools.com/howto/howto_website_create_portfolio.asp
+
+- Idea: User's Update/Page (a page for User's thing like iMood, status café, spacehey, ... the user status page)
+
+- Remember: The Admin Login Should Not Be Moved From The "Minor Changes" Branches. I MUST NOT upload it yet... (PS: if u see it, tell me pls)
 

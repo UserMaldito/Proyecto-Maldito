@@ -36,5 +36,12 @@ aside{
     >article{
         padding: 25px;
     }
+    a{
+        text-decoration: none;
+    }
+    #mail>*{
+        width: 40px;
+    }
+
 }
 

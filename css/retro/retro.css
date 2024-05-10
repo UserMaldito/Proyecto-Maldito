@@ -140,9 +140,15 @@ html{
         >li{
             margin: inherit;
             a:visited, a{
-                color: blue
+                text-decoration: none;
+                color: var(--color-letter-secondary);
+                border-bottom: 2px solid var(--color-background-important);
             }
-            
+            a:hover{
+                text-decoration: none;
+                color: var(--color-background-important);
+                border-bottom: 2px solid var(--color-letter-secondary );
+            }            
         }
         /* Change Messages x2 */
         li.new>*:after{
@@ -258,10 +264,5 @@ html{
     border-bottom: 3px solid var(--color-letter-link-hovered);
 }
 
-/* Clock Frame */
-#clock_frame{
-    position: sticky;
-    top: 100px;
-    left: 72%;
-}
+
 

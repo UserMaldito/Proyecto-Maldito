@@ -1,9 +1,7 @@
 const DOM = {
     layoutSelect: null,
     // selectedOption: document.getElementById("changingLayout"),
-    allLinksCss: null,
-
-
+    allLinksCss: null
 }
 
 function ChangeLayout(){
@@ -42,31 +40,26 @@ function VerifingNewLayout(newLayout){
             let isCSSMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
 
             if (isCSSMobile) {
-                HackerCSS("retro_mobile");
                 message = "Oh, I see...";
-                //music
+                //Music
                 let musicPlayer = document.querySelector("iframe");
                 // musicPlayer.width = "90%";
                 musicPlayer.height= "152px";
             }
-            else{
-                HackerCSS("retro");
-            }
+            HackerCSS("hacker");
 
             console.log(message);
             newLayoutName = "retro";
             break;
 
         //Gallery Layout
-
         case "gallery_retro":
             NoCSS();
+            HackerGalleryCSS("hacker");
             BootstrapCSS();
-            HackerGalleryCSS();
             console.log("STOP HACKING ME! I'M SCARED!! PLS, I'LL DO ANYTHING!!!");
             newLayoutName = "gallery_retro";
             break;
-
 
         default:
             newLayoutName = "trolling"; //do the barrel roll? idk
@@ -74,6 +67,7 @@ function VerifingNewLayout(newLayout){
             break;
     }
 
+    
     return newLayoutName;
 }
 
@@ -83,34 +77,6 @@ function NoCSS() {
     DOM.allLinksCss.forEach((cssLink) => {
         cssLink.remove();
     });
-}
-
-//Not Done
-function DefaultCSS() {
-    //I Create The Element Link and Attach them the Relative Path 
-    let link_1 = document.createElement("link");
-    let link_2 = document.createElement("link");
-    // let link_3 = document.createElement("link");
-    let link_4 = document.createElement("link");
-    let link_5 = document.createElement("link");
-
-    link_1.setAttribute("rel", "stylesheet");
-    link_2.setAttribute("rel", "stylesheet");
-    // link_3.setAttribute("rel", "stylesheet");
-    link_4.setAttribute("rel", "stylesheet");
-    link_5.setAttribute("rel", "stylesheet");
-
-    link_1.setAttribute("href", "/css/generic/generic.css");
-    link_2.setAttribute("href", "/css/generic/header/header.css");
-    // link_3.setAttribute("href", "/css/generic/fonts/Yulong.css");
-    link_4.setAttribute("href", "/css/generic/main/main.css");
-    link_5.setAttribute("href", "/css/generic/cursor/cursor.css");
-
-    document.head.appendChild(link_1);
-    document.head.appendChild(link_2);
-    // document.head.appendChild(link_3);
-    document.head.appendChild(link_4);
-    document.head.appendChild(link_5);
 }
 
 function HackerCSS(folder) {
@@ -123,7 +89,7 @@ function HackerCSS(folder) {
     let link_6 = document.createElement("link");
     let link_7 = document.createElement("link");
     let link_8 = document.createElement("link");
-    let link_9 = document.createElement("link");
+    // let link_9 = document.createElement("link");
 
     link_1.setAttribute("rel", "stylesheet");
     link_2.setAttribute("rel", "stylesheet");
@@ -133,17 +99,17 @@ function HackerCSS(folder) {
     link_6.setAttribute("rel", "stylesheet");
     link_7.setAttribute("rel", "stylesheet");
     link_8.setAttribute("rel", "stylesheet");
-    link_9.setAttribute("rel", "stylesheet");
+    // link_9.setAttribute("rel", "stylesheet");
 
-    link_1.setAttribute("href", "/css/"+folder+"/retro.css");
-    link_2.setAttribute("href", "/css/"+folder+"/font/font.css");
+    link_1.setAttribute("href", "/css/"+folder+"/fonts/fonts.css");
+    link_2.setAttribute("href", "/css/"+folder + "/"+ folder +".css");
     link_3.setAttribute("href", "/css/"+folder+"/header/header.css");
     link_4.setAttribute("href", "/css/"+folder+"/main/main.css");
-    link_5.setAttribute("href", "/css/"+folder+"/footer/footer.css");
-    link_6.setAttribute("href", "/css/"+folder+"/cursor/cursor.css");
-    link_7.setAttribute("href", "/css/"+folder+"/images.css");
-    link_8.setAttribute("href", "/css/"+folder+"/main/aside/aside.css");
-    link_9.setAttribute("href", "/css/"+folder+"/main/section/section.css");
+    link_5.setAttribute("href", "/css/"+folder+"/main/section/section.css");
+    link_6.setAttribute("href", "/css/"+folder+"/main/aside/aside.css");
+    link_7.setAttribute("href", "/css/"+folder+"/footer/footer.css");
+    link_8.setAttribute("href", "/css/"+folder+"/cursors/cursor.css");
+    // link_9.setAttribute("href", "/css/"+folder+"/images.css");
 
     document.head.appendChild(link_1);
     document.head.appendChild(link_2);
@@ -153,7 +119,7 @@ function HackerCSS(folder) {
     document.head.appendChild(link_6);
     document.head.appendChild(link_7);
     document.head.appendChild(link_8);
-    document.head.appendChild(link_9);
+    // document.head.appendChild(link_9);
 }
 
 function BootstrapCSS(){
@@ -168,6 +134,44 @@ function BootstrapCSS(){
 
     document.head.appendChild(link_1);
 
+    if (window.location.pathname.match("Online/Gallery/My-Camera-Roll/index.html")){
+        let link_2 = document.createElement("link");
+        link_2.setAttribute("rel", "stylesheet");
+        link_2.setAttribute("href", "/css/hacker/specific/gallery/gallery.css");
+        document.head.appendChild(link_2);
+    }
+}
+
+function HackerGalleryCSS(folder) {
+    let link_1 = document.createElement("link");
+    let link_2 = document.createElement("link");
+    let link_3 = document.createElement("link");
+    let link_4 = document.createElement("link");
+    let link_5 = document.createElement("link");
+    let link_6 = document.createElement("link");
+    
+    
+    link_1.setAttribute("rel", "stylesheet");
+    link_2.setAttribute("rel", "stylesheet");
+    link_3.setAttribute("rel", "stylesheet");
+    link_4.setAttribute("rel", "stylesheet");
+    link_5.setAttribute("rel", "stylesheet");
+    link_6.setAttribute("rel", "stylesheet");
+    
+    
+    link_1.setAttribute("href", "/css/"+folder+"/fonts/fonts.css");
+    link_2.setAttribute("href", "/css/"+folder+"/cursors/cursor.css");
+    link_3.setAttribute("href", "/css/"+folder+"/"+ folder +".css");
+    link_4.setAttribute("href", "/css/"+folder+"/header/header.css");
+    link_5.setAttribute("href", "/css/"+folder+"/specific/gallery/gallery.css");
+    link_6.setAttribute("href", "/css/"+folder+"/footer/footer.css");
+    
+    document.head.appendChild(link_1);
+    document.head.appendChild(link_2);
+    document.head.appendChild(link_3);
+    document.head.appendChild(link_4);
+    document.head.appendChild(link_5);
+    document.head.appendChild(link_6);
 }
 
 window.onload = () => {
@@ -180,28 +184,18 @@ window.onload = () => {
 
     //Set items
     let localLayout = localStorage.getItem("layoutName");
-    if ((localLayout == null) || (localLayout == "")) {
-        VerifingNewLayout("retro");
-        localStorage.setItem("layoutName", "retro");
-    }
-    else{
-        VerifingNewLayout(localLayout);
+
+    if ((localLayout.length == 0) & DOM.allLinksCss.length == 0) {
+        localLayout = "hacker";
+
+        /* If we are in my gallery (with that url/link/whatever), wanna load my css gallery superduperespecial  */
+        if (window.location.pathname.match("Online/Gallery/My-Camera-Roll/index.html")){
+            localLayout = "gallery-retro";
+        }
     }
 
-    let isScriptMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
-    if (isScriptMobile) {
-        let mobileScript = document.createElement("script");
+    
 
-        mobileScript.type = "text/javascript";
-        mobileScript.src = "/js/devices.js";
-        
-        document.body.appendChild(mobileScript);
-    }
-
-    //Put the year in the footer
-    let dateBox = document.getElementById("fecha");
-    if (dateBox != null) {
-        let year = new Date().getFullYear();
-        dateBox.innerHTML = "&copy;" + year.toString();
-    }
+    VerifingNewLayout(localLayout);
+    localStorage.setItem("layoutName", localLayout);
 };
