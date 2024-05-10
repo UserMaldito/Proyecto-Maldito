@@ -49,7 +49,7 @@ function VerifingNewLayout(newLayout){
             HackerCSS("hacker");
 
             console.log(message);
-            newLayoutName = "retro";
+            newLayoutName = "hacker";
             break;
 
         //Gallery Layout
@@ -185,16 +185,27 @@ window.onload = () => {
     //Set items
     let localLayout = localStorage.getItem("layoutName");
 
-    if ((localLayout.length == 0) & DOM.allLinksCss.length == 0) {
+    
+    let isGallery = window.location.pathname.includes("Online/Gallery/My-Camera-Roll/index.html");
+    
+    // If we are in my gallery (with that url/link/whatever), wanna load my css gallery superduperespecial
+    // If not, go to default layout: hacker
+    if ((localLayout == "retro") || (localLayout == "hacker") || (localLayout == "gallery_retro")){
         localLayout = "hacker";
-
-        /* If we are in my gallery (with that url/link/whatever), wanna load my css gallery superduperespecial  */
-        if (window.location.pathname.match("Online/Gallery/My-Camera-Roll/index.html")){
-            localLayout = "gallery-retro";
+        
+        if (isGallery) {
+            localLayout = "gallery_retro";
         }
     }
 
-    
+    /* Default Layout: Hacker (Gallery included) */
+    if ((localLayout.length == 0) & DOM.allLinksCss.length == 0) {
+        localLayout = "hacker";
+        
+        if (isGallery){
+            localLayout = "gallery_retro";
+        }
+    }
 
     VerifingNewLayout(localLayout);
     localStorage.setItem("layoutName", localLayout);
