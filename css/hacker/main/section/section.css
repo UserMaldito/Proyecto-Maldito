@@ -27,8 +27,13 @@ body>main>section{
             }
         }
     }
-    summary{
-        color: var(--color-letter-link-1);
+    details{
+        summary{
+            color: var(--color-background-3);
+        }
+        *{
+            margin-left: 17px;
+        }
     }
 
     .important{
