@@ -34,7 +34,7 @@ const separator = '.';     //Recommended: "." & "," & " "
                                 ^
                                 |
     */
-const createdType = 3;
+const createdType = -1;
 const updatedType = 1;
 
 
@@ -110,15 +110,31 @@ function SetCounterInfo(webData){ // Your views = 6331 (example) | Last Update =
         case 2:
             views = BestViewInfo(webData.views);
         break;
+        case -1:
+            views = "";
+        break;
     }
 
-    let betterCreatedDate = BetterDateInfo(webData.created, createdType);
-    let betterUpdatedDate = BetterDateInfo(webData.updated, updatedType);
+    let betterCreatedDate = "";
+    let betterUpdatedDate = "";
+    
+    if (createdType != -1) {
+        betterCreatedDate = BetterDateInfo(webData.created, createdType);
+    }
+    if (updatedType != -1) {
+        betterUpdatedDate = BetterDateInfo(webData.updated, updatedType);
+    }
 
-    viewBox.innerText ="My views: " + views;
-    createdBox.innerText = 'Created: ' + betterCreatedDate;
-    updatedBox.innerText = `Updated: ${betterUpdatedDate}`;
-
+    //Writing
+    if (viewSelector > 0) {
+        viewBox.innerText ="My views: " + views;
+    }
+    if (createdType >= 0) {
+        createdBox.innerText = 'Created: ' + betterCreatedDate;
+    }
+    if (updatedType >= 0) {
+        updatedBox.innerText = `Updated: ${betterUpdatedDate}`;
+    }
     // console.log("Write it down");
 }
 

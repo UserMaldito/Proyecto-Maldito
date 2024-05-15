@@ -43,19 +43,184 @@
                         </h3>
                     </header>
                     <p>
-                        This Neocities Website is front-end only.
+                        This Neocities Website is front-end only so, no logic stuff (except a little bit of JS). My main goal was and is to make a
+                        fully understandable code in form of a website. Now I will explain how and why I do "this code".
                     </p>
-                    <details>
+                    <details class="m-3">
                         <summary>
-                            HTML Explanation
+                        Main Attraction Of My Website
                         </summary>
-                        <p>
-                            Thanks to a combination of a Mexican Youtuber, an "Old Flash Game" <a href="https://youtu.be/MyDSSESPd4U?si=Uu-SB_4g4XuSdO6d&t=85">(this video)</a>
-                            and <a href="https://sadgrl.online" title="Iconic Neocities Website">sadgrl.online</a>, I decided to, quote <cite>make a Neocities Page as cool as her site</cite> .
-                            Named this thing "Proyecto Sadgrl" and renamed to <strong title="'Cause My Original Nickname Is User Maldito">"Proyecto Maldito"</strong>. See other people's pages
-                            inspired my to keep (and copy) some ideas (and code).
+                        <p class="m-3">
+                            The fundamental hook is: You can hover everything, there is so much info.
                         </p>
-                        <p class="d-flex justify-content-around link-projects"><span>Source code&nbsp;<a href="https://github.com/UserMaldito/Proyecto-Maldito">here</a></span>&nbsp;<span>Explanation Code&nbsp;<a href="/Online/Proyects/">here</a></span></p>
+                        <details class="m-3" open>
+                            <summary>
+                                How Did I Accomplish This?
+                            </summary>
+                            <hr>
+                                <details class="m-3">
+                                    <summary>
+                                        HTML
+                                    </summary>
+                                    <p class="m-3">
+                                        The key is to put a lot of <i>Title</i> attributes. I mean, eeeeverywheeere.
+                                    </p>
+                                    <pre class="m-3">
+&lt;span class="title" title="Hypertext Markup Languaje"&gt;HTML&lt;/span&gt;
+                                    </pre>
+                                    <p class="m-3">
+                                        In the first place, I was using the <i>abbr</i> tag (abbreviation). But when I saw that almost every tag can have a title attribute, I deleted all the abbr tag
+                                        and replaced it with title.
+                                    </p>
+                                    <p class="m-3">
+                                        But one problem arise (well, many problems), the user can not know that a certain word/phare have a information
+                                        associated. The solution: CSS style.
+                                    </p>
+                                    <p class="m-3">
+                                        The other problem? Mobile-users. So scary! But I wanna give them the opportunity to have a 100% experience like in the PC.
+                                        Solution: JS and StackOverFlow (God Bless Them).
+                                    </p>
+                                </details>
+                                <hr>
+                                <details class="m-3">
+                                    <summary>
+                                        CSS
+                                    </summary>
+                                    <p class="m-3">
+                                        If I do a distinctive pattern in order to have the curiosity of the user, eventually, will hover it and  discover the information
+                                        beneath that. And once discovered, it'll know that <i>that specific pattern of colors</i> means info. Soemthing like:
+                                    </p>
+                                    <pre class="m-3">
+//Example to have the attention of the user
+*[title]{
+    background-color: red;
+    color: green;
+    &:hover{
+        //Once hover, invert the background and the letter colors
+        color: red;
+        background-color: green;
+    }
+}
+                                    </pre>
+                                    <span class="title m-3" title="I'm A Real Example!">Real Example</span>
+                                </details>
+                                <hr>
+                                <details class="m-3" open>
+                                    <summary>
+                                        JS
+                                    </summary>
+                                    <p class="m-3">
+                                        As you can see in my script <a href="/js/devices.js">devices.js</a>:
+                                    </p>
+                                    <p class="m-3">
+                                        1. First I need to gather all the attibutes, but JS doesn't support it.
+                                    </p>
+                                    <pre class="m-3">
+//Solution: Cry, beg and put a class in every title attribute.
+//Then, gather all the classes named "title"
+
+var deltaTouch; //Global variable defined
+let abreviationList = document.querySelectorAll(".title");
+                                    </pre>
+                                    <p class="m-3">
+                                        2. Check if the user is in a mobile ('cause this is only for mobile-users).
+                                    </p>
+                                    <pre class="m-3">
+//In my PC, firefox says this (putting this command in the web command):
+window.navigator.userAgent
+
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0)
+Gecko/20100101 Firefox/125.0"
+
+//But when I emulate a mobile browser and run the same command it says:
+
+"Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3
+Mobile/15E148 Safari/604.1"
+                                    </pre>
+                                    <p class="m-3">
+                                        Knowing that, I just need to know if this string have a "Mobile" in any part of it.
+                                    </p>
+                                    <pre class="m-3">
+//The "function" indexOf() return "-1" only if it not found the word "Mobile"
+//And in this line I'm saying:
+//Can you find the word "Mobile" here?
+//And will respond "true" or "false"
+let isScriptMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
+                                    </pre>
+                                    <p class="m-3">
+                                        If it has been found I'll put an <span class="title" title="When Something Happens, I Do Something Too">Event</span> in every single title:
+                                        if the user touch you twice, then appear the info you have as a popup.
+                                    </p>
+                                    <pre class="m-3">
+//For Every Title Attribute
+abreviationList.forEach(abbr =&gt; {
+    //I'll put an Event where detected a touch
+    abbr.addEventListener("touchstart", function(e){
+        //2. Confirm if is a doubleTap 
+        let doubleTap = isDoubleTap(e);
+        if (doubleTap) {
+            //if is true, show the content as a popup
+            e.preventDefault();
+            //3. 
+            ShowAbbreviation(abbr);
+        }
+    })
+});
+
+//The Other Functions:
+
+//3. Just to show the content of the title
+function ShowAbbreviation(abbr){
+    alert(abbr.title);
+}
+
+//2. The parameter is an event (advanced stuff)
+function isDoubleTap(e) {
+    const maxTime = 700; //Time between taps
+    let doubleTapDetected = false;
+    let touch = e.touches.length;
+
+    if (touch === 1) {
+        //If has no value, I will put one
+        if (!deltaTouch) {
+            //Time given between taps
+            deltaTouch = e.timeStamp + maxTime;
+        }
+        else{
+            let isNotExpired = (e.timeStamp &lt;= deltaTouch);
+            if (isNotExpired) {
+                e.preventDefault();
+                //reset the variable
+                deltaTouch = null; 
+                console.log("Double Tap detected!");
+                doubleTapDetected = true;
+            }
+            else{
+                //Reset timer for the Double Tap/Touch
+                deltaTouch = e.timeStamp + maxTime;
+            }
+        }
+    }
+
+    return doubleTapDetected;
+}
+                                    </pre>
+                                    <p class="m-3">
+                                        THE END!!!
+                                    </p>
+                                </details>
+                        </details>
+                    </details>
+                    <hr>
+                    <details class="m-3">
+                        <summary>
+                            The Counter / Visitors
+                        </summary>
+                        <details class="m-3">
+                            <summary>
+                            Put a default Style
+                            </summary>
+                        </details>
                     </details>
                 </article>
             </section>

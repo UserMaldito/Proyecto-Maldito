@@ -152,3 +152,7 @@
 
 - Everything is not done yet
 
+- Idea: Throgh JS, randomize the cursor in the miyazaki part
+
+
+
