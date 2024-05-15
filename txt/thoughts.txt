@@ -146,3 +146,9 @@
 
 - Remember: The Admin Login Should Not Be Moved From The "Minor Changes" Branches. I MUST NOT upload it yet... (PS: if u see it, tell me pls)
 
+- Idea Explain all your JS in order to other users can fully understand it
+
+- [14/05/24 - 14:02] -> Next Update: User's Code
+
+- Everything is not done yet
+

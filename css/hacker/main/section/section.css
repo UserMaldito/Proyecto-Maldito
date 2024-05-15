@@ -11,9 +11,6 @@ body>main>section{
         >header{
             text-indent: 6%;
         }
-        /* *:not(hr, header, summary){ 
-            padding-left: 25px;
-        } */
         ul{
             position: relative;
             left: -60px;
@@ -28,10 +25,11 @@ body>main>section{
         }
     }
     details{
+        margin-left: 40px;
         summary{
             color: var(--color-background-3);
         }
-        *{
+        p{
             margin-left: 17px;
         }
     }
@@ -43,8 +41,22 @@ body>main>section{
         padding: 0 20px;
     }
 
+    pre{
+        display: block;
+        color: var(--color-letter-3);
+        background-color: var(--color-background-4);
+        border: 5px solid red;
+        padding: 20px;
+        overflow: scroll;
+    }
+
     #my_name{
         text-align: end;
         margin: 50px;
+    }
+
+    .link-projects{
+        display: flex;
+        justify-content: space-around;
     }
 }
