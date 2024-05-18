@@ -3,7 +3,7 @@
 //
 //                                                         ~ User Trasnochador
 
-//1. Place Here Your Neocities Username -> Example: "almondine" or "cinni" or "dawsomespace" or "goblin-heart"
+//1. Place Here Your Neocities Username -> Example: "almondine" or "cinni" or "dawsomespace" or "goblin-heart" or "fauux"
 const username = "user-maldito";
 
 //2. Views Type: (Normal[0], Better[1] or Best[2])
@@ -14,7 +14,7 @@ const username = "user-maldito";
         bestViews = 2; -> My views: 12.3 M | 1.2 K
     */
 const viewSelector = 2;
-const separator = '.';     //Recommended: "." & "," & " "
+const separator = '.';     //when viewSelector is 1 -> Recommended: "." & "," & " "
 
 //3. Date Type: IMPORTANT TO UNDERSTAND
     /*
@@ -35,8 +35,9 @@ const separator = '.';     //Recommended: "." & "," & " "
                                 |
     */
 const createdType = -1;
-const updatedType = 1;
+const updatedType = 5;
 
+//If you wanna hide (not show) something, the value should be "-1" (like in line 37, createdType)
 
 //--------------------------------------------------------------------------------------------------------------
 
@@ -117,7 +118,7 @@ function SetCounterInfo(webData){ // Your views = 6331 (example) | Last Update =
 
     let betterCreatedDate = "";
     let betterUpdatedDate = "";
-    
+
     if (createdType != -1) {
         betterCreatedDate = BetterDateInfo(webData.created, createdType);
     }
@@ -165,21 +166,27 @@ function BetterViewsInfo(views){
     return betterInfo;
 }
 function BestViewInfo(views){
+    views = views;
     let bestInfo = "";
+
     let stringViews = views.toString();
+    let letter = " K";
+    let divider = 100;
 
-    switch (true) {
-        case ((stringViews.length >= 4) && (stringViews.length < 7)):
-            bestInfo = stringViews[0] + separator + stringViews[1] + " K";
-        break;
+    if (stringViews.length >= 7) {
+        letter = " M";
+        divider = 100*1000;
+    }
 
-        case (stringViews.length >= 7):
-            bestInfo = stringViews[0] + separator + stringViews[1] + " M";
-        break;
-    
-        default:
-            bestInfo = stringViews;
-        break;
+    let decimalNumber = Math.trunc(views / divider);
+    let lastNumber = decimalNumber.toString()[decimalNumber.toString().length - 1];
+    decimalNumber = Math.trunc(views / (divider*10));
+
+    if (Number.parseInt(lastNumber) == 0) {
+        bestInfo = decimalNumber.toString() + letter;
+    }
+    else{
+        bestInfo = decimalNumber.toString() + "." + lastNumber + letter;
     }
 
     return bestInfo;
@@ -236,12 +243,14 @@ function BetterDateInfo(date, options) {
         break;
         default:
             /* Maths */
-            if (betterMonths >= 12) {
-                betterYears++;
-            }
+            // if (betterMonths >= 12) {
+            //     betterYears++;
+            // }
             while (betterMonths >= 12) {
                 betterMonths = betterMonths - 12;
+                betterYears++;
             }
+            betterYears--;
             let betterDays = 0;
             if (allDays > 28) {
                 Math.floor(( allDays) / averageMonth);

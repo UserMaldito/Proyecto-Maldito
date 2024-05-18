@@ -40,12 +40,12 @@ body{
                 margin: 120px;
             }
             /* Article Rules Inside the 1st Section*/
-            >article{
+            article{
                 margin-top: 20px;
                 width: 97%;
                 /* Wanna Change the Card Colors*/
-                div{
-                    >figure{
+                .image{
+                    figure{
                         .card-body{
                             background-color: var(--color-background-2);
                             color: var(--color-letter-link-3);
@@ -91,4 +91,11 @@ body{
             }
         }
     }
+}
+
+.gallery-details{
+    border-radius: 7px;
+    width: 98%;
+    padding: 20px;
+    background-color: red;
 }

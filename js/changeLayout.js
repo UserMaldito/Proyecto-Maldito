@@ -1,19 +1,20 @@
 const DOM = {
-    layoutSelect: null,
-    // selectedOption: document.getElementById("changingLayout"),
-    allLinksCss: null
+    layoutSelect: document.getElementById("changingLayout"),
+    allLinksCss: document.querySelectorAll("link")
 }
 
 function ChangeLayout(){
     let selectedTheme = DOM.layoutSelect.options[DOM.layoutSelect.selectedIndex].value;
     let layoutName = VerifingNewLayout(selectedTheme);
+
     localStorage.setItem("layoutName", layoutName);
 }
 
 function VerifingNewLayout(newLayout){
     //Refreshing the definition (of all the links) [necessary]
     DOM.allLinksCss = document.querySelectorAll("link");
-
+    let isMobile = (window.navigator.userAgent.indexOf("Mobile") != -1); //Mobile?
+    let isGallery = window.location.pathname.includes("Online/Gallery/My-Camera-Roll/index.html"); //My Gallery?
     let newLayoutName = "";
 
     switch (newLayout) {
@@ -24,12 +25,18 @@ function VerifingNewLayout(newLayout){
         case "default":
             NoCSS();
             BootstrapCSS();
+            if (isGallery) {
+                FastSolution();
+            }
             console.log("Default Default Default Default Default :)");
             newLayoutName = "default";
             break;
 
         case "css_hater":
             NoCSS();
+            if (isGallery) {
+                FastSolution();
+            }
             console.log("CSS Hater Spotted");
             newLayoutName = "css_hater";
             break;
@@ -37,9 +44,8 @@ function VerifingNewLayout(newLayout){
         case "retro":
             NoCSS();
             let message = "Please, don't hack me. I'll do anything, but don't hurt me TnT";
-            let isCSSMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
 
-            if (isCSSMobile) {
+            if (isMobile) {
                 message = "Oh, I see...";
                 //Music
                 let musicPlayer = document.querySelector("iframe");
@@ -57,6 +63,7 @@ function VerifingNewLayout(newLayout){
             NoCSS();
             HackerGalleryCSS("hacker");
             BootstrapCSS();
+            FastSolution();
             console.log("STOP HACKING ME! I'M SCARED!! PLS, I'LL DO ANYTHING!!!");
             newLayoutName = "gallery_retro";
             break;
@@ -174,21 +181,45 @@ function HackerGalleryCSS(folder) {
     document.head.appendChild(link_6);
 }
 
+function FastSolution() {
+    //Solution to the bad initialization of masonry when the details are close:
+    let allDetails = document.querySelectorAll("details");
+    allDetails.forEach(det => {
+        det.open = true;
+        det.open = false;
+    });
+}
+// function ChangeZoom(){
+//     let moreZoom = document.getElementById("increase-zoom");
+//     let lessZoom = document.querySelector("#decrease-zoom");
+
+//     document.body.style.zoom = 1;
+//     moreZoom.addEventListener("click", function(){
+//         let zoomLevel = Number.parseFloat(document.body.style.zoom) + 0.1;
+//         document.body.style.zoom = zoomLevel;
+//         console.log(document.body.style.zoom);
+//     });
+//     lessZoom.addEventListener("click", function(){
+//         let zoomLevel = Number.parseFloat(document.body.style.zoom) + 0.1;
+//         document.body.style.zoom = zoomLevel;
+//         console.log(document.body.style.zoom);
+//     });
+//     console.log(document.body.style.zoom);
+// }
+
 window.onload = () => {
     //Definition of all the Elements of the Web
-    DOM.layoutSelect = document.getElementById("changingLayout");
-    DOM.allLinksCss = document.querySelectorAll("link");
+    DOM.layoutSelect = document.getElementById("changingLayout");   //The Select in the form
+    DOM.allLinksCss = document.querySelectorAll("link");    //All links in the HTML right now
 
     //Listening Events
     DOM.layoutSelect.addEventListener("change", ChangeLayout);
 
     //Set items
     let localLayout = localStorage.getItem("layoutName");
-
-    
     let isGallery = window.location.pathname.includes("Online/Gallery/My-Camera-Roll/index.html");
     
-    // If we are in my gallery (with that url/link/whatever), wanna load my css gallery superduperespecial
+    // If we are in my gallery (with that url/link/whatever), wanna load my css gallery super-duper-special
     // If not, go to default layout: hacker
     if ((localLayout == "retro") || (localLayout == "hacker") || (localLayout == "gallery_retro")){
         localLayout = "hacker";
@@ -199,7 +230,7 @@ window.onload = () => {
     }
 
     /* Default Layout: Hacker (Gallery included) */
-    if ((localLayout.length == 0) & DOM.allLinksCss.length == 0) {
+    if ((localLayout == null) & DOM.allLinksCss.length == 0) {
         localLayout = "hacker";
         
         if (isGallery){
@@ -210,10 +241,3 @@ window.onload = () => {
     VerifingNewLayout(localLayout);
     localStorage.setItem("layoutName", localLayout);
 };
-
-for (let i = 0; i < 4; i++) {
-    for (let j = 0; j < 4; j++) {
-        //Code Here
-    }
-    //Code Here
-}

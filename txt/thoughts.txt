@@ -154,5 +154,9 @@
 
 - Idea: Throgh JS, randomize the cursor in the miyazaki part
 
+- Idea: Index for all the PLAYLIST COLLECTIONS of all the people I know (Spotify, SoundCloud, YT Music, ...)
+
+- Idea: Updated Content vs Updated Features
+
 
 
