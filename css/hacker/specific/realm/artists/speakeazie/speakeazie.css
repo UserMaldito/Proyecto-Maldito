@@ -1,0 +1,147 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    >body{
+        margin: 0;
+        padding: 0;
+        >header{
+            display: flex;
+            justify-content: center;
+            margin: 50px 0 20px 0;
+        }
+        main{
+            display: flex;
+            flex-direction: column-reverse;
+            >section{
+                #main{
+                    background: url("/img/specific/Artists/Speakeazie/speakeazie-background-1.png") 0 0 no-repeat;
+                    width: 100%;
+                    height: 800px;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                #about{
+                    margin-left: 50px;
+                    
+                    p{
+                        margin-left: 50px;
+                    }
+                }
+                #style{
+                    margin-left: -50px;
+                    text-align: end;
+                    >header{
+                        a{
+                            text-decoration: none;
+                            &:visited{
+                                color: blueviolet;
+                            }
+                        }
+                    }
+                    p{
+                        margin-left: 50px;
+                    }
+                }
+                #gallery-1{
+                    background: url("/img/specific/Artists/Speakeazie/dancing-speakeazie.gif") 0 -780px no-repeat;
+                    width: 100%;
+                    height: 800px;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                #gallery-2{
+                    background: url("/img/specific/Artists/Speakeazie/speakeazie-background-2.jpg") 0 -320px no-repeat;
+                    width: 100%;
+                    height: 800px;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                #gallery-3{
+                    background: url("/img/specific/Artists/Speakeazie/speakeazie-background-3.jpg") 0 0 no-repeat;
+                    width: 100%;
+                    height: 800px;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                #gallery-4{
+                    background: url("/img/specific/Artists/Speakeazie/speakeazie-background-4.jpg") 0 -500px no-repeat;
+                    width: 100%;
+                    height: 800px;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                #gallery-5{
+                    background: url("/img/specific/Artists/Speakeazie/speakeazie-background-5.jpg") 0 -120px no-repeat;
+                    width: 100%;
+                    height: 800px;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                
+                article{
+                    padding: 100px;
+                    font-size: x-large;
+                    >header{
+                        a{
+                            text-decoration: none;
+                            &:visited{
+                                color: blueviolet;
+                            }
+                        }
+                    }
+                }
+            }
+            >aside{
+                >nav{
+                    padding-bottom: 10px;
+                    border-bottom: 5px solid white;
+                    >ul{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        li{
+                            text-shadow: 2px 2px  red, -2px 2px blue;
+                            box-shadow: 0 2px red, 0 4px green, 0 6px blue;
+                            a{
+                                text-decoration: none;
+                                color: inherit;
+                                font-size: 35px;
+                                border-right: 0;
+                                padding: 4px;
+                                &:hover{
+                                    animation: dancingShadowText infinite alternate linear 1.7s;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .back-to-top{
+        background: url("/img/svg/home-icon-silhouette.png"), 0 40px no-repeat;
+        background-size: cover;
+        position: sticky;
+        top: 95%;
+        left: 90%;
+        text-decoration: none;
+        font-size: 80px;
+        >*{
+            color: transparent;
+        }
+    }
+}
+
+@keyframes dancingShadowText {
+    25%{
+        text-shadow: -2px 2px red, -2px -2px  blue;
+    }
+    50%{
+        text-shadow: -2px -2px  red, 2px -2px  blue;
+    }
+}

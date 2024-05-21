@@ -214,12 +214,18 @@ function isDoubleTap(e) {
                         </details>
                     </details>
                     <hr>
-                    <details class="m-3">
+                    <details class="m-3" open>
                         <summary>
                             The Counter / Visitors
                         </summary>
                         <p class="m-3">
-                            I don't think I have to explained, but just to be sure...
+                            <a href="/js/counter.js">Here is the code of the counter</a>
+                        </p>
+                        <p class="m-3">
+                            This counter will put three things: Your views, time created (the website) and the last update.
+                        </p>
+                        <p class="m-3">
+                            If you are going to use it, make sure to read the last part ("Show your own website").
                         </p>
                         <details class="m-3">
                             <summary>
@@ -372,7 +378,21 @@ function SetCounterInfo(webData){
                             </p>
                             <ol>
                                 <li>
-                                    Put Your Neocities Username. Examples: mine is user-maldito (https://neocities.org/site/<strong title="Your Username">user-maldito</strong>)
+                                    <p>
+                                        First, you need this structure (to target and write your website's data): 
+                                    </p>
+                                    <pre class="m-3 border border-3 border-danger p-3 bg-secondary text-black">
+&lt;section id="stats-box"&gt;
+    &lt;article class="stat"&gt;
+        &lt;p id="views"&gt;&lt;/p&gt;
+        &lt;p id="created"&gt;&lt;/p&gt;
+        &lt;p id="updated"&gt;&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;
+                                    </pre>
+                                </li>
+                                <li>
+                                    Then, put Your Neocities Username. Examples: mine is user-maldito (https://neocities.org/site/<strong title="Your Username">user-maldito</strong>)
                                     <pre class="m-3 border border-3 border-danger p-3 bg-secondary text-black">
 //Line 7:
 const username = "user-maldito";
