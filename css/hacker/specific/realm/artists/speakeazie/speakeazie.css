@@ -1,6 +1,9 @@
 html{
     margin: 0;
     padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
     background-color: black;
     color: white;
     overflow-x: hidden;
@@ -25,7 +28,6 @@ html{
                 }
                 #about{
                     margin-left: 50px;
-                    
                     p{
                         margin-left: 50px;
                     }
@@ -104,7 +106,6 @@ html{
                         flex-direction: row;
                         justify-content: space-evenly;
                         li{
-                            text-shadow: 2px 2px  red, -2px 2px blue;
                             box-shadow: 0 2px red, 0 4px green, 0 6px blue;
                             a{
                                 text-decoration: none;
@@ -113,7 +114,7 @@ html{
                                 border-right: 0;
                                 padding: 4px;
                                 &:hover{
-                                    animation: dancingShadowText infinite alternate linear 1.7s;
+                                    animation: dancingShadowText infinite linear 1s;
                                 }
                             }
                         }
@@ -137,11 +138,82 @@ html{
     }
 }
 
+@media (max-width: 800px) {
+    *{
+        overflow-x: hidden;
+    }
+    ul{
+        display: flex;
+        flex-direction: column !important;
+        padding: 20px;
+        li{
+            padding: 10px 0;
+        }
+    }
+    #main{
+        background-position: 0 50% !important;
+        background-size: 100% auto !important;
+    }
+    #about{
+        margin-left: -80px !important;
+        p{
+            margin-left: 20px !important;
+        }
+    }
+    #style{
+        margin-right: 10px !important;
+        text-align: end;
+        >header{
+            a{
+                text-decoration: none;
+                &:visited{
+                    color: blueviolet;
+                }
+            }
+        }
+        p{
+            margin-right: -50px;
+        }
+    }
+    #personal{
+        text-align: center;
+    }
+
+    #gallery-1{
+        background-position: 0 0 !important;
+    }
+    #gallery-2{
+        background-position: -100px -40px !important;
+    }
+    #gallery-3{
+        background-position: -100px 0 !important;
+    }
+    #gallery-4{
+        background-position: -170px -145px !important;
+    }
+    #gallery-5{
+        background-position: 50% -50% !important;
+    }
+
+    .back-to-top{
+        background: url("/img/svg/home-icon-silhouette.png"), 0 40px no-repeat;
+        background-size: cover;
+        position: sticky;
+        top: 95%;
+        left: 30% !important;
+        text-decoration: none;
+        font-size: 80px;
+        >*{
+            color: none;
+        }
+    }
+}
+
 @keyframes dancingShadowText {
     25%{
-        text-shadow: -2px 2px red, -2px -2px  blue;
+        text-shadow: 2px 2px red, -2px -2px  blue;
     }
-    50%{
-        text-shadow: -2px -2px  red, 2px -2px  blue;
+    75%{
+        text-shadow: -2px -2px  red, 2px 2px  blue;
     }
 }
