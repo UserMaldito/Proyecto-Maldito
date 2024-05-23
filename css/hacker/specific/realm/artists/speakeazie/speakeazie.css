@@ -82,7 +82,6 @@ html{
                     background-size: cover;
                     background-attachment: fixed;
                 }
-                
                 article{
                     padding: 100px;
                     font-size: x-large;
@@ -120,7 +119,6 @@ html{
                         }
                     }
                 }
-                
             }
         }
     }
