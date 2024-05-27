@@ -132,6 +132,9 @@ html{
         font-size: 80px;
         >*{
             color: transparent;
+            &::selection{
+                color: transparent;
+            }
         }
     }
 }
@@ -178,16 +181,16 @@ html{
     }
 
     #gallery-1{
-        background-position: 0 0 !important;
+        background-position: 50% 50% !important;
     }
     #gallery-2{
-        background-position: -100px -40px !important;
+        background-position: 30% 20% !important;
     }
     #gallery-3{
-        background-position: -100px 0 !important;
+        background-position: 25% 0 !important;
     }
     #gallery-4{
-        background-position: -170px -145px !important;
+        background-position: 30% 30% !important;
     }
     #gallery-5{
         background-position: 50% -50% !important;
