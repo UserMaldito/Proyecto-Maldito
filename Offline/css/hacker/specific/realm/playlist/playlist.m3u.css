@@ -1,0 +1,19 @@
+html{
+    background-color: pink;
+    ul{
+        /* background-color: red; */
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1000px) {
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+    }
+}

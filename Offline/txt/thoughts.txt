@@ -1,0 +1,162 @@
+- Various Style In The Site (Old School(no CSS), Retro (pure CSS3), Simple (CSS3[?] and something more), Modern (CSS3 and Bootstrap), 
+    Futurist (Modern + Masonry and idk), ...)
+- I wanna share my thoughts, stories, delusions, experiences, tutorials (?), ...
+- URL of the site: User.Maldito or Maldito.User or User.Maldito.Online[www.User.com] (Favorite x1) or (language [en, es, pt]).User.Maldito 
+(Favorite x2)
+- I should have some repository in my GitHub account
+- Which technology should I use (i like to use ASP.NET MVC, Java Spring, React, Laravel, ...). Sigh...
+- I want to use neocity (inspiration looking the page sadgrl.online)
+- Various Translations (or, at least, English and Spanish). I should do all in English and the Writing all Again in Spanish. The other languages...
+    traductors (I guess)
+- Topics: Tutorials / Stories ([Posibles] Notas Muertas) / Proyects / About Me (Diary [?], Videogames, Songs, Experiences) / My (Home)Work / ...
+- Should I put a chat like her? I need to think about that, I'm not rich...
+- Debería establecer una tématica general y partir de ahí. La pregunta es, ¿cúal?
+- So much Folders to Keep my Mind in Order (sorry for the Arbitrary Capitalize Letter)
+- There is no need to put my (Social Media) Instagram Account, right?
+- But I need to put some "definitions" to both, the users and I, to understand the website
+- Sorry if I forget something, maybe I need to be reminded again :>
+- Should I avoid the use of "divs"? I'll try my best
+- Responsive? Maybe after Simple
+- Each Page/Layout should have its own Night Mode?! That looks like a lot of work
+- Ahora que caigo, tengo que usar ids para todo, por las traducciones en JSON. Suena a trabajazo x2
+- Link: Galery. Incluir carpetas de Memes (img + mp4) + Life Reveal (img + mp4)
+- Link: Thoughts. Pensameintos, delirios y opiniones mías.
+
+- Layouts: 
+
+    Old School Era: like 80's - 00's websites. Poor CSS, Just Text, Some Colors, No JavaScript, Baseline IMG ;CCCCCCC
+        Little More Slow, Different Icons and Mouse...
+
+    Retro: font and things Arcade-like, colors and img with some pixels (more pixelart), events and popup alert
+
+    Simple: Clean Layout, Smooth JS Animations (if possible), Progresive IMG :DDDDDDD, ... (idk, honesty)
+
+    Modern: Simple + Usage of Bootstrap (yey!), little more/less info 
+
+    Futurist: Modern + Use of Masonry (yey?) &... i forgot :(
+
+- I must avoid putting images. Instead, I can use Mega and with some links I avoid using so much space. 
+    Win - Win to both, Neocity and me. 
+
+- I should focus first in having all the pages done and, then, end it with "some" styles (1000 line codes of style) =(
+
+- Is better option Imgur or Mega (or another platform) (please, Google Drive No)?
+
+- Should I count this Document as a Page? 50/50
+
+- Oh, I almost forgot, I really like the idea of personalize the 404 page (50X page could I? I don't think so)
+
+- Add, through JavaScript, the Explanations (abbr tag and title)
+
+- The 3 sections, on the Main Page, must have just 3 things.
+
+- Ponerle colores de fondo al pasar el ratón a los enlaces del Navegador (like, Gallery -> Green | About Me -> Orange | Stories -> Blue | ... -> ...)
+    Deberán de ser colores flojos (pasteles maybe), para que no destaque mucho.
+
+- Idea: Change the default cursor (default Wii[?]) and make it Customizable
+
+- Idea: Name this thoughts.txt as a "Manifesto" -> sadgrl.online reference
+
+- Idea: Meme Recolector as a Slide? Could be interesting, but nah.
+
+- Idea: Put in all dirs an fake Index as a 404 Not Found
+
+- Idea: Dynamic buttom to go back (the old pages do not have a "return" buttom, right?)
+
+- NEW SECTION: To Do.
+
+- To Do: Hoverable buttons in the Gallery > Index
+
+- Idea: Try to make some pages (Gallery, Stories, ...) dynamic (JSON file + )
+
+- Idea: Help svg (not png) and the users can hover it for help (explaining how this page works)
+
+- Idea: Tipografía Slab-Serif / Usar Menos de 5 colores
+	Paleta Colores (Realeza-Day/Night | Bootstrap-D/N | Old School-D/N)
+
+- Idea: Github -> 2 Branches (minor changes & mayor changes)
+    To have a better way to see the changes
+
+- Idea: About this Web (explicar como funciona la página web)
+
+- Idea: Put "C:/" in List (hacker/retro style)
+
+- Idea: Make the Header/Footer/The Navegator Dynamicly (with JS), cause it's always the same (content)
+
+- Idea: Make a changelog page (sight...)
+
+- Idea: Hover the link in The Realm Page will display a different Font 
+
+- Idea: Make a tribute page for the BestCore (Hardcore Tanco-C and more)
+
+- New Inspiration: https://odditycommoddity.neocities.org/
+
+- Idea: all-core stetic (webcore, oddcore, ...)
+
+- Idea: Talk about my favorite music with the color topic and more...
+
+- Idea: Asunto Miyazaki Page
+
+- Idea: Record and put a loop of some voice telling things...
+
+- Idea: Put a CMD to Stories and to read you have to write "ls" to list all the entries
+    , nano to select a entry and select a language to begin the reading.
+    Meaning: At least 1 File/language (JSON, terminal or plain text?)
+
+- Idea: Sort the Homework Page of my assignments (DSW, DPL, ...)
+
+- Idea: Page about the game Ultrakill
+
+- Idea: Before creating any other page, i'll need the script <p>
+
+- Cronología: 1. Index -> 2. Stories -> 3. Gallery -> 4. About This/Him -> 5. Realm/Void
+    -> 6. Homework -> 7.Proyects -> 8.Tutorials
+
+- Idea: Put a link to return 1 page before (hehe, sorry ppl, I dumb-dumb)
+
+- Idea: Put a link to return to the Top (# -> Fragments)
+
+- Idea: En una página, dirigirme a mi instituto / bachillerato 
+
+- New Inspiration: https://jorge2bat.neocities.org/ 
+
+- Idea: mostrar sitios de Tenerife
+
+- Idea: Mostrar el/los elementos diferenciadore(es) de ésta página respecto a las demás
+
+- Idea: Seguir con el legado de Sadgrl and make a newbie guide to HTML, CSS & JS. 
+
+- New Inspiration: https://nulldivinity.neocities.org/
+
+- Idea: Make User's Button! (done in 3-4 hours in Paint)
+
+- To Do: Remake the CSS to make it more understandable :<
+
+- Idea: /Online/Essays (share my old essay and remastered, but in Drive pls I don't wanna write more)
+
+- Idea (thanks to https://clowdywings.neocities.org/): Post snippets of codes
+
+- Idea: Fake cookies box (I hate cookies. Do u h8 cookies? -> Yes (Eat them) / No (Use them) )
+
+- Important Update: User's Performance
+
+- Idea: Hacer portfolio en Neocities (modelo, web developer and more) https://www.w3schools.com/howto/howto_website_create_portfolio.asp
+
+- Idea: User's Update/Page (a page for User's thing like iMood, status café, spacehey, ... the user status page)
+
+- Remember: The Admin Login Should Not Be Moved From The "Minor Changes" Branches. I MUST NOT upload it yet... (PS: if u see it, tell me pls)
+
+- Idea Explain all your JS in order to other users can fully understand it
+
+- [14/05/24 - 14:02] -> Next Update: User's Code
+
+- Everything is not done yet
+
+- Idea: Throgh JS, randomize the cursor in the miyazaki part
+
+- Idea: Index for all the PLAYLIST COLLECTIONS of all the people I know (Spotify, SoundCloud, YT Music, ...)
+
+- Idea: Updated Content vs Updated Features
+
+- Idea: Put Artist's Social Media (Tribute Page)
+

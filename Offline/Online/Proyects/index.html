@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="/css/hacker/fonts/fonts.css">
+        <link rel="stylesheet" href="/css/hacker/hacker.css">
+        <link rel="stylesheet" href="/css/hacker/header/header.css">
+        <link rel="stylesheet" href="/css/hacker/main/main.css">
+        <link rel="stylesheet" href="/css/hacker/main/section/section.css">
+        <link rel="stylesheet" href="/css/hacker/main/aside/aside.css">
+        <link rel="stylesheet" href="/css/hacker/cursors/cursor.css">
+        <link rel="stylesheet" href="/css/hacker/footer/footer.css">
+        
+        <title>
+            User's Website
+        </title>
+    </head>
+    <body>
+        <header class="p-4 d-flex justify-content-center">
+            <h1>
+                <a href="/home.html" title="Welcome to my Weird Website. Welcome to My Mind">
+                    The User Maldito's Web
+                </a>
+            </h1>
+            <a class="mx-2" href="/index.html" title="How This Page Works?" id="helper">
+                ?
+            </a>
+            <br>
+        </header>
+        <main>
+            <section class="m-5">   
+                <header>
+                    <h2 tabindex="0" class="title" title="Inspect And Steal My Ideas (With Credits Please :·3)">
+                        Project Page
+                    </h2>
+                </header>
+                <article class="m-5">
+                    <header>
+                        <h3 tabindex="0" class="title" title="Masonry? C++? Azure? ARE YOU GOING TO IVOKE LUCIFER TO HACK MY ACCOUNTS??!?!">
+                            <s>Weird</s> Tech fancy Words
+                        </h3>
+                    </header>
+                    <details open class="m-3">
+                        <summary>
+                            I need to know what is...
+                        </summary>
+                        <details class="m-3">
+                            <summary>
+                                HTML
+                            </summary>
+                            <p class="m-3">
+                                <span class="title" title="HyperText Markup Languaje">HTML</span> (index.html): The skeleton of &ap; 90% of every site. Is all about tags and attributes.
+                            </p>
+                            <details>
+                                <summary>
+                                    Usage + Examples
+                                </summary>
+                                <pre class="m-3">
+&lt;a title="User's Website" href="https://user-maldito.neocities.org" alt="User's Website"&gt;Visit User's Website!&lt;/a&gt;
+&lt;br&gt; &lt;span&gt;It's so cool and retro and hacker and handsome...  I love it&lt;/span&gt;
+                            </pre>
+                            <p class="m-3">Where "&lt;", a keyword and "&gt;" represent the beginning of the tag and "&lt;", "/", a keyword and "&gt;" the end of it. Example:</p>
+                            <pre class="m-3">
+&lt;div id="container"&gt; (level 0)
+    &lt;a&gt;This is an anchor tag. I will let you visit another link. Just click me&lt;/a&gt; (level 1)
+    &lt;p&gt;I am a paragraph tag. You can write on me  &lt;strong&gt; Bold the text with me!&lt;/strong&gt; (level 2)&lt;/p&gt; (level 1)
+    &lt;p hidden&gt;I am the same paragraph tag, but I have an special attribute to hide myself&lt;/p&gt;(level 1)
+&lt;/div&gt;(level 0)
+                            </pre>
+                            <p class="m-3">
+                                The attributes give them "special effects". Some of them are unique for every tag.
+                            </p>
+                            <p class="m-3">
+                                &gt; Theoretical example: the "hidden" attribute of the "p" tag has a hidden effect.
+                                The attribute "title" in almost every tag has the effect of, on hover, display the text given (like I have in all my website LoL)
+                            </p>
+                            <p class="m-3">
+                                &gt; Practical Example: 
+                            </p>
+                            <pre class="m-3">
+&lt;span title="Yey! You hover me!"&gt;Hover me to get more info&lt;/span&gt;
+                            </pre>
+                            <span class="m-3">&gt; Output:</span> <span class="title" title="Yey! You hover me!">Hover me to get more info</span>
+                            </details>
+                        </details>
+                        <details class="m-3">
+                            <summary>
+                                CSS
+                            </summary>
+                            <p class="m-3">
+                                <span class="title" title="Cascade Style Sheets">CSS</span> (style.css): CSS is used to set the squeleton a bit of style. Putting it a suit and tie to the HTML.
+                            </p>
+                            <details class="m-3">
+                                <summary>
+                                    Usage
+                                </summary>
+                                <p class="m-3">
+                                    &gt; There are 2 method to add the style:
+                                </p>
+                                <ol class="m-3">
+                                    <li>
+                                        <p>
+                                            Inside HTML: using the tag &lt;style&gt;&lt;/style&gt; and write it inside.
+                                        </p>
+                                        <p>
+                                            Example:
+                                        </p>
+                                        <pre>
+&lt;body&gt;
+    &lt;style&gt;
+        body{
+            color: white;
+            background-color: black;
+        }
+    &lt;/style&gt;
+&lt;/body&gt;
+                                        </pre>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Outside HTML: using the tag &lt;link&gt;&lt;/link&gt; with the attributes &rArr; rel="stylesheet" & href="project/css/style.css" inside the head tag
+                                        </p>
+                                        <p>
+                                            Example:
+                                        </p>
+                                            <pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel="stylesheet" href="folder/css/style.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    .
+    .
+    .
+    &lt;/body&gt;
+&lt;/html&gt;
+
+                                            </pre>
+                                        <p>
+                                            And the style.css looks like: 
+                                        </p>
+                                        <pre>
+body{
+    color: white;
+    background-color: black;
+}
+p{
+    cursor: crosshair;
+    text-align: center;
+}
+                                        </pre>
+                                    </li>
+                                </ol>
+                            </details>
+                            <details class="m-3">
+                                <summary>
+                                    User's Recommendation
+                                </summary>
+                                <p class="m-3">
+                                    &gt;Separate the style for a better understanding and scalability (even with small 
+                                    projects) & Nesting CSS:
+                                </p>
+                                <pre class="m-3">
+&lt;style&gt;
+    body{
+        color: white;
+        background-color: black;
+        p{
+        color: red;
+        }
+        .important{
+            background-color: lightblue;
+            >a{
+                margin: 0 10px;
+                &:hover{
+                    text-decoraton: none;
+                }
+            }
+        }
+    }
+&lt;/style&gt;
+                                </pre>
+                            </details>
+                            <details class="m-3">
+                                <summary>
+                                    Syntaxis
+                                </summary>
+                                <p class="m-3">
+                                    HTML tags + CSS Selectors* + { + css attributes + }
+                                </p>
+                                <p class="m-3">
+                                    Main CSS Selectors* &rArr; Examples: 
+                                </p>
+                                <ul class="m-3">
+                                    <li>
+                                        <p>
+                                            [" "] &xrArr; (body p) = Search any <strong>P</strong> tag inside the tag <strong>BODY</strong> - any level -
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            [">"] &xrArr; (div>p) = Search the direct <strong>P</strong> tag inside the tag <strong>DIV</strong> - only the first level -
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ["+"] &xrArr; (li+a) = Search the <strong>A</strong> tag being the upper tag <strong>LI</strong> - only this (consecutive) combination -
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ["[attribute]"] &xrArr; (span[title]) = Search the <strong>SPAN</strong> tag with the "attribute" <strong>TITLE</strong> - all span with title will be selected -
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ["*"] &xrArr; (div *) = Search <strong>ALL TAGS</strong> in the <strong>DIV</strong> tag - all tags in the first level, <i>combination</i> of " " and ">" -
+                                        </p>
+                                    </li>
+                                </ul>
+                            </details>
+                        </details>
+                        <details class="m-3">
+                            <summary>
+                                JS
+                            </summary>
+                            <p class="m-3">
+                                <span class="title" title="JavaScript">JS</span> (script.js): Is a Programming Language (HTML and CSS is NOT) and is used as well as <span class="title" title="What You Can See / Interact">Client</span> as <span class="title" title="Manage The Logic, Data And More">Server</span>.
+                            </p>
+                            <details class="m-3">
+                                <summary>
+                                    Usage
+                                </summary>
+                                <ul class="m-3">
+                                    <li>Manage and Validate info before sending it to the server (as a protection method)</li>
+                                    <li>Handle Events ("This website says: ", "If you click here, something happens", ...)</li>
+                                    <li>Present more Info and Data (HTML and CSS throgh JS, modify the behavior of the page, play sounds and videos, )</li>
+                                    <li>Search info (fetch function [XHR is outdated])</li>
+                                    <li>And all of it asynchronous</li>
+                                </ul>
+                            </details>
+                            <details class="m-3">
+                                <summary>
+                                    Syntaxis
+                                </summary>
+                                <hr>
+                                <details class="m-3">
+                                    <summary>
+                                        Variables
+                                    </summary>
+                                    <p class="m-3">
+                                        It has 3 type of <span class="title" title="Data Store In A Word">variables</span>:
+                                        <span class="title" title="Just Work In The Level Its Defined, If The Value Change In A Sublevel, It Will Return To Its Principal Value">let</span>,
+                                        <span class="title" title="Work In All Levels, Any Modification Will Be Reflected">var</span>
+                                        and 
+                                        <span class="title" title="Once It Have A Value, You Can't Change It">const</span>.
+                                    </p>
+                                    <p class="m-3">
+                                        Basic example:
+                                    </p>
+                                    <pre class="m-3">
+const firstNumber = 5; //Can't change
+let secondNumber = 3;
+secondNumber = 5; //Changed the data stored
+var result = firstNumber + secondNumber;
+console.log(result);
+//Expected output: 13
+                                    </pre>
+                                </details>
+                                <hr>
+                                <details class="m-3">
+                                    <summary>
+                                        Functions
+                                    </summary>
+                                    <p class="m-3">Function: piece of encapsulated code</p>
+                                <p class="m-3">
+                                    Defined with <i>function</i>, FunctionName, <span class="title" title="Can Pass Data Putting The Variable Name Inside">"()"</span> 
+                                    followed by <span class="title" title="Code Here">"{}"</span>. The "return" keyword (inside, in the end of {}) gives you back the value 
+                                    (made to be stored in a variable)
+                                </p>
+                                <p class="m-3">Advanced Example:</p>
+                                <pre class="m-3">
+function FastCalc(firstNumber, secondNumber){
+    //This variable does not exist outside the brackets
+    let resultCalc = firstNumber + secondNumber;
+    return resultCalc;
+}
+
+var result = FastCalc(2, 7);
+                                </pre>
+                                <p class="m-3">Or like a variable:</p>
+                                <pre class="m-3">
+const fastCalc = (firstNumber, secondNumber) => {
+    return firstNumber + secondNumber;
+}
+
+var result = fastCalc(2, 7);
+                                </pre>
+                                </details>
+                                <hr>
+                                <details class="m-3">
+                                    <summary>
+                                        Conditionals
+                                    </summary>
+                                    <p class="m-3">
+                                        Conditionals: <i>"If something happens, I will do this"</i>. There is 2 type of conditional <i>if else</i> and <i>switch</i>
+                                    </p>
+                                <pre class="m-3">
+let number = 28;
+let isNumber = true;
+
+//Only enter if the statement is true
+if (isNumber) { 
+    alert("Is a number!");
+}
+else{
+    alert("Is not a number :c");
+}
+
+//The question mark "!" announce that is the oposite
+if (!isNumber) {    //If is NOT a number... 
+    //Only go here if the statement is NOT true or if it's false, it's the same
+    alert("Is a number!");
+}
+
+// && = and -> || = or
+//If is a number and is 18 or higher...
+if ((isNumber) && (number >= 18)) { 
+    alert("The number inserted is correct. You can go inside...")
+}
+if ((isNumber) || (number != 0)){
+    alert("You can see this text if "isNumber" is true OR the variable number is NOT 0);
+}
+                                </pre>
+                                <pre>
+//Switch case with numbers
+let number = 2; //Number goes 1 to 3
+switch (number) {
+    case 1:
+        BadScore();
+    break;
+    case 2:
+        MediumScore();
+    break;
+    case 3:
+        PerfectScore();
+    break;
+    default:
+        console.log("The default "gateway" happens when none of the other cases is true");
+    break;
+}
+
+//Switch case with boolean values (true or false)
+let number = 2; //Number goes 1 to 3
+switch (true) {
+    case (number &lt; 0):
+        BadScore();
+    break;
+    case (number == 0):
+        MediumScore();
+    break;
+    case (number &gt; 0):
+        PerfectScore();
+    break;
+    default:
+        console.log("Innecesary default case because you have cover the 3 scenarios:
+        when the number is LESS THAN 0, when IS 0 and when is MORE THAN 0");
+    break;
+}
+                                </pre>
+                                </details>
+                                <hr>
+                                <details class="m-3">
+                                    <summary>
+                                        Loops
+                                    </summary>
+                                    <p>
+                                        There are 3 types of logic loops: <i class="title" title="While The Condition Is True, Execute The Code">while</i>, <i class="title" title="First Iteration Free, Then If The Condition Is False Don't Execute The Code">do while</i> and <i class="title" title="Travel All The Loop">for</i>
+                                    </p>
+                                    <pre>
+//dowhile
+function DoWhileLoop(){
+    let index = 1;
+    do{
+        //The first iteration is free
+        //Repeat the code while the index is less than 3
+        console.log(index);
+        index++;//IMPORTANT to iterate correctly
+        //when the index is more than 4, the loop will break
+    } while (index &lt; 4);
+}
+
+//while
+function WhileLoop(){
+    let startIndex = 0;
+    let endIndex = 5;
+    const number = 3;
+    var isMyNumber = false;
+
+    while (startIndex &lt;= endIndex){
+        //if 0 is less or equal than 5? yes -> execute the code inside
+        if (startIndex &gt;= number){
+            //when the index is EQUAL or MORE than 13, isNumber will be true
+            isMyNumber = true;
+        }
+        console.log(startIndex);
+        startIndex++;//IMPORTANT to iterate correctly
+    }
+
+    console.log("My number was found?: " + isMyNumber);
+}
+
+//for loop
+function CountingLoop(){
+    console.log("Counting 0 to 10");
+    for (let index = 0; index &lt; 11; index++){//Auto-Increment (index++)
+        console.log(index);
+    }
+}
+
+What will be the output?
+
+(PC Only) Copy the function code > press f12 > Go to Console
+> Paste the code > Call the function --&gt; CountingLoop()
+
+Try differents number and see the output!
+                                    </pre>
+                                </details>
+                                <hr>
+                            </details>
+                            <details class="m-3">
+                                <summary>
+                                    User's Tips and Tricks
+                                </summary>
+                                <hr>
+                                <details class="m-3">
+                                    <summary>
+                                        Significant Variable Names (please!!!)
+                                    </summary>
+                                    <pre>
+//Do you understand this code?
+let a = 100;
+let b = 14;
+let c = a-b;
+console.log(c);
+
+//And this code?
+let maxHealth = 100;
+let damage = 14;
+let currentHealth = maxHealth - damage;
+console.log(currentHealth);
+
+//The main difference is the variable names!
+
+for (let i = 0; i &lt; 4; i++) {
+    for (let j = 0; j &lt; 4; j++) {
+        //Code Here
+    }
+    //Code Here
+}
+
+for (let firstIndex = 0; firstIndex &lt; 4; firstIndex++) {
+    for (let secondIndex = 0; secondIndex &lt; 4; secondIndex++) {
+        //Code Here
+    }
+    //Code Here
+}
+
+//The variable names can tell you with 2-3 words
+//the CONTEXT of the code with no knowledge
+                                    </pre>
+                                </details>
+                                <hr>
+                                <details class="m-3" open>
+                                    <summary>
+                                        Implement it to the Page
+                                    </summary>
+                                    <p>
+                                        Like the CSS method, JS have 2 methods:
+                                    </p>
+                                    <details class="m-3">
+                                        <summary>
+                                            Inside the HTML
+                                        </summary>
+                                        <pre>
+//index.html:
+&lt;body&gt;
+    .
+    .
+    .
+    .
+    &lt;p onclick="ClickEvent()"&gt;
+        Click Me!
+    &lt;/p&gt;
+
+    &lt;script&gt;
+    function ClickEvent(){
+        alert("I was clicked!");
+    }
+    &lt;/script&gt;
+&lt;/body&gt;
+                                        </pre>
+                                    </details>
+                                    <hr>
+                                    <details class="m-3">
+                                        <summary>
+                                            Outside the HTML
+                                        </summary>
+                                        <pre>
+//index.html:
+&lt;body&gt;
+    .
+    .
+    .
+    .
+    &lt;p onclick="ClickEvent()"&gt;
+        Click Me!
+    &lt;/p&gt;
+
+    &lt;script src="/folder/js/script.js"&gt;
+    &lt;/script&gt;
+&lt;/body&gt;
+
+//script.js:
+function ClickEvent(){
+    alert("I was clicked!");
+}
+                                        </pre>
+                                    </details>
+                                    <p>
+                                        I will always recommend using CSS and JS using the "outside method" (linking the document in the HTML and modifying the content outside).
+                                        Why? My reason is: <span class="title" title="When The Project Grows And You Repeat Functions, Codes And Styles">Scalability and Modularization</span>, 
+                                        <span class="title" title="All Organized And In Plain Sight">Performance and Clean Workplace</span>
+                                    </p>
+                                </details>
+                                <hr>
+                                <details class="m-3">
+                                    <summary>
+                                        Transform the <i translate="no">for</i> into <i translate="no">while</i> -> and the <i translate="no">while</i> into the <i translate="no">do while</i>
+                                    </summary>
+                                    <pre>
+//Transform the For loop To a While Loop
+1. For Loop
+    for (let index = 0; index &lt; 11; index++){
+        console.log(index);
+    }
+
+2. let index = 0; this go up like this:
+    let index = 0;
+    for (index &lt; 11; index++){
+        console.log(index);
+    }
+
+3. The Auto-Increment Goes Inside (IMPORTANT: always in the bottom part)
+    let index = 0;
+    for (index &lt; 11){
+        console.log(index);
+        index++;
+    }
+
+4. Change the keyword for to while (and Voilà!)
+    let index = 0;
+    while (index &lt; 11){
+        console.log(index);
+        index++;
+    }
+
+//Transform the While Loop into the Do-While loop
+1. While Loop
+    let index = 0;
+    while (index &lt; 11){
+        console.log(index);
+        index++;
+    }
+
+2. Copy the While part and put it on the bottom like this:
+    let index = 0;
+    {
+        console.log(index);
+        index++;
+    }while (index &lt; 11);//REMEMBER TO PUT ";" AT THE VERY END
+
+3. Put the keyword Do:
+    let index = 0;
+    do{
+        console.log(index);
+        index++;
+    }while (index &lt; 11);
+                                    </pre>
+                                </details>
+                                <hr>
+                            </details>
+                        </details>
+                        <details class="m-3" open>
+                            <summary>
+                                Words
+                            </summary>
+                            <details class="m-3">
+                                <summary>
+                                    Bootstrap
+                                </summary>
+                                <p class="m-3">
+                                    Is a CSS <span class="title" title="Software That Includes Pre-Written Code, Libraries and Tools To Work More Efficiently">Framework</span> that works around classes.
+                                </p>
+                                <a href="https://getbootstrap.com/docs/5.3/utilities/flex/#enable-flex-behaviors">Example on Flex Behavior Here!</a>
+                            </details>
+                            <details class="m-3">
+                                <summary>
+                                    Masonry
+                                </summary>
+                                <p class="m-3">
+                                    Is a JS Grid Layout used to make responsive and dynamic website (My gallery have Masonry :D) (When you change the zoom and the photos reorder automatically? That's the magic of Masonry)
+                                </p>
+                                <a href="https://masonry.desandro.com/events">More Example of Masonry here!</a>
+                            </details>
+                            <details class="m-3" open>
+                                <summary>
+                                    Front-End / Back-End / API Explained :D
+                                </summary>
+                                <p class="m-3">
+                                    Imagine the Web as a Restaurant: The <span title="The Client Side, The Visuals, The Interface">Front-End</span> will be the <span title="What You See: Is It Clean? Nice Color? Smells Good? ...">Showcase</span>.
+                                    The <span title="The Server, The Logic Part, Process The Info">Back-End</span> is the <span title="Cooking Your Meal, Preparing The Order">Kitchen</span>.
+                                    The <span title="Application Program Interface / Handle The Request / Gives You The Correct Links">API</span> is the <span title="Handle Your Request / Offers You The Content Of The Menu">Waiter/Waitress</span> and
+                                    the <span title="Store All The Data: Username, Password, Credit Card, ...">Database</span> could be seen as the <span title="Here Is The Food, Drinks, Spices, ...">Pantry</span>.
+                                </p>
+                            </details>
+                        </details>
+                    </details>
+                </article>
+                <article class="m-5">
+                    <header>
+                        <h3 tabindex="0" class="title" title="Little / Tiny Things I Made In My Free Time (not true, i always hyperfocus and stay awake all night)">
+                            Silly Projects
+                        </h3>
+                    </header>
+                    <details class="m-3" open>
+                        <summary>
+                            Proyecto Maldito
+                        </summary>
+                        <p class="m-3">
+                            Thanks to a combination of a Mexican Youtuber, an "Old Flash Game" <a href="https://youtu.be/MyDSSESPd4U?si=Uu-SB_4g4XuSdO6d&t=85">(this video)</a>
+                            and <a href="https://sadgrl.online" class="title" title="Iconic Neocities Website">sadgrl.online</a>, I decided to, quote <cite>make a Neocities Page as cool as her site</cite> .
+                            Named this thing "Proyecto Sadgrl" and renamed to <strong class="title" title="'Cause My Original Nickname Is User Maldito">"Proyecto Maldito"</strong>. See other people's pages
+                            inspired my to keep (and copy) some ideas (and pre).
+                        </p>
+                        <p class="d-flex justify-content-around link-projects"><span>Source&nbsp;<a href="https://github.com/UserMaldito/Proyecto-Maldito">here</a></span>&nbsp;<span>Explanation&nbsp;<a href="/Online/Proyects/Maldito/index.html">here</a></span></p>
+                    </details>
+                </article>
+            </section>
+            <aside class="m-5">
+                <header class="border border-0 border-bottom">
+                    <h2 class="title" tabindex="0" title="Links to My Other Pages">
+                        The Navigator
+                    </h2>
+                </header>
+                <nav class="d-flex flex-column align-items-center">
+                    <ul class="p-5">
+                        <li class="deprecated">
+                            <a class="title" href="/index.html" title="Discover the Hidden Truth of This Page">
+                                About User's Website
+                            </a>
+                        </li>
+                        <li class="modified">
+                            <a class="title" href="/Online/About-Him/profile.html" title="aaaaaaaaAAAAAAAAAAªªªªªªªªª">
+                                About User
+                            </a>
+                        </li>
+                        <li class="new">
+                            <a class="title" href="/Online/Realm/index.html" title="Wanna Explore More Deeply In User's Mind?">
+                                User's Realm
+                            </a>
+                        </li>
+                        <li class="new">
+                            <a class="title" href="/Online/Stories/index.html" title="My Schizophrenia With Few Restrictions">
+                                User's Stories
+                            </a>
+                        </li>
+                        <li class="new">
+                            <a class="title" href="/Online/Gallery/index.html" title="Photos & Videos of Myself and My Surronding (Memes are Includes, Maybe)">
+                                User's Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a class="modified title" href="/Online/Proyects/index.html" title="Do You Really Need An Explanation Of What Is A Project?">
+                                User's Projects
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <form class="p-5">
+                        <select tabindex="0" name="Layout" id="changingLayout" title="Change the Layout of the Page">
+                            <option selected="selected" value="retro" title="Wanna feel like ur doing something cool? Hack the Style">
+                                Hacker CSS (Dark Mode)
+                            </option>
+                            <option value="default" title="Keep another style with this option!">
+                                Clean UX (Light Mode)
+                            </option>
+                            <option value="css_hater" title="Do you like the old old old pages? Delete the Style">
+                                Style-less (No CSS)
+                            </option>
+                        </select>
+                    </form>
+                </nav>
+            </aside> 
+        </main>
+        <footer class="m-4">
+            <p>~ Made with love by User Maldito <strong id="fecha"></strong></p>
+            <hr>
+            <section id="stats-box">
+                <article class="stat d-flex flex-row justify-content-around p-2">
+                    <p id="views"></p>
+                    <p id="created"></p>
+                    <p id="updated"></p>
+                </article>
+            </section>
+            <hr>
+            <section class="d-flex justify-content-between align-items-center" id="stickers">
+                <article>
+                    <br>
+                    <img class="p-1" src="/img/buttons/old_buttons/button(1).gif" alt="button_1">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(2).gif" alt="button-2">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(3).gif" alt="button-3">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(4).gif" alt="button-4">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(5).gif" alt="button-5">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(6).gif" alt="button-6">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(8).gif" alt="button-8">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(9).gif" alt="button-9">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(10).gif" alt="button-10">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(11).gif" alt="button-11">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(12).gif" alt="button-12">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(13).gif" alt="button-13">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(14).gif" alt="button-14">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(16).gif" alt="button-16">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(17).gif" alt="button-17">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(18).gif" alt="button-18">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(19).gif" alt="button-19">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(22).gif" alt="button-22">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(23).gif" alt="button-23">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(24).gif" alt="button-24">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(26).gif" alt="button-26">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(27).gif" alt="button-27">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(28).gif" alt="button-28">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(30).png" alt="button-30">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(31).gif" alt="button-31">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(33).gif" alt="button-33">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(34).gif" alt="button-34">
+                    <img class="p-1" src="/img/buttons/old_buttons/button(36).png" alt="button-36">
+                    <br>
+                </article>
+            </section>
+        </footer>
+        <div id="scripts">
+            <!-- This Will Display My Homemade Stats  -->
+            <script src="/js/counter.js"></script>
+
+            <!-- The Magic Of Putting A Date + Copyright In The Footer -->
+            <script src="/js/date.js"></script>
+
+            <!-- (Same As Hover In PC) This Script Will Detect A Mobile User And, With Double Tap, Could See The Title -->
+            <script src="/js/devices.js"></script>
+
+            <!-- This Script Will Change The Layout  -->
+            <script src="/js/changeLayout.js"></script>
+        </div>
+    </body>
+</html>

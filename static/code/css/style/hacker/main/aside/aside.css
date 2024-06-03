@@ -1,0 +1,83 @@
+html>body>main>aside{
+    /* Make the Navbar Sticky Through JS */
+
+    #breadcrumbs{
+        background-color: var(--color-letter-dark);
+        text-decoration: none;
+        >ol{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            text-decoration: inherit;
+            >li{
+                text-decoration: inherit;
+                >a{
+                    text-decoration: underline var(--color-letter-info) 3px;
+                    color: var(--color-background-primary);
+                    &:hover{
+                        color: var(--color-background-light);
+                    }
+                }
+                &:first-child::before{
+                    content: "C:\\";
+                    margin: 0 5px;
+                    color: var(--color-letter-danger);
+                }
+                &+li::before{
+                    content: "\\";
+                    margin: 0 5px 0 10px;
+                    color: var(--color-letter-danger);
+                }
+            }
+        }
+    }
+
+    #links{
+        >ul{
+            list-style-type: none;
+            margin: 30px 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            >li{
+                &::before{
+                    content: "C:/";
+                    color: var(--color-letter-secondary);
+                }
+                &:hover:before{
+                    color: var(--color-letter-info);
+                }
+                &:first-child:hover{
+                    position: relative;
+                    >ul{
+                        position: absolute;
+                        left: -50px;
+                        list-style-type: none;
+                        display: block;
+                        z-index: 1;
+                        width: 300px;
+                        >li{
+                            border: 2px solid var(--color-background-light);
+                            padding: 10px;
+                            background-color: var(--color-background-dark);
+                            &:hover{
+                                background-color: var(--color-background-light);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Color Styles */
+    *{
+        color: var(--color-letter-danger);
+        text-decoration: underline var(--color-letter-secondary);
+        &:hover{
+            color: var(--color-letter-secondary);
+            text-decoration: underline var(--color-letter-warning);
+        }
+    }
+}
