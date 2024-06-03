@@ -1,0 +1,170 @@
+html>body>main>section{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 2%;
+
+    details>*:not(summary){
+        padding-left: 30px;
+    }
+    
+    #main-article{
+        width: 100%;
+        border: 5px solid red;
+        hr{
+            margin: 20px;
+            color: var(--color-letter-danger);
+        }
+        details~hr, p~hr{
+            color: var(--color-letter-info);
+        }
+        ul{
+            list-style-type: none;
+            >li{
+                margin: 20px;
+            }
+        }
+        details{
+            >summary{
+                color: var(--color-letter-warning);
+                &:hover{
+                    color: var(--color-letter-danger);
+                }
+            }
+            hr{
+                color: var(--color-background-light);
+            }
+        }
+        >article{
+            margin: 20px;
+            >header{
+                color: var(--color-letter-secondary);
+                >*{
+                    display: inline;
+                }
+            }
+            >*:not(header){
+                padding: 0 20px;
+            }
+            p:before{
+                content: '>';
+                margin-right: 5px;
+                color: var(--color-letter-secondary);
+            }
+            p:hover:before{
+                color: var(--color-letter-danger);
+            }
+            >ul{
+                list-style-type: none;
+            }
+        }
+        a{
+            text-decoration: underline var(--color-letter-info);
+            color: var(--color-letter-danger);
+            &:hover{
+                text-decoration: underline var(--color-letter-danger);
+                color: var(--color-letter-secondary);
+            }
+        }
+        pre{
+            border: 3px solid var(--color-letter-danger);
+            background-color: var(--color-background-secondary);
+            color: var(--color-letter-secondary);
+            overflow: scroll;
+        }
+        #middle-links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            >a:last-child{
+                color: var(--color-letter-info);
+                text-decoration: underline var(--color-letter-danger);
+                &:hover{
+                    color: var(--color-letter-danger);
+                    text-decoration: underline var(--color-letter-secondary);
+                }
+            }
+        }
+
+        #about-article{
+            article:first-of-type{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                img{
+                    height: 300px;
+                    width: auto;
+                    border: 2px double var(--color-letter-dark);
+                    &:hover{
+                        border: 2px solid var(--color-letter-secondary);
+                        transform: scale(1.1);
+                        z-index: 1;
+                    }
+                    &:active{
+                        border: 2px dashed var(--color-letter-danger);
+                    }
+                }
+            }
+            #him-2+*{
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                #statuscafe{
+                    border: 3px solid var(--color-background-light);
+                    background-color: var(--color-background-secondary);
+                    padding: 0 20px;
+                    #statuscafe-username{
+                        a{
+                            color: var(--color-letter-warning);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #aside-article{
+        width: 26%;
+        border: 5px solid blue;
+        padding: 20px;
+        /* Style When Hover The Buttons */
+        a>img:hover{
+            border: 2px solid var(--color-letter-warning);
+            transform: scale(1.1);
+            z-index: 1;
+        }
+        #my-button-section{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            #mySvg{
+                transform: scale(1.75);
+                color: var(--color-letter-info);
+                &:hover{
+                    color: var(--color-letter-warning);
+                }
+            }
+        }
+        #webrings{
+            >article>a{
+                animation: changingColors infinite alternate 1s;
+                /* Targeting the middle one */
+                &:nth-child(2){
+                    animation: changingColors infinite alternate .5s;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 899px) {
+    #him-1{
+        display: flex;
+        flex-direction: column !important;
+        padding-top: 20px !important;
+    }
+}

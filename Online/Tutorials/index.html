@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/static/code/css/style/hacker/hacker.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/cursors.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/header/header.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/main/main.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/main/section/section.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/main/aside/aside.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/footer/footer.css">
+    
+    <title>User's Realm</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <a title="Welcome To User's Weird Website. Welcome To His Mind" tabindex="2" href="/Online/index.html">
+                The User Maldito's Website
+            </a>
+        </h1>
+    </header>
+    <main>
+        <section>
+            <article id="main-article">
+                <article>
+                    <header>
+                        <h3 title="Learn Something New">
+                            Tutorial
+                        </h3>
+                    </header>
+                    <p class="welcome-message">
+                        Fast Tutorial of:
+                    </p>
+                    <hr>
+                    <details id="html" open>
+                        <summary>
+                            HTML
+                        </summary>
+                        <hr>
+                        <details id="explanation-html" open>
+                            <summary>
+                                Fast Explanation
+                            </summary>
+                            <p>
+                                HyperText Markup Languaje <strong title="Name Of The Document"><i>(index.html)</i></strong>: is all about tags.
+                                Example of tags &rArr; &lt;p&gt; &lt;/p&gt;. 
+                                It's important to remember: the OPEN tag, the KEYWORD and the CLOSE tag. Keep that in mind.
+                            </p>
+                            <p>
+                                The very first tag (in a html document) will always be &rArr; &lt;!DOCTYPE html&gt;&lt;html&gt; &lt;/html&gt;.
+                                See more in <a href="#advance-example-html">Advance Example</a>.
+                            </p>
+                            <p>
+                                There is 2 types of tags: inline and block tags. The block one is so big it have a 100% width.
+                                The inline tag will have enough width to contain what's inside it. See more in <a href="#simple-example-html">Simple Example</a>.
+                            </p>
+                            <p>
+                                Between the OPEN tag, you can put another keyword (ATTRIBUTES) to make the tag more unique.
+                                It have to looks like this: 1.[keyword="value"] class="container" 2. [keyword] hidden.
+                                See more in <a href="#simple-example-html">Simple Example</a>.
+                            </p>
+                        </details>
+                        <hr>
+                        <details id="simple-example-html">
+                            <summary>
+                                Simple Example
+                            </summary>
+                            <pre><code>
+&lt;p&gt; I am a paragraph tag and I'm a block tag with no attributes &lt;/p&gt;
+&lt;span hidden&gt; I'm a inline text tag with 1 attribute (to keep me invisible) &lt;/span&gt;
+&lt;a href="https://google.es"&gt; I'm a inline link tag. Click me and we'll go to Google's Browser&lt;/a&gt;
+                            </code></pre>
+                        </details>
+                        <hr>
+                        <details id="advance-example-html">
+                            <summary>
+                                Advance Example
+                            </summary>
+                            <pre><code>
+&lt;!-- This is a comment tag (never shown in a website) --&gt;
+&lt;!DOCTYPE html&gt; &lt;!-- This is to recognize the languaje --&gt;
+&lt;html&gt;  &lt;!-- This tag represent the whole webpage --&gt;
+    &lt;head&gt; &lt;!-- Here should go style links and info of the page (meta tags) --&gt;
+        &lt;title&gt;My First Webstite&lt;/title&gt; &lt;!-- The title is the tab name --&gt;
+    &lt;/head&gt;
+    &lt;body&gt; &lt;!-- The body of the page. --&gt;
+        &lt;p&gt; I am a paragraph tag and I'm a block tag with no attributes &lt;/p&gt;
+        &lt;span hidden&gt; I'm a inline text tag with 1 attribute (to keep me invisible) &lt;/span&gt;
+        &lt;a href="https://google.es"&gt; I'm a inline link tag. Click me and we'll go to Google's Browser&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </details>
+                        <hr>
+                        <details id="user-html">
+                            <summary>
+                                User's Recommendation
+                            </summary>
+                            <p>
+                                ALL THE IMPORTANT TAGS (html, head, link, title, body, header, h1-h6, body, p, a, span, footer and script).
+                            </p>
+                            <p>
+                                Interesting TAGS: strong, i, img, ul, ol, li, select, option, section, article, details, summary, br and hr.
+                            </p>
+                            <p>
+                                Wanna feel like a hacker? In any website, press Ctrl + U (this will open a new window with the source code 
+                                of the website). Take a closer look and see how it is divided. Another tip: try it in my pages.
+                            </p>
+                            <p>
+                                Indentation is SUPER IMPORTANT. Indentation is spacing the element (usually using the tab key [&LeftArrowRightArrow;]). Is
+                                used to see, a plain sight, what's inside of what.
+                            </p>
+                        </details>
+                        <hr>
+                    </details>
+                    <hr>
+                    <details id="css" open>
+                        <summary>
+                            CSS
+                        </summary>
+                        <hr>
+                        <details id="explanation-1-css" open>
+                            <summary>
+                                Fast Explanation
+                            </summary>
+                            <p>
+                                Cascade Style Sheet <strong><i>(style.css)</i></strong>: is used to make more <i>stylish</i> the entire World Wide Web.
+                                You can personalize more your tag (putting colors, changing the appearance and position of letters, ...).
+                            </p>
+                            <p>
+                                Syntaxis 1: tag{ keyword: "value" }; See more in <a href="#simple-example-1-css">Simple Example</a>.
+                            </p>
+                            <p>
+                                There is 2 mode of linking it to the HTML file: inside and outside. See more in <a href="#advance-example-1-css">Advance Example 1</a>.
+                            </p>
+                            <p>
+                                There is 2 mode of syntaxis in the CSS file: "Normal" and Nesting. See more in <a href="#advance-example-2-css">Advance Example 2</a>.
+                            </p>
+                            <p>
+                                You have more details of Normal Vs Nested Syntaxys in <a href="#user-css">User's Recommendations</a>
+                            </p>
+                        </details>
+                        <hr>
+                        <details id="simple-example-1-css">
+                            <summary>
+                                Simple Example
+                            </summary>
+                            <pre><code>
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+                            </code></pre>
+                        </details>
+                        <hr>
+                        <details id="advance-example-1-css">
+                            <summary>
+                                Advance Example 1
+                            </summary>
+                            <pre><code>
+//Inside HTML & "Normal" Syntaxis
+&lt;!DOCTYPE html&gt; &lt;!-- This is to recognize the languaje --&gt;
+&lt;html&gt;  &lt;!-- This tag represent the whole webpage --&gt;
+    &lt;head&gt; &lt;!-- Here should go style links and info of the page (meta tags) --&gt;
+        &lt;title&gt;My First Webstite&lt;/title&gt; &lt;!-- The title is the tab name --&gt;
+    &lt;/head&gt;
+    &lt;body&gt; &lt;!-- The body of the page. --&gt;
+        &lt;style&gt;
+            a{
+                color: red;
+            }
+            a:hover{
+                color: green;
+            }
+            a:active, a:visited{
+                color: white;
+            }
+        &lt;/style&gt;
+        &lt;a href="https://google.es"&gt; I'm a inline link tag. Click me and we'll go to Google's Browser&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </details>
+                        <hr>
+                        <details id="advance-example-2-css">
+                            <summary>
+                                Advance Example 2
+                            </summary>
+                            <pre><code>
+//Outside HTML & Nested Syntaxis
+
+&lt;!-- index.html --&gt;
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt; 
+        &lt;head&gt;
+            &lt;link rel="stylesheet" href="/folder/css/style.css" &gt;
+            .
+            .
+            .
+        &lt;/head&gt;
+    &lt;/html&gt;
+
+/* style.css */
+
+    body{
+        header{
+            background-color: pink;
+            >h3{
+                text-align: center;
+            }
+        }
+        main{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: center;
+            a{
+                text-decoration: none;
+                &:hover{
+                    color: red;
+                }
+                &:active, &:visited{
+                    color: white;
+                }
+            }
+        }
+    }
+                            </code></pre>
+                        </details>
+                        <hr>
+                        <details id="explanation-2-css">
+                            <summary>
+                                Advance Explanation (Syntaxis)
+                            </summary>
+                            <p>
+                                Syntaxis 2
+                            </p>
+                            <ul>
+                                <li>
+                                    "X Y" => Y tag is <strong>inside</strong> X (any level)?
+                                </li>
+                                <li>
+                                    "X+Y" => Y tag and Y tag <strong>are together</strong> (same level)?
+                                </li>
+                                <li>
+                                    "X>Y" => Y tag is <strong>directly</strong> inside
+                                </li>
+                                <li>
+                                    "X[title]" => only X with that <strong>attribute</strong> will be selected
+                                </li>
+                                <li>
+                                    ".container *" => Anything in the <strong>container class</strong>
+                                </li>
+                                <li>
+                                    "input#password" => The input tag <strong>with the ID password</strong> will be selected
+                                </li>
+                                <li>
+                                    "X, Y" => X tag <strong>and</strong> Y tag
+                                </li>
+                            </ul>
+                        </details>
+                        <hr>
+                        <details id="user-css">
+                            <summary>
+                                User's Recommendation
+                            </summary>
+                            <p>
+                                Use the Outside Method to link an Style. Why? It have better scalability, more readability and 
+                                if something isn't working you'll know what is (better debugging)
+                            </p>
+                            <p>
+                                Use the "Nesting" Syntaxis to know what's inside what. Example: In plain sight, you will see, as in the .html,
+                                that there is a class "container" and inside there is 2 span tags and 1 link:
+                            </p>
+                            <details>
+                                <summary>
+                                    Code Example (Normal vs Nesting Syntaxis)
+                                </summary>
+                                <pre><code>
+/*Normal Syntaxis*/
+.container{
+    border: 1px solid black;
+}
+.container span{
+    text-indent: 5px;
+}
+.container a{
+    text-decoration: none;
+}
+.container a:hover{
+    color: blue;
+}
+/*Nested Syntaxis*/
+.container{
+    span{
+        text-indent: 5px;
+    }
+    a{
+        text-decoration: none;
+        /* The "&" is referencing the tag (a tag in this case) */
+        &:hover{
+            color: blue
+        }
+    }
+}
+                            </code></pre>
+                            </details>
+                        </details>
+                        <hr>
+                    </details>
+                    <hr>
+                    <details id="js">
+                        <summary>
+                            JS (To-Do)
+                        </summary>
+                    </details>
+                    <hr>
+                </article>
+            </article>
+        </section>
+        <aside>
+            <nav id="breadcrumbs">
+                <ol>
+                    <li>
+                        <a tabindex="3" href="/Online/index.html">Online</a>
+                    </li>
+                    <li>
+                        <a tabindex="3" href="/Online/Tutorials/index.html">Tutorials</a>
+                    </li>
+                    <li>
+                        <span>Index.html</span>
+                    </li>
+                    <li>
+                        <a tabindex="3" href="#html">#HTML</a>
+                    </li>
+                    <li>
+                        <a tabindex="3" href="#css">#CSS</a>
+                    </li>
+                    <li>
+                        <a tabindex="3" href="#js">#JS</a>
+                    </li>
+                </ol>
+            </nav>
+            <nav id="links">
+                <ul>
+                    <li>
+                        <a tabindex="3" title="What Do You Wanna Know About?" href="#about">
+                            About
+                        </a>
+                        <ul hidden>
+                            <li>
+                                <a tabindex="3" title="Know Him Better" href="/Online/About/him.html">
+                                    About User
+                                </a>
+                            </li>
+                            <li>
+                                <a tabindex="3" title="Know His Creation" href="/Online/About/web.html">
+                                    About User's Website
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a tabindex="3" title="User Is Gonna Be Your Teacher" href="/Online/Tutorials/index.html">
+                            Tutorials
+                        </a>
+                    </li>
+                    <li>
+                        <a tabindex="3" title="Code He Randomly Throw (And Works!)" href="/Online/Projects/index.html">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a tabindex="3" title="Classic Shrine With Another Name" href="/Online/Realm/index.html">
+                            Realm
+                        </a>
+                    </li>
+                    <li>
+                        <a tabindex="3" title="His Schizophrenia With Few Restrictions" href="/Online/Stories/index.html">
+                            Stories
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <section>
+            <article id="my-sign">
+                <span>
+                    Made with love by <strong>User Maldito</strong>
+                </span>
+                <span id="year">
+                    &copy;20XX
+                </span>
+            </article>
+            <hr>
+            <article id="stats">
+                <p id="views">
+                    My Views: XXX XXX
+                </p>
+                <p id="created">
+                    First Upload: DD-MM-AAAA
+                </p>
+                <p id="updated">
+                    Last Updated: DD-MM-AAAA
+                </p>
+            </article>
+            <hr>
+        </section>
+        <article id="funny-random-buttons">
+
+        </article>
+    </footer>
+    <div id="scripts-box">
+        <script src="/static/code/js/index.js"></script>
+    </div>
+</body>
+</html>

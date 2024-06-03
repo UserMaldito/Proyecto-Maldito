@@ -1,0 +1,65 @@
+:root{
+    /* Letter Colors */
+    --color-letter-primary: rgb(255, 255, 255);
+    --color-letter-secondary: rgb(0, 255, 0);
+    --color-letter-dark: rgb(0, 128, 0);
+    --color-letter-danger: rgb(255, 0, 0);
+    --color-letter-warning: rgb(255, 166, 0);
+    --color-letter-info: rgb(0, 191, 255);
+
+    /* Background Colors */
+    --color-background-primary: rgb(0, 0, 0);
+    --color-background-secondary: rgb(110, 110, 110);
+    --color-background-dark: rgb(35, 35, 35); 
+    --color-background-light: rgb(220, 220, 220);
+    --color-background-white: rgb(255, 255, 255);
+
+    /* States Colors */
+
+}
+
+/* When the user select something */
+::selection{
+    background-color: var(--color-letter-secondary);
+    color: var(--color-background-dark);
+}
+
+/* Default Style  */
+html{
+    background-color: var(--color-background-primary);
+    color: var(--color-background-white);
+    font-size: x-large;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-letter-dark) var(--color-background-dark);
+
+
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Danger = Hovered Thing */
+
+header *[title]:not(body>header>h1>a){
+    text-decoration: underline double white 1px;
+    &:hover{
+        color: var(--color-letter-danger);
+    }
+}
+
+a[title]:not(body>header>h1>a){
+    text-decoration: underline dotted white 1px;
+}
+
+*[title]:not(a[title], header *){
+    color: var(--color-letter-secondary);
+    text-decoration: underline dotted var(--color-letter-info) 2px;
+    &:hover{
+        color: var(--color-letter-dark);
+        text-decoration: underline solid var(--color-letter-warning) 2px;
+    }
+}

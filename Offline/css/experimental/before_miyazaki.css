@@ -1,0 +1,7 @@
+html{
+    background-color: black;
+    color: white;
+    span{
+        display: none;
+    }
+}

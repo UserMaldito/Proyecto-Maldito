@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/static/code/css/style/hacker/hacker.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/cursors.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/header/header.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/main/main.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/main/section/section.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/main/aside/aside.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/footer/footer.css">
+    
+    <title>User's Projects</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <a title="Welcome To User's Weird Website. Welcome To His Mind" tabindex="2" href="/Online/index.html">
+                The User Maldito's Website
+            </a>
+        </h1>
+    </header>
+    <main>
+        <section>
+            <article id="main-article">
+                <article>
+                    <header>
+                        <h3 title="Neocities' Website">
+                            Proyecto Maldito
+                        </h3>
+                    </header>
+                    <p class="welcome-message">
+                        Everything have their reason. And the reason of the code is right here.
+                    </p>
+                    <details id="hover">
+                        <summary>
+                            How do you do the Hover thing?
+                        </summary>
+                        <p>
+                            That's a easy question. Is the main attraction of the website, so it have to be notice.
+                            We can make it work for other devices, because, at first, it only works on PC users.
+                            See the JS section (To-Do).
+                        </p>
+                        <hr id="hover-html">
+                        <details>
+                            <summary>
+                                HTML
+                            </summary>
+                            <p>
+                                With the attribute tittle you can put an "altenative text".
+                            </p>
+                            <pre><code>
+&lt;span title="WWW stands for World Wide Web"&gt;What is "WWW"?&lt;span&gt;
+                            </code></pre>
+                            <span title="WWW stands for World Wide Web">What is "WWW"?</span>
+                        </details>
+                        <hr id="hover-css">
+                        <details>
+                            <summary>
+                                CSS
+                            </summary>
+                            <p>
+                                With style, we can make it unique and easy to spot to the users.
+                            </p>
+                            <pre><code>
+a[title]{
+    color: red;
+    cursor: alias;
+}
+*[title]:not(a[title]){
+    color: lightgreen;
+    text-decoration: underline solid 3px pink;
+    &:hover{
+        color: lightblue;
+        text-decoration: none;
+    }
+}
+                            </code></pre>
+                        </details>
+                    </details>
+                    <hr id="counter">
+                    <details open>
+                        <summary>
+                            How your counter works?
+                        </summary>
+                        <p>
+                            Step 1. Copy & Paste <strong>ALL</strong> my code
+                        </p>
+                        <p>
+                            Step 2. Follow the instructions
+                        </p>
+                        <p>
+                            Step 3. If you don't know what to do, keep reading this article.
+                        </p>
+                        <hr id="counter-html">
+                        <details>
+                            <summary>
+                                HTML
+                            </summary>
+                            <p>
+                                Make sure you have a similar HTML structure. The ID are important.
+                            </p>
+                            <pre><code>
+&lt;article id="stats"&gt;
+    &lt;p id="views"&gt;
+        My Views: XXX XXX
+    &lt;/p&gt;
+    &lt;p id="created"&gt;
+        First Upload: DD-MM-AAAA
+    &lt;/p&gt;
+    &lt;p id="updated"&gt;
+        Last Updated: DD-MM-AAAA
+    &lt;/p&gt;
+&lt;/article&gt;
+                            </code></pre>
+                        </details>
+                        <hr id="counter-js">
+                        <details open>
+                            <summary>
+                                JS
+                            </summary>
+                            <p>
+                                You ONLY have to CHANGE:
+                            </p>
+                            <details id="name-counter" open>
+                                <summary>
+                                    1. Your Username
+                                </summary>
+                                <p>
+                                    Just enter your username
+                                </p>
+                                <pre><code>
+//1. Your name
+const username = "dapoyo";
+                                </code></pre>
+                            </details>
+                            <hr>
+                            <details id="views-counter" open>
+                                <summary>
+                                    2. Your Views
+                                </summary>
+                                <p>
+                                    What you wanna see? 0: Default (12345678 or 13579) / 1: separator (12.345.678 or 13 579) /
+                                    2: fancy (12.3 M or 13.5 K) / -1: Hide the Views
+                                </p>
+                                <pre><code>
+//2. The View Selector
+//Example: views = 12.345.678 or 13.579
+const viewSelector = 1;
+const separator = ',';
+//Output: 12,345,678 views or 13,579 views
+                                </code></pre>
+                            </details>
+                            <hr>
+                            <details id="date-counter" open>
+                                <summary>
+                                    3. Your Created and Updated Date
+                                </summary>
+                                <p>
+                                    The options are:
+                                </p>
+                                <ul>
+                                    <li>-1: Hide me that stat</li>
+                                    <li>1: Show me only the day(s)</li>
+                                    <li>2: Show me only the week(s)</li>
+                                    <li>3: Show me only the month(s)</li>
+                                    <li>4: Show me only the year(s)</li>
+                                    <li>Other Thing: Full Display</li>
+                                </ul>
+                                <pre><code>
+    //3. Created date
+    createdType = -1;
+    //Output: nothing
+    createdType = 2;
+    //Output: 34 week(s) ago
+
+    4. Updated date
+    const updatedType = 0;
+    //Output: 1 Year(s) 3 Month(s) 23 day(s) aprox
+    const updatedType = 4;
+    //Output: Less than a year
+                                </code></pre>
+                            </details>
+                        </details>
+                        <hr>
+                    </details>
+                </article>
+            </article>
+        </section>
+        <aside>
+            <nav id="breadcrumbs">
+                <ol>
+                    <li>
+                        <a tabindex="3" href="/Online/index.html">Online</a>
+                    </li>
+                    <li>
+                        <a tabindex="3" href="/Online/Projects/index.html">Projects</a>
+                    </li>
+                    <li>
+                        <a tabindex="3" href="/Online/Projects/Neocities-Project/index.html">Proyecto Maldito</a>
+                    </li>
+                    <li>
+                        <span tabindex="3">Index.html</span>
+                    <li>
+                        <a tabindex="3" href="#hover">Hoverable Things</a>
+                    </li>
+                    <li>
+                        <a tabindex="3" href="#counter">Homemade Counter</a>
+                    </li>
+                </ol>
+            </nav>
+            <nav id="links">
+                <ul>
+                    <li>
+                        <a tabindex="3" title="What Do You Wanna Know About?" href="#about">
+                            About
+                        </a>
+                        <ul hidden>
+                            <li>
+                                <a tabindex="3" title="Know Him Better" href="/Online/About/him.html">
+                                    About User
+                                </a>
+                            </li>
+                            <li>
+                                <a tabindex="3" title="Know His Creation" href="/Online/About/web.html">
+                                    About User's Website
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a tabindex="3" title="User Is Gonna Be Your Teacher" href="/Online/Tutorials/index.html">
+                            Tutorials
+                        </a>
+                    </li>
+                    <li>
+                        <a tabindex="3" title="Code He Randomly Throw (And Works!)" href="/Online/Projects/index.html">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a tabindex="3" title="Classic Shrine With Another Name" href="/Online/Realm/index.html">
+                            Realm
+                        </a>
+                    </li>
+                    <li>
+                        <a tabindex="3" title="His Schizophrenia With Few Restrictions" href="/Online/Stories/index.html">
+                            Stories
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <section>
+            <article id="my-sign">
+                <span>
+                    Made with love by <strong>User Maldito</strong>
+                </span>
+                <span id="year">
+                    &copy;20XX
+                </span>
+            </article>
+            <hr>
+            <article id="stats">
+                <p id="views">
+                    My Views: XXX XXX
+                </p>
+                <p id="created">
+                    First Upload: DD-MM-AAAA
+                </p>
+                <p id="updated">
+                    Last Updated: DD-MM-AAAA
+                </p>
+            </article>
+            <hr>
+        </section>
+        <article id="funny-random-buttons">
+
+        </article>
+    </footer>
+    <div id="scripts-box">
+        <script src="/static/code/js/index.js"></script>
+        <script src="/static/code/js/user's-cookie-concent.js"></script>
+    </div>
+</body>
+</html>
