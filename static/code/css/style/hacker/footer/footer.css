@@ -1,0 +1,18 @@
+html>body>footer{
+    margin-top: 40px;
+    >section{
+        >article{
+            padding: 20px;
+            &:first-of-type{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            &:last-of-type{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+}

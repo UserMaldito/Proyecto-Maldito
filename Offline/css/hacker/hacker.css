@@ -1,0 +1,249 @@
+/*Cool Selection Color*/
+*::selection{
+    background-color: lightgreen;
+    color:  black;
+}
+
+/* Global Variables*/
+:root{
+    /* Background Variables */
+    --color-background-1: rgb(0, 0, 0);    /* Back Background */
+    --color-background-2: rgb(22, 22, 22); /* Second Background */
+    --color-background-3: rgb(180, 0, 0);  /* Just 4 border */
+    --color-background-4: rgb(95, 95, 95); /* Third Background */
+
+    /* Letter Variables */
+    --color-letter-1: rgb(0, 128, 0);     /* Background Words */
+    --color-letter-2: rgb(255, 149, 0);   /* Headers */
+    --color-letter-3: rgb(0, 255, 0);     /* Words */
+    --color-letter-4: rgb(0, 0, 255);     /* Background Words */
+
+    /* Letter Link + States Variables */
+    --color-letter-link-1: rgb(0, 251, 255);    /* States Color 1 */
+    --color-letter-link-2: rgb(255, 255, 0);    /* States Color 2 */
+    --color-letter-link-3: rgb(255, 255, 255);  /* States Color 3 */
+    --color-letter-link-4: rgb(255, 0, 255);    /* States Color 4 */
+
+    /* Border of the Page */
+    --border: 5px solid rgb(0, 35, 0);
+}
+
+
+html{
+    background-color: var(--color-background-1);
+    color: var(--color-letter-link-3);
+    font-family: "Yulong";
+    font-size: x-large;
+    body{
+        /* Change Messages */
+        .new:not(li):after{
+            margin-left: 4px;
+            content: "NEW!";
+            color: var(--color-letter-link-2);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .modified:not(li):after{
+            margin-left: 4px;
+            content: "MODIFIED!";
+            color: var(--color-letter-link-4);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .experimental:not(li):after{
+            margin-left: 4px;
+            content: "experimental";
+            color: var(--color-background-3);
+            text-decoration: underline;
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .old:not(li):after{
+            margin-left: 4px;
+            content: "old";
+            color: var(--color-background-4);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .deprecated:not(li):after{
+            margin-left: 4px;
+            content: "deprecated";
+            color: var(--color-background-4);
+            text-decoration: line-through purple;
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .testing:not(li):after{
+            margin-left: 4px;
+            content: "testing";
+            color: var(--color-letter-link-1);
+            border-bottom: 2px solid var(--color-letter-link-visited);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .hidden:not(li):after{
+            margin-left: 4px;
+            content: "hidden";
+            color: var(--color-letter-3);
+            text-decoration: line-through var(--color-background-2);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .urgent:not(li):after{
+            margin-left: 4px;
+            content: "IMPORTANT";
+            color: var(--color-background-3);
+            text-decoration: overline underline var(--color-letter-2);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+        .to-do:not(li):after{
+            margin-left: 4px;
+            content: "To Do";
+            color: var(--color-letter-2);
+            border-bottom: 2px solid var(--color-background-important);
+            font-size: smaller;
+            position: relative;
+            bottom: 5px;
+        }
+
+        ul{
+            margin: 30px;
+        }
+        ul, ol{
+            >li{
+                margin: inherit;
+                a:visited, a{
+                    text-decoration: none;
+                    color: var(--color-letter-3);
+                    &:hover{
+                        text-decoration: none;
+                        color: var(--color-letter-link-2);
+                    }
+                }
+            }
+            .new>*:after{
+                margin-left: 4px;
+                content: "NEW!";
+                color: var(--color-letter-link-2);
+                font-size: smaller;
+                position: relative;
+                bottom: 5px;
+            }
+            .modified>*:after{
+                margin-left: 4px;
+                content: "MODIFIED!";
+                color: var(--color-letter-link-4);
+                font-size: smaller;
+                position: relative;
+                bottom: 5px;
+            }
+            .experimental>*:after{
+                margin-left: 4px;
+                content: "experimental";
+                color: var(--color-background-3);
+                text-decoration: underline;
+                font-size: smaller;
+                position: relative;
+                bottom: 5px;
+            }
+            .old>*:after{
+                margin-left: 4px;
+                content: "old";
+                color: var(--color-background-4);
+                font-size: smaller;
+                position: relative;
+                bottom: 5px;
+            }
+            .deprecated>*:after{
+                margin-left: 4px;
+                content: "deprecated";
+                color: var(--color-background-4);
+                text-decoration: line-through purple;
+                font-size: smaller;
+                position: relative;
+                bottom: 5px;
+            }
+            .testing>*:after{
+                margin-left: 4px;
+                content: "testing";
+                color: var(--color-letter-link-1);
+                border-bottom: 2px solid var(--color-letter-link-visited);
+                font-size: smaller;
+                position: relative;
+                bottom: 5px;
+            }
+            .hidden>*:after{
+                margin-left: 4px;
+                content: "hidden";
+                color: var(--color-letter-3);
+                text-decoration: line-through var(--color-background-2);
+                font-size: smaller;
+                position: relative;
+                bottom: 5px;
+            }
+            .urgent>*:after{
+                margin-left: 4px;
+                content: "IMPORTANT";
+                color: var(--color-background-3);
+                text-decoration: overline underline var(--color-letter-2);
+                font-size: smaller;
+                position: relative;
+                bottom: 5px;
+            }
+            .to-do>*:after{
+                margin-left: 4px;
+                content: "To Do";
+                color: var(--color-letter-2);
+                border-bottom: 2px solid var(--color-background-important);
+                font-size: smaller;
+                position: relative;
+                bottom: 5px;
+            }
+        }
+
+        /* All the Titles*/
+        h2[title]{
+            color: var(--color-letter-2);
+            text-decoration: underline; /* dotted */
+        }
+        h3[title]{
+            color: var(--color-letter-3);
+            text-decoration: underline; /* dotted */
+        }
+        a[title]:not(body>header *, body>main>aside *){
+            text-decoration: underline;
+            background-color: var(--color-letter-4);
+            color: var(--color-letter-link-3) !important;
+            &:hover{
+                color: var(--color-letter-4) !important;
+                text-decoration: underline;
+                background-color: var(--color-letter-link-3);
+            }
+        }
+        *[title]:not(h2, h3, a){
+            color: lightgreen;
+            background-color: black;
+            &:hover{
+                background-color: lightgreen;
+                color: black;
+            }
+        }
+        a:visited, a:not(body>header *, body>main>aside *){
+            text-decoration: none;
+            color: var(--color-letter-link-1);
+            &:hover{
+                text-decoration: none;
+                background-color: var(--color-background-4);
+            }
+        }
+    }
+}

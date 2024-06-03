@@ -1,0 +1,21 @@
+html>body>header{
+    /* background-color: pink; */
+    text-align: center;
+    margin: 20px;
+    >h1>a{
+        text-decoration: none;
+        animation: changingColors infinite alternate 4s;
+    }
+
+}
+@keyframes changingColors {
+    0%{
+        color: red;
+    }
+    50%{
+        color: green;
+    }
+    100%{
+        color: blue;
+    }
+}

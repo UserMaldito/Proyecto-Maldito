@@ -1,0 +1,9 @@
+*[title]:not(body>header>h1>a, a[title]){
+    cursor: help;
+}
+body>header>h1>a{
+    cursor: wait;
+}
+a[title]:not(body>header>h1>a){
+    cursor: alias;
+}

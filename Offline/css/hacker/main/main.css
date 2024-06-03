@@ -1,0 +1,19 @@
+body>main{
+    border: var(--border);
+}
+body>main:not(#warning){
+    display: flex;
+}
+
+/*Media Rules*/
+@media (max-width: 1000px) {
+    main{
+        flex-direction: column;
+        >aside{
+            nav{
+                flex-direction: row-reverse;
+                justify-content: center;
+            }
+        }
+    }
+}
