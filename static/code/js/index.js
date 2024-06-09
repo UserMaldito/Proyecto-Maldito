@@ -322,5 +322,61 @@ function ChangePhoto(imgNode){
 }
 //---------------------------------------------------------------------------
 
+//----- Mobile Version Script (Event) ---------------------------------------
+var deltaTouch; //Important
+let abreviationList = document.querySelectorAll("[title]");
+
+let isScriptMobile = (window.navigator.userAgent.indexOf("Mobile") != -1);
+if (isScriptMobile) {
+    abreviationList.forEach(abbr => {
+        abbr.addEventListener("touchstart", function(e){
+            let doubleTap = isDoubleTap(e);
+            if (doubleTap) {
+                e.preventDefault();
+                ShowAbbreviation(abbr);
+            }
+        })
+    });
+
+    let hiddenList = document.querySelector("#hidden-list");
+    if (hiddenList) {
+        hiddenList.style.display = "initial";
+        hiddenList.setAttribute("style", "list-style-type: none");
+    }
+}
+
+function isDoubleTap(e) {
+    const maxTime = 700;
+    let doubleTapDetected = false;
+    let touch = e.touches.length;
+
+    if (touch === 1) {
+        if (!deltaTouch) {
+            deltaTouch = e.timeStamp + maxTime;
+        }
+        else{
+            let isNotExpired = (e.timeStamp <= deltaTouch);
+            if (isNotExpired) {
+                e.preventDefault();
+                deltaTouch = null;
+                console.log("Double Tap detected!");
+                doubleTapDetected = true;
+            }
+            else{
+                deltaTouch = e.timeStamp + maxTime;
+            }
+        }
+    }
+
+    return doubleTapDetected;
+}
+
+function ShowAbbreviation(abbr){
+    alert(abbr.title);
+}
+
+
+
+//---------------------------------------------------------------------------
 
 Index();
