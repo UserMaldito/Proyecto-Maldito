@@ -81,10 +81,6 @@ html>body>main>aside{
         }
     }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 @media (max-width: 800px) {
     html>body>main>aside{
         display: flex;
@@ -108,5 +104,3 @@ html>body>main>aside{
         margin-left: 40% !important;
     }
 }
->>>>>>> Minor_Changes
->>>>>>> Mayor_Changes

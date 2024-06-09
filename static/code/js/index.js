@@ -322,8 +322,6 @@ function ChangePhoto(imgNode){
 }
 //---------------------------------------------------------------------------
 
-<<<<<<< HEAD
-=======
 //----- Mobile Version Script (Event) ---------------------------------------
 var deltaTouch; //Important
 let abreviationList = document.querySelectorAll("[title]");
@@ -380,6 +378,5 @@ function ShowAbbreviation(abbr){
 
 
 //---------------------------------------------------------------------------
->>>>>>> Mayor_Changes
 
 Index();
