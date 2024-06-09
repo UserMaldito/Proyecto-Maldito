@@ -81,3 +81,32 @@ html>body>main>aside{
         }
     }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+@media (max-width: 800px) {
+    html>body>main>aside{
+        display: flex;
+        flex-direction: column-reverse !important;
+        width: 100% !important;
+    }
+
+    #breadcrumbs{
+        border: 5px solid var(--color-letter-dark);
+        width: 100% !important;
+    }
+
+    #breadcrumbs>ol, #links>ul{
+        display: flex;
+        flex-direction: column !important;
+        >li{
+            margin: 5px;
+        }
+    }
+    #links>ul{
+        margin-left: 40% !important;
+    }
+}
+>>>>>>> Minor_Changes
+>>>>>>> Mayor_Changes

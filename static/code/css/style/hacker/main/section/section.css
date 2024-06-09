@@ -161,10 +161,23 @@ html>body>main>section{
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 899px) {
     #him-1{
+=======
+@media (max-width: 800px) {
+    #him-1, html>body>main>section{
+>>>>>>> Mayor_Changes
         display: flex;
         flex-direction: column !important;
         padding-top: 20px !important;
     }
+<<<<<<< HEAD
+=======
+    #main-article, #aside-article{
+        width: 100% !important;
+        padding: 0 !important;
+        margin-top: 20px !important;
+    }
+>>>>>>> Mayor_Changes
 }
