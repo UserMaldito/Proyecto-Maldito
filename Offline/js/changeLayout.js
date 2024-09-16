@@ -14,7 +14,7 @@ function VerifingNewLayout(newLayout){
     //Refreshing the definition (of all the links) [necessary]
     DOM.allLinksCss = document.querySelectorAll("link");
     let isMobile = (window.navigator.userAgent.indexOf("Mobile") != -1); //Mobile?
-    let isGallery = window.location.pathname.includes("Online/Gallery/My-Camera-Roll/index.html"); //My Gallery?
+    let isGallery = window.location.pathname.includes("Offline/Online/Gallery/My-Camera-Roll/index.html"); //My Gallery?
     let newLayoutName = "";
 
     switch (newLayout) {
@@ -108,15 +108,15 @@ function HackerCSS(folder) {
     link_8.setAttribute("rel", "stylesheet");
     // link_9.setAttribute("rel", "stylesheet");
 
-    link_1.setAttribute("href", "/css/"+folder+"/fonts/fonts.css");
-    link_2.setAttribute("href", "/css/"+folder + "/"+ folder +".css");
-    link_3.setAttribute("href", "/css/"+folder+"/header/header.css");
-    link_4.setAttribute("href", "/css/"+folder+"/main/main.css");
-    link_5.setAttribute("href", "/css/"+folder+"/main/section/section.css");
-    link_6.setAttribute("href", "/css/"+folder+"/main/aside/aside.css");
-    link_7.setAttribute("href", "/css/"+folder+"/footer/footer.css");
-    link_8.setAttribute("href", "/css/"+folder+"/cursors/cursor.css");
-    // link_9.setAttribute("href", "/css/"+folder+"/images.css");
+    link_1.setAttribute("href", "/Offline/css/"+folder+"/fonts/fonts.css");
+    link_2.setAttribute("href", "/Offline/css/"+folder + "/"+ folder +".css");
+    link_3.setAttribute("href", "/Offline/css/"+folder+"/header/header.css");
+    link_4.setAttribute("href", "/Offline/css/"+folder+"/main/main.css");
+    link_5.setAttribute("href", "/Offline/css/"+folder+"/main/section/section.css");
+    link_6.setAttribute("href", "/Offline/css/"+folder+"/main/aside/aside.css");
+    link_7.setAttribute("href", "/Offline/css/"+folder+"/footer/footer.css");
+    link_8.setAttribute("href", "/Offline/css/"+folder+"/cursors/cursor.css");
+    // link_9.setAttribute("href", "/Offline/css/"+folder+"/images.css");
 
     document.head.appendChild(link_1);
     document.head.appendChild(link_2);
@@ -135,16 +135,16 @@ function BootstrapCSS(){
     link_1.setAttribute("rel", "stylesheet");
 
     //Bootstrap Link 
-    link_1.setAttribute("href", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
+    link_1.setAttribute("href", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/Offline/css/bootstrap.min.css");
     link_1.setAttribute("integrity", "sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN");
     link_1.setAttribute("crossorigin", "anonymous");
 
     document.head.appendChild(link_1);
 
-    if (window.location.pathname.match("Online/Gallery/My-Camera-Roll/index.html")){
+    if (window.location.pathname.match("/Offline/Online/Gallery/My-Camera-Roll/index.html")){
         let link_2 = document.createElement("link");
         link_2.setAttribute("rel", "stylesheet");
-        link_2.setAttribute("href", "/css/hacker/specific/gallery/gallery.css");
+        link_2.setAttribute("href", "/Offline/css/hacker/specific/gallery/gallery.css");
         document.head.appendChild(link_2);
     }
 }
@@ -166,12 +166,12 @@ function HackerGalleryCSS(folder) {
     link_6.setAttribute("rel", "stylesheet");
     
     
-    link_1.setAttribute("href", "/css/"+folder+"/fonts/fonts.css");
-    link_2.setAttribute("href", "/css/"+folder+"/cursors/cursor.css");
-    link_3.setAttribute("href", "/css/"+folder+"/"+ folder +".css");
-    link_4.setAttribute("href", "/css/"+folder+"/header/header.css");
-    link_5.setAttribute("href", "/css/"+folder+"/specific/gallery/gallery.css");
-    link_6.setAttribute("href", "/css/"+folder+"/footer/footer.css");
+    link_1.setAttribute("href", "/Offline/css/"+folder+"/fonts/fonts.css");
+    link_2.setAttribute("href", "/Offline/css/"+folder+"/cursors/cursor.css");
+    link_3.setAttribute("href", "/Offline/css/"+folder+"/"+ folder +".css");
+    link_4.setAttribute("href", "/Offline/css/"+folder+"/header/header.css");
+    link_5.setAttribute("href", "/Offline/css/"+folder+"/specific/gallery/gallery.css");
+    link_6.setAttribute("href", "/Offline/css/"+folder+"/footer/footer.css");
     
     document.head.appendChild(link_1);
     document.head.appendChild(link_2);
@@ -217,7 +217,7 @@ window.onload = () => {
 
     //Set items
     let localLayout = localStorage.getItem("layoutName");
-    let isGallery = window.location.pathname.includes("Online/Gallery/My-Camera-Roll/index.html");
+    let isGallery = window.location.pathname.includes("/Offline/Online/Gallery/My-Camera-Roll/index.html");
     
     // If we are in my gallery (with that url/link/whatever), wanna load my css gallery super-duper-special
     // If not, go to default layout: hacker

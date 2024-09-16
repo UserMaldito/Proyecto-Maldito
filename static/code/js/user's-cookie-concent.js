@@ -68,14 +68,17 @@ function EventCookieBox(cookieBox, hide) {
         cookieBox.style.border = "0";
     }
 }
-//---------------------------------------------------------------------------
-let wannaCookies = localStorage.getItem("User says");
-if (wannaCookies == undefined) {
-    CookieBox();
+//------Do Not Show In Mobile Version (Is Annoying)--------------------------
+if((window.navigator.userAgent.indexOf("Mobile") == -1)){
+    let wannaCookies = localStorage.getItem("User says");
+    if (wannaCookies == undefined) {
+        CookieBox();
+    }
+    else{
+        console.log("Do you miss User's e-cookies? Write 'EraseCookies()' and hit enter");
+    }
 }
-else{
-    console.log("Do you miss User's e-cookies? Write 'EraseCookies()' and hit enter");
-}
+
 function EraseCookies() {
     localStorage.removeItem("User says");
     console.log("In the very next refresh, you'll have it ^_^");

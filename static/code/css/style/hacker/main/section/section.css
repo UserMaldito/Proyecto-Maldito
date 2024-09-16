@@ -58,12 +58,20 @@ html>body>main>section{
                 list-style-type: none;
             }
         }
-        a{
+        a[title]{
             text-decoration: underline var(--color-letter-info);
             color: var(--color-letter-danger);
             &:hover{
                 text-decoration: underline var(--color-letter-danger);
                 color: var(--color-letter-secondary);
+            }
+        }
+        a{
+            text-decoration: underline var(--color-letter-danger);
+            color: var(--color-letter-secondary);
+            &:hover{
+                text-decoration: underline var(--color-letter-info);
+                color: var(--color-letter-danger);
             }
         }
         pre{

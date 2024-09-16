@@ -160,3 +160,6 @@
 
 - Idea: Put Artist's Social Media (Tribute Page)
 
+- Idea: Back-end part protected (user + psw). 2 psw (1 is correct, other is for...)
+
+
