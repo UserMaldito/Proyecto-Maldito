@@ -1,9 +1,15 @@
 *[title]:not(body>header>h1>a, a[title]){
-    cursor: help;
+    cursor: url("/static/data/Wii-Cursor/wii-help-ccw.cur"), crosshair;
 }
 body>header>h1>a{
-    cursor: wait;
+        cursor: url("/static/data/Wii-Cursor/wii-loading-ring.ani"), wait;
 }
-a[title]:not(body>header>h1>a){
-    cursor: alias;
+a{
+    cursor: url("/static/data/Wii-Cursor/wii-open.cur"), alias;
+    &[title]:not(body>header>h1>a){
+        cursor: url("/static/data/Wii-Cursor/wii-pointer-blue.cur"), alias;
+    }
+}
+html{
+    cursor: url("/static/data/Wii-Cursor/Wii\ Cursor.cur"), pointer;
 }

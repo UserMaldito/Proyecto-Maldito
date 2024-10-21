@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/static/code/css/style/hacker/hacker.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/cursors.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/header/header.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/main/main.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/main/section/section.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/main/aside/aside.css">
+    <link rel="stylesheet" href="/static/code/css/style/hacker/footer/footer.css">
+    
+    <!-- <link rel="stylesheet" href="/static/code/css/style/hllwn/hllwn.css"> -->
+
+    <title>User's Gallery</title>
+</head>
+<body class="m-3">
+    <header class="text-center m-3">
+        <h1>
+            <a title="Welcome To User's Weird Website. Welcome To His Mind" tabindex="2" href="/Online/index.html" class="text-decoration-none">
+                The User Maldito's Website
+            </a>
+        </h1>
+    </header>
+    <main class="d-flex flex-column-reverse">
+        <section class="d-flex">
+            <article id="main-article"  class="border border-2 border-primary margin-1 order-2 flex-grow-1 w-75 m-2">
+                <article id="greeting" class="m-3">
+                    <header>
+                        <h3 title="Photos taken with his phone">
+                            Gallery
+                        </h3>
+                    </header>
+                    <p class="welcome-message m-3">
+                        Do you wanna see what he see?
+                    </p>
+                    <a id="user" title="Photos of User + People (Mirror Collection)" href="/Online/Gallery/Camera-Roll/User/users-photos.html">
+                        User's Photos
+                    </a>
+                    <br><br>
+                    <a id="other-things" title="Landscape, Animals and Whatever..." href="/Online/Gallery/Camera-Roll/Other-Things/other-things.html">
+                        Other Things
+                    </a>
+                </article>
+                <hr id="description">
+            </article>
+            <select name="layoutChanger" id="layoutChanger">
+                <option value="default">-- Layout Selector --</option>
+                <option value="hacker">Hacker Style 2.0</option>
+                <option value="bootstrap">Simple</option>
+                <option value="css-hater">No CSS</option>
+            </select>
+        </section>
+        <aside class="d-flex flex-row justify-content-around align-items-center">
+            <nav id="breadcrumbs">
+                <ol class="d-flex list-group">
+                    <li class="list-group-item active list-group-item-action">
+                        <a class="text-white" tabindex="3" href="/Online/index.html">Online</a>
+                    </li>
+                    <li class="list-group-item active list-group-item-action">
+                        <a class="text-white" tabindex="3" href="/Online/index.html">Gallery</a>
+                    </li>
+                    <li class="list-group-item bg-info disabled">
+                        <span tabindex="3">Index.html</span>
+                    </li>
+                    <li class="list-group-item list-group-item-action list-group-item-secondary">
+                        <a tabindex="3" class="text-decoration-none" href="#user">User</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action list-group-item-secondary">
+                        <a tabindex="3" class="text-decoration-none" href="#other-things">Other Things</a>
+                    </li>
+                </ol>
+            </nav>
+            <nav id="links">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action list-group-item-success">
+                        <a tabindex="3" class="text-decoration-none" title="What Do You Wanna Know About?" href="#about">
+                            About
+                        </a>
+                        <ul id="hidden-list" hidden>
+                            <li class="list-group-item">
+                                <a tabindex="3" class="text-decoration-none" title="Know Him Better" href="/Online/About/him.html">
+                                    About User
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a tabindex="3" class="text-decoration-none" title="Know His Creation" href="/Online/About/web.html">
+                                    About User's Website
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item list-group-item-action list-group-item-danger">
+                        <a tabindex="3" class="text-decoration-none" title="User Is Gonna Be Your Teacher" href="/Online/Tutorials/index.html">
+                            Tutorials
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action list-group-item-info">
+                        <a tabindex="3" class="text-decoration-none" title="Code He Randomly Throw (And Works!)" href="/Online/Projects/index.html">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action list-group-item-danger">
+                        <a tabindex="3" class="text-decoration-none" title="Classic Shrine With Another Name" href="/Online/Realm/index.html">
+                            Realm
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action list-group-item-success">
+                        <a tabindex="3" class="text-decoration-none" title="His Schizophrenia With Few Restrictions" href="/Online/Stories/index.html">
+                            Stories
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action list-group-item-success">
+                        <a tabindex="3" class="text-decoration-none" title="Narcissism" href="/Online/Gallery/index.html">
+                            Gallery
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <section>
+            <article id="my-sign">
+                <span>
+                    Made with love by <strong title="Webmaster/Admin of The Website">User Maldito</strong>
+                </span>
+                <span id="year">
+                    &copy;20XX
+                </span>
+            </article>
+            <hr>
+            <article id="stats" class="d-flex justify-content-around">
+                <p id="views">
+                    My Views: XXX XXX
+                </p>
+                <p id="created">
+                    First Upload: DD-MM-AAAA
+                </p>
+                <p id="updated">
+                    Last Updated: DD-MM-AAAA
+                </p>
+            </article>
+            <hr>
+        </section>
+        <article id="funny-random-buttons">
+            
+        </article>
+    </footer>
+    <div id="scripts-box">
+        <script src="/static/code/js/index.js"></script>
+        <script src="/static/code/js/layout-changer.js"></script>
+    </div>
+</body>
+</html>

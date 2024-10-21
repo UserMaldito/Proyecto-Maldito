@@ -162,4 +162,6 @@
 
 - Idea: Back-end part protected (user + psw). 2 psw (1 is correct, other is for...)
 
-
+- Idea: Spanish (Tribute?) Page (style and music [
+    idk, it's gonna be so difficult and different...
+])

@@ -4,11 +4,6 @@ const messageDOM = {
     changelog: document.querySelector("#main-article #changelog+article .welcome-message"),
     thoughts: document.querySelector("#main-article #thoughts+article header h3"),
 };
-console.log("Init");
-console.log(messageDOM.welcome);
-console.log(messageDOM.description);
-console.log(messageDOM.changelog);
-console.log(messageDOM.thoughts);
 
 let welcomeMessage = () =>{
     const messages = [

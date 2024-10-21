@@ -375,8 +375,6 @@ function ShowAbbreviation(abbr){
     alert(abbr.title);
 }
 
-
-
 //---------------------------------------------------------------------------
 
 Index();

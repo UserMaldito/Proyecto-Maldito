@@ -1,0 +1,64 @@
+:root{
+    --color-letter-primary: rgb(236, 125, 17);
+    --color-letter-secondary: rgb(128, 78, 59);
+    --color-letter-black: rgb(0, 0, 0);
+    --color-letter-white: rgb(255, 255, 255);
+    --color-letter-dark: rgb(77, 22, 0);
+    --color-letter-light: rgb(239, 215, 184);
+    --color-letter-danger: rgb(152, 38, 8);
+    --color-letter-warning: rgb(232, 174, 74);
+    --color-letter-info: rgb(82, 172, 0);
+    --color-letter-aux-1: rgb(136, 124, 86);
+    --color-letter-aux-2: rgb(110, 58, 158);
+    --color-letter-aux-3: rgb(82, 172, 0);
+    --color-letter-aux-4: rgb(242, 143, 28);
+}
+
+::selection{
+    background-color: var(--color-letter-aux-2);
+    color: var(--color-letter-aux-3);
+}
+
+html{
+    /* I Love This Style lol  https://developer.mozilla.org/es/docs/Web/CSS/CSS_images/Using_CSS_gradients#usando_gradientes_c%C3%B3nicos*/
+    background: conic-gradient(at 0% 50%, var(--color-letter-aux-4), var(--color-letter-aux-2), var(--color-letter-aux-3));
+    font-size: x-large;
+    scroll-behavior: smooth;
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-letter-aux-4) var(--color-letter-aux-2);
+
+    a{
+        color: var(--color-letter-light)
+    }
+}
+
+a{
+    color: var(--color-letter-aux-3);
+    &:hover{
+        color: var(--color-letter-aux-3);
+        font-style: oblique;
+    }
+}
+
+a[title]:not(body>header>h1>a){
+    text-decoration: underline dotted white 1px;
+    font-style: oblique;
+    &:hover{
+        color: var(--color-letter-aux-4);
+        text-decoration: underline solid var(--color-letter-info) 2px;
+        font-style: normal;
+
+    }
+}
+
+*[title]:not(a[title], header *){
+    color: var(--color-letter-aux-1);
+    background-color: var(--color-letter-secondary);
+    text-decoration: underline dashed var(--color-letter-danger) 2px;
+    font-style: oblique;
+    &:hover{
+        color: var(--color-letter-white);
+        text-decoration: underline solid var(--color-letter-warning) 2px;
+        font-style: normal;
+    }
+}

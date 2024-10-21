@@ -34,14 +34,14 @@
                     <p class="welcome-message">
                         Everything have their reason. And the reason of the code is right here.
                     </p>
-                    <details id="hover">
+                    <details id="hover" open>
                         <summary>
                             How do you do the Hover thing?
                         </summary>
                         <p>
                             That's a easy question. Is the main attraction of the website, so it have to be notice.
                             We can make it work for other devices, because, at first, it only works on PC users.
-                            See the JS section (To-Do).
+                            See the JS section (Done).
                         </p>
                         <hr id="hover-html">
                         <details>
@@ -76,6 +76,93 @@ a[title]{
         color: lightblue;
         text-decoration: none;
     }
+}
+                            </code></pre>
+                        </details>
+                        <hr id="hover-js">
+                        <details open>
+                            <summary>
+                                JS
+                            </summary>
+                            <p>
+                                With JavaScript, we can do something like:
+                                <i>
+                                    "If you see a <strong>Mobile User</strong>, let's do this: If the user
+                                    <strong>double tap</strong> a hovered thing, show it as a popup."
+                                </i>.
+                            </p>
+                            <p>
+                                I'll reccommend to, first, understand the code and then copy-paste the code.
+                                Anyways, now it's time to explain the code.
+                            </p>
+                            <p>
+                                Step 1. Declare the time between touch (double-click/double-touch/double-tap = deltaTouch).
+                            </p>
+                            <p>
+                                Step 2: Get all the <i>hovered thing</i>
+                            </p>
+                            <pre><code>
+var deltaTouch;
+
+//Search, in my HTML, all the attributes with the name: "title"
+let hoveredList = document.querySelectorAll("[title]");
+                            </code></pre>
+                            <p>
+                                Step 3: See if the User is Mobile or not
+                            </p>
+                            <p>
+                                Step 4: If true, put an event saying: "If someone touch one of the hovered things,
+                                check if the user DO the double-tap.".
+                            </p>
+                            <pre><code>
+//Searching in all the hovered things
+abreviationList.forEach(abbr => {
+            //Event saying: "if you detect a tap, check for a double-tap"
+            abbr.addEventListener("touchstart", function(e){
+                let doubleTap = isDoubleTap(e);
+                //If it's a double-tap, show the content as a popup
+                if (doubleTap) {
+                    e.preventDefault();
+                    ShowAbbreviation(abbr);
+                }
+            })
+        });
+
+
+// -- The functions --
+function isDoubleTap(e) {
+    const maxTime = 700; //Time between taps
+    let doubleTapDetected = false;
+    let touch = e.touches.length;
+
+    //Tap Detected?
+    if (touch === 1) {
+        //If has no value, I will put one (Tap-1)
+        if (!deltaTouch) {
+            deltaTouch = e.timeStamp + maxTime;
+        }
+        else{ 
+            let isNotExpired = (e.timeStamp &lt;= deltaTouch);
+            //(Tap-2) Is short enough to detect it as a double tap?
+            if (isNotExpired) {
+                //Answer: Yes -> Reset the timer and say that we detected a Double-Tap
+                e.preventDefault();
+                deltaTouch = null;
+                console.log("Double Tap detected!");
+                doubleTapDetected = true;
+            }
+            else{
+                //Answer: No -> Keep searching for another tap
+                deltaTouch = e.timeStamp + maxTime;
+            }
+        }
+    }
+
+    return doubleTapDetected;
+}
+
+function ShowAbbreviation(abbr){
+    alert(abbr.title);
 }
                             </code></pre>
                         </details>
@@ -212,42 +299,47 @@ const separator = ',';
                 </ol>
             </nav>
             <nav id="links">
-                <ul>
-                    <li>
-                        <a tabindex="3" title="What Do You Wanna Know About?" href="#about">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action list-group-item-success">
+                        <a tabindex="3" class="text-decoration-none" title="What Do You Wanna Know About?" href="#about">
                             About
                         </a>
-                        <ul hidden>
-                            <li>
-                                <a tabindex="3" title="Know Him Better" href="/Online/About/him.html">
+                        <ul id="hidden-list" hidden>
+                            <li class="list-group-item">
+                                <a tabindex="3" class="text-decoration-none" title="Know Him Better" href="/Online/About/him.html">
                                     About User
                                 </a>
                             </li>
-                            <li>
-                                <a tabindex="3" title="Know His Creation" href="/Online/About/web.html">
+                            <li class="list-group-item">
+                                <a tabindex="3" class="text-decoration-none" title="Know His Creation" href="/Online/About/web.html">
                                     About User's Website
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a tabindex="3" title="User Is Gonna Be Your Teacher" href="/Online/Tutorials/index.html">
+                    <li class="list-group-item list-group-item-action list-group-item-danger">
+                        <a tabindex="3" class="text-decoration-none" title="User Is Gonna Be Your Teacher" href="/Online/Tutorials/index.html">
                             Tutorials
                         </a>
                     </li>
-                    <li>
-                        <a tabindex="3" title="Code He Randomly Throw (And Works!)" href="/Online/Projects/index.html">
+                    <li class="list-group-item list-group-item-action list-group-item-info">
+                        <a tabindex="3" class="text-decoration-none" title="Code He Randomly Throw (And Works!)" href="/Online/Projects/index.html">
                             Projects
                         </a>
                     </li>
-                    <li>
-                        <a tabindex="3" title="Classic Shrine With Another Name" href="/Online/Realm/index.html">
+                    <li class="list-group-item list-group-item-action list-group-item-danger">
+                        <a tabindex="3" class="text-decoration-none" title="Classic Shrine With Another Name" href="/Online/Realm/index.html">
                             Realm
                         </a>
                     </li>
-                    <li>
-                        <a tabindex="3" title="His Schizophrenia With Few Restrictions" href="/Online/Stories/index.html">
+                    <li class="list-group-item list-group-item-action list-group-item-success">
+                        <a tabindex="3" class="text-decoration-none" title="His Schizophrenia With Few Restrictions" href="/Online/Stories/index.html">
                             Stories
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action list-group-item-success">
+                        <a tabindex="3" class="text-decoration-none" title="Narcissism" href="/Online/Gallery/index.html">
+                            Gallery
                         </a>
                     </li>
                 </ul>
