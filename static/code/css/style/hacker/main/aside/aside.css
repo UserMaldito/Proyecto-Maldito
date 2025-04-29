@@ -71,6 +71,11 @@ html>body>main>aside{
         }
     }
 
+    #layoutChanger{
+        border: 2px solid red;
+        color: blue;
+    }
+
     /* Color Styles */
     *{
         color: var(--color-letter-danger);

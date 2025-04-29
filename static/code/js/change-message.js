@@ -16,6 +16,8 @@ let welcomeMessage = () =>{
         "I hope to see you soon :D *virtual hug*",
         "User says: How do get in here?",
         "Welcome Message Test",
+        "Hi! Hi! Hi! ^_^",
+        "return Ok('The Usual?');",
         "Oh, hello there! You have reach successfully the User's home page. Take a seat and enjoy his awesome old school website."
     ];
 
@@ -30,6 +32,11 @@ let descriptionMessage = () =>{
         "User says: If you're bored, read something I made. Let's stay bored together",
         "If you're interested in Programming, keep looking!!",
         "Description Message Test",
+        "Enjoy this tiny disaster webpage :3",
+        "What are you doing in my WebPage?!",
+        "Oh, still reading..? Hmmm... Say Cheese! And... and... And do a backflip! And... Oh my god, stop reading already! I dont't know what I can say now.. -_-!",
+        "................................",
+        "A website called 'iamuser.fun'. -20 boredom, +10 creativity, +15 fun, -5 Internet, +0.1% all damage",
         "curl https://iamuser.fun/Offline/txt/thoughts.txt > ideas.txt",
         "Here you can read some of his stories, learn something about programming and know him better."
     ];
@@ -43,7 +50,10 @@ let changelogMessage = () =>{
         "It's just a changelog...",
         "Changelog Message Test",
         "What changes? Everything is new.",
-        "Take a look what changed while you aren't here."
+        "Take a look what changed while you aren't here.",
+        "Life is changing, why not this too?",
+        "The webpage just leveled up! See the stats here",
+        "Wanna see the past and the present? Down here is the change and remember that you write your future ^^",
     ];
 
     let randomNumber = parseInt(Math.random() * (messages.length));

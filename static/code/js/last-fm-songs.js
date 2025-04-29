@@ -11,9 +11,9 @@ let dataBuilder = (data) => {
 
     let subtitle = document.createElement("h3");
     subtitle.innerHTML = "Recent Tracks";
-    subtitle.title = "What User Is Listening";
+    subtitle.title = "What Is He Listening Right Now?";
     subtitle.id = "recent-tracks";
-    recentTracksWrite.append(subtitle);
+    recentTracksWrite.before(subtitle);
 
     let trackList = document.createElement("ul");
 
