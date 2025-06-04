@@ -18,7 +18,15 @@ let welcomeMessage = () =>{
         "Welcome Message Test",
         "Hi! Hi! Hi! ^_^",
         "return Ok('The Usual?');",
-        "Oh, hello there! You have reach successfully the User's home page. Take a seat and enjoy his awesome old school website."
+        "Oh, hello there! You have reach successfully the User's home page. Take a seat and enjoy his awesome old school website.",
+        "Aww, hello there! I hope you are having a great day!",
+        "The usual, pal?",
+        "Yo solía ser un aventurero como tú. Hasta que recibí una flecha en la rodilla...",
+        "Now that I have your attention, let me tell you a secret: I am User!",
+        "..................................................... Sorry, I'm shy",
+        "................................................ Sorry, I'm just a little bit shy",
+        "........................................ Sorry, I just don't know what to say",
+        "................................"
     ];
 
     let randomNumber = parseInt(Math.random() * (messages.length));
@@ -38,7 +46,11 @@ let descriptionMessage = () =>{
         "................................",
         "A website called 'iamuser.fun'. -20 boredom, +10 creativity, +15 fun, -5 Internet, +0.1% all damage",
         "curl https://iamuser.fun/Offline/txt/thoughts.txt > ideas.txt",
-        "Here you can read some of his stories, learn something about programming and know him better."
+        "Here you can read some of his stories, learn something about programming and know him better.",
+        "Free Content! (But not free of bugs)",
+        "I think we still have some space for you, so... get confy and enjoy the ride!",
+        "I hope you find something uninteresting here! (If you find something interesting, please let me know, is a bug!)",
+        "Maybe my web have some bugs because I like butterflies..."
     ];
 
     let randomNumber = parseInt(Math.random() * (messages.length));
@@ -49,11 +61,16 @@ let changelogMessage = () =>{
     const messages = [
         "It's just a changelog...",
         "Changelog Message Test",
+        "................................",
         "What changes? Everything is new.",
         "Take a look what changed while you aren't here.",
         "Life is changing, why not this too?",
         "The webpage just leveled up! See the stats here",
         "Wanna see the past and the present? Down here is the change and remember that you write your future ^^",
+        "The world is changing, why not this too?",
+        "The changelog is here!",
+        "Whoops! I forgot to update the changelog...",
+        "I don't know what to say... I just wanted to say 'Hello :3'.",
     ];
 
     let randomNumber = parseInt(Math.random() * (messages.length));
