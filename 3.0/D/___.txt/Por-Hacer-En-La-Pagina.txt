@@ -1,0 +1,53 @@
+Tooltip example: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_tooltip
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Parte 1: Teletexto Página Principal....... Sin Acabar [3/2]
+    1. Tema (colores y posiciones) .................................................... Ok
+    2. Contenido ...................................................................... Sin Acabar [1/6] (3.0 Lista)
+    3. (OPCIONAL) Comportamiento (cambios de páginas, ubicación actual, tiempo/hora)... Ok
+    4. (OPCIONAL) Mejorar Tooltip + pequeños detalles en la consola / otros lugares ... Ok
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Parte 2: Contenido....... Sin Acabar [0/6]
+    --------------------------------------------------------------------------------------------------------------------
+    1. Personal ............... Sin Acabar [5/5]
+        1.0 Página Principal .. Ok
+        1.1 Sobre User ........ Ok (desglose web [todos los enlaces recogidos]) -> (tal vez siguiente actualización 3.1)
+        1.2 Diario ............ Ok (OPCIONAL: hablar de Chris / Grupo Racista (?) / Nahuel + terminar con Sofía) -> (tal vez siguiente actualización 3.1)
+        1.3 Galería ........... Ok (OPCIONAL: actualizar fotos + detalles al resaltar)
+        1.4 Dedicatorias ...... Ok -> (1-3 por actualización)
+    --------------------------------------------------------------------------------------------------------------------
+    2. Arte ...................... Sin Hacer [0/6]
+        2.0 Página Principal ..... Sin Empezar
+        2.1 Lírica ............... Sin Empezar
+        2.2 Música ............... Sin Empezar
+        2.3 Web .................. Sin Empezar
+        2.4 Fotografía ........... Sin Empezar
+        2.5 Demás ................ Sin Empezar
+    --------------------------------------------------------------------------------------------------------------------
+    3. Cambios ............................... Sin Hacer [0/4]
+        3.0 Página Principal ................. Sin Empezar
+        3.1 Historial ........................ Sin Empezar
+        3.2 Ideas y Proyectos ................ Sin Empezar
+        3.3 Mejoras, Corecciones y Promesas .. Sin Empezar
+    --------------------------------------------------------------------------------------------------------------------
+    4. Aprendiendo ............................ Sin Hacer [0/10]
+        4.0 Página Principal .................. Sin Empezar
+        4.1 Infotmática ....................... Sin Empezar
+        4.2 Idiomas ........................... Sin Empezar
+        4.3 Fotografía ........................ Sin Empezar
+        4.4 Hostelería ........................ Sin Empezar
+        4.5 Bailes (Pasos de) ................. Sin Empezar
+        4.6 Estudios .......................... Sin Empezar
+        4.7 Cocina ............................ Sin Empezar
+        4.8 Psicología ........................ Sin Empezar
+        4.9 Sin Clasificar .................... Sin Empezar
+    --------------------------------------------------------------------------------------------------------------------
+    5. Noticias Ambulances No Importantes (NANI) ... Sin Empezar [0/3]
+        5.1 Servidor PHP ........................... Sin Empezar
+        5.2 Mensajes Preselccionados ............... Sin Empezar
+        5.3 Vincular y funcional ................... Sin Empezar
+        5.4 (OPCIONAL) Accesible por (por ejemplo) bot de Whatsapp/telegram/loquesea -> cambios al servidor -> mostrar mensajes -> ALMACENAR MENSAJE
+    --------------------------------------------------------------------------------------------------------------------
+    6. Botones del Internet .............................. Sin Empezar [0/3]
+        6.1 Botones de Gente de Neocities y + ............ Sin Empezar
+        6.2 Gif y tonterías animadas + webring ........... Sin Empezar
+        6.3 Actualizar el mío + ponerlo .................. Sin Empezar

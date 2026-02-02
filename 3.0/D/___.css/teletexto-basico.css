@@ -1,0 +1,48 @@
+:root{
+/* Colores*/
+    background-color: black;
+    color: white;
+    
+
+/* Enlaces */
+    a{
+        color: white;
+        &:hover{
+            font-weight: 300;
+        }
+        font-weight: 900;
+    }
+    
+
+/* Letras */
+    font-family: monospace;
+    font-size: larger;
+    font-weight: 100;
+    
+
+/* Texto Resaltado */
+        [data-title]{
+        background-color: blue;
+        color: white;
+        position: relative;
+        cursor: help;
+        
+        &:hover::after{
+            content: attr(data-title);
+            position: absolute;
+            top: -110%;
+            left: -15%;
+            text-align: justify;
+            
+            background-color: white;
+            color: blue;
+            font-family: monospace;
+            font-size: .9em;
+            padding: 2px 6px;
+            white-space: nowrap;
+        }
+    }
+
+/* Explicable */
+    scroll-behavior: smooth;
+}

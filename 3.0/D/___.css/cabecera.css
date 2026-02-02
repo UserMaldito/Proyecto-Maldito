@@ -1,0 +1,41 @@
+body{
+    header{
+        /* Caminito */
+        #teletexto-alto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            #página-info{
+                color: darkgoldenrod;
+            }
+            
+            #ir-a-página{
+                color:darkturquoise;
+                
+            }
+            
+            #ir-a-página-por-número{
+                background-color: transparent;
+                outline: 1px solid yellow;
+                color: cyan;
+                width: 3ch;
+            }
+            
+            #página-migas-de-pan{
+                color: darkred;
+            }
+            
+            #fecha-hora{
+                color: darkgreen
+            }
+        }
+        
+        /* Título de la Página Web */
+        #título-página{
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+}

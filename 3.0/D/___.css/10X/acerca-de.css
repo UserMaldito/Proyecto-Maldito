@@ -1,0 +1,14 @@
+body{
+/* Líneas Separación*/
+    hr{
+        color: red;
+    }
+    
+/* Principal */
+    main{
+        margin: 30px 30px;
+        ul li{
+            margin: 25px 0;
+        }
+    }
+}

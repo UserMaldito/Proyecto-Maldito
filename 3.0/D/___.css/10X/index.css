@@ -1,0 +1,29 @@
+body{
+/* Letras */
+    font-family: monospace;
+    font-size: larger;
+    font-weight: 100;
+    
+
+/* Enlaces */
+    a:not(header *){
+        color: white;
+        &:hover{
+            color: red;
+            font-weight: 300;
+        }
+        font-weight: 900;
+    }
+    
+
+    /* Líneas Separación*/
+    hr{
+        color: darkred;
+    }
+    /* Principal */
+    main{
+        margin: 30px 30px;
+    }
+    
+
+}

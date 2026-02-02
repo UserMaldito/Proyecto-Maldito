@@ -1,0 +1,23 @@
+body{
+/* Líneas Separación*/
+    hr{
+        color: red;
+    }
+/* Enlaces */
+    a:not(header *){
+        color: white;
+        &:hover{
+            color: red;
+            font-weight: 300;
+        }
+        font-weight: 900;
+    }
+    
+/* Principal */
+    main{
+        margin: 30px 30px;
+        details > *:not(summary){
+            margin: 20px 30px;
+        }
+    }
+}

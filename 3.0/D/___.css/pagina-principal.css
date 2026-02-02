@@ -1,0 +1,68 @@
+body{
+    text-align:justify;
+
+    main{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: .5fr .1fr .5fr .5fr;
+        gap: 0 0;
+        grid-template-areas:
+        "Personal Arte"
+        "Texto-Rodante Texto-Rodante"
+        "Cambios Enseñando"
+        "Botones Botones"
+        ;
+        
+        section{
+            display: inherit;
+            justify-items: center;
+            /* Listas */
+            ul{
+                list-style-type: none;
+            }
+        }
+        
+        #personal{
+            grid-area: Personal;
+            background-color: red;
+            >h2{
+                color: orange
+            }
+        }
+        #arte{
+            grid-area: Arte;
+            background-color: green;
+            >h2{
+                color: red;
+            }
+        }
+        #teletexto-rodante{
+            grid-area: Texto-Rodante;
+            background-color: black
+        }
+        #cambios{
+            grid-area: Cambios;
+            background-color:yellow;
+            color: black;
+            a{
+                color: blue;
+            }
+        }
+        #enseñando{
+            grid-area: Enseñando;
+            background-color: navy;
+            h2{
+                color: lightsalmon;
+            }
+            a{
+                color: yellow;
+            }
+        }
+        #botones-otras-páginas{
+            grid-area: Botones;
+            background-color: white;
+            color: black;
+        }
+    }
+}

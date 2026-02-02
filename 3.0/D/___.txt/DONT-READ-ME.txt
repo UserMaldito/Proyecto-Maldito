@@ -1,0 +1,62 @@
+1. Ideas Iniciales
+
+    - Página web dedicada a blog personal
+    - ¿Qué se hace? Lo que me de la puta gana: diario, fotos mías, escritos profundos, santuario a mis cosas favoritas (música, artistas, gente conocida mía, lugares, ...), tutoriales de cosas, 
+    - ¿Estilo?: Retro, Hacker, Y2K, consola (?), letra pixel (Windows XP Dark Mode) / Windows XP Light Mode / Moderno, Sencillo, letra formal / Sin CSS (sin estilos)
+    - ¿Modo de "habla"?: 1ra persona singular + 3ra persona singular, con tecnicisos (explicados de manera simple y escueta)
+    - ¿Código?: Abierto, légible, modularizado y reutilizable
+    - Organización CMD like
+    - Añadir banners de publicidad falsos (o de otras páginas web [propias o ajenas])
+    - ¿Otro estilo?: y2k (CMD), 2010 thing (más visual).
+    - ¿Preguntas o más ideas? Con ayuda de ChatGPT
+    - Galería: Estando en C:/ hacer referencia a contenido multimedia en D:/
+
+-------------
+
+2. Estructura
+
+
+C:/
+|- portada / warning / dirList /
+    |- Usuarios
+        |- User-Maldito
+            |- Acerca de
+                |- User
+                |- 
+            |- Documentos
+                |- Ensayos
+                |- Historias y Delirios
+                |- Proyectos y Tareas
+                |- Tutoriales
+                |-
+            |- Música
+            |- Fotos
+            |- Vídeos
+            |- Carpeta Personal
+                |-
+                |-
+                |-
+                |-
+            |-
+        |- Otros Usuarios
+            |- Pink-Brocoli
+        |- 
+
+
+3. Ideas Desestructuradas
+
+- Página de tributo a:
+    - Tekno en Español (Parkineos, SargentoDMT, Amygdala, ...)
+    - Depresión Sonora
+    - Música latina (cumbia, dembow, reggeaton, trap[?], ...)
+    - Speedcore (?)
+
+- Inicio del renacimiento de VotaMiCuerpo.es
+- Autoplayer desde 0
+- Horrible idea de separar la página por "C:/" y "D:/", a ver cómo le hago para hacerlo lpm
+- Hablar sobre el libro "Rodeados de Idiotas" + Mi Teoría Musical en -> Disertaciones Aleatorias
+
+
+-----------
+<p>No diré hola... Diré Buenos (Días/Tardes/Noches). Este es el sitio de User Maldito <span title="¡¡¡ARRIBA ESPAÑA!!!">en español</span>.</p>
+<p>Un desarrollador web fallido que busca la creatividad lógica, desahogo oscuro e historias personales.</p>

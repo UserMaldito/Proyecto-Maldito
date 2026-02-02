@@ -1,0 +1,114 @@
+body{
+                /* General */
+    /* Colores */
+    background-color: black;
+    color: white;
+
+    [data-title]{
+        background-color: blue;
+		color: white;
+        position: relative;
+        cursor: help;
+
+        &:hover::after{
+            content: attr(data-title);
+            position: absolute;
+            top: -110%;
+            left: -50%;
+            text-align: center;
+
+            background-color: white;
+            color: blue;
+            font-family: monospace;
+            font-size: .9em;
+            padding: 2px 6px;
+            white-space: nowrap;
+        }
+    }
+
+    /* Letras */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 100;
+
+
+    /* Links */
+    a:not(#título-página>a){
+        color: black;
+        font-weight: 900;
+    }
+    a:visited{
+        color: blueviolet;
+        font-weight: 400;
+    }
+    #título-página>a{
+        color: white;
+    }
+
+
+    /* Líneas Separación*/
+    hr{
+        color: red;
+    }
+
+    /* Cabecera */
+    header{
+        /* Caminito */
+        #teletexto-alto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            #página-info{
+                color: darkgoldenrod;
+            }
+            
+            #ir-a-página{
+                color:darkturquoise;
+                
+            }
+            
+            #ir-a-página-por-número{
+                background-color: transparent;
+                outline: 1px solid yellow;
+                color: cyan;
+                width: 3ch;
+            }
+            
+            #página-migas-de-pan{
+                color: darkred;
+            }
+            
+            #fecha-hora{
+                color: darkgreen
+            }
+        }
+        
+        /* Título de la Página Web */
+        #título-página{
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+    
+
+                /* Principal */
+    main{
+        margin: 30px 30px;
+    }
+    #fotos{
+        margin-top: 20px;
+
+        img{
+            width: 200px;
+            margin-top: 12px;
+            display: block;
+        }
+    }
+
+                /* Pie de Página */
+    footer{
+        text-align: center;
+    }
+}
